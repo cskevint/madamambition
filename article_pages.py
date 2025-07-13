@@ -45,13 +45,25 @@ def download_article_data(url):
             for img in content_elem.find_all('img'):
                 src = img.get('src')
                 filename = src.split('/')[-1]
+                new_src = f"/articles/images/{filename}"
                 alt = img.get('alt', '')
             if src:
-                images.append({'src': src, 'filename':filename, 'alt': alt})
+                images.append({
+                    'src': src, 
+                    'new_src': new_src,
+                    'filename':filename, 
+                    'alt': alt
+                })
+        # Replace all occurrences of image src with new_src in content
+        for img in images:
+            if img['src'] and img['new_src']:
+                content = content.replace(img['src'], img['new_src'])
+            if main_image == img['src']:
+                main_image = img['new_src']
         return {
+            'title': title,
             'url': url,
             'filename': f"{path}.md",
-            'title': title,
             'main_image': main_image,
             'content': content,
             'images': images,
@@ -67,8 +79,11 @@ def process_article(article_data):
 
     filename = os.path.join(ARTICLE_FOLDER, article_data['filename'])
     with open(filename, 'w', encoding='utf-8') as f:
-        f.write(f"[//]: # (title: {article_data['title']})\n\n")
-        f.write(f"[//]: # (main_image: {article_data['main_image']})\n\n")
+        f.write(f"[//]: # (title: {article_data['title']})\n")
+        f.write(f"[//]: # (url: {article_data['url']})\n")
+        f.write(f"[//]: # (filename: {article_data['filename']})\n")
+        f.write(f"[//]: # (main_image: {article_data['main_image']})\n")
+        f.write("\n")
         f.write(article_data['content'])
 
     for img in article_data['images']:
@@ -106,6 +121,7 @@ def main():
     for page in ARTICLE_LIST_PAGES:
         articles = find_all_articles(page)
         articles_found.extend(articles)
+    # articles_found = articles_found[:2]  # Limit to first 10 articles for testing
 
     for article_url in articles_found:
         article = download_article_data(article_url)

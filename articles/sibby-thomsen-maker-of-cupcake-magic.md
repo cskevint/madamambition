@@ -1,6 +1,7 @@
 [//]: # (title: Sibby Thomsen – Maker of Cupcake Magic)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/06/58-scaled.jpg)
+[//]: # (url: https://madamambition.com/sibby-thomsen-maker-of-cupcake-magic/)
+[//]: # (filename: sibby-thomsen-maker-of-cupcake-magic.md)
+[//]: # (main_image: /articles/images/58-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Sibby Thomsen – Maker of Cupcake Magic
 
 June 7, 2023
 
-![Sibby Thompsen of Sibby's Cupcakes](https://madamambition.com/wp-content/uploads/2023/06/58-scaled.jpg "Sibby Thompsen of Sibby's Cupcakes")
+![Sibby Thompsen of Sibby's Cupcakes](/articles/images/58-scaled.jpg "Sibby Thompsen of Sibby's Cupcakes")
 
 Author’s Note:
 --------------

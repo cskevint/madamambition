@@ -1,6 +1,7 @@
 [//]: # (title: Chrysta Wilson – Founder & DEI Coach and Consultant)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/01/38-Chrysta-Wilson-scaled.jpg)
+[//]: # (url: https://madamambition.com/chrysta-wilson-founder-dei-coach-and-consultant/)
+[//]: # (filename: chrysta-wilson-founder-dei-coach-and-consultant.md)
+[//]: # (main_image: /articles/images/38-Chrysta-Wilson-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Chrysta Wilson – Founder & DEI Coach and Consultant
 
 January 29, 2023
 
-![](https://madamambition.com/wp-content/uploads/2023/01/38-Chrysta-Wilson-scaled.jpg "Chrysta Wilson")
+![](/articles/images/38-Chrysta-Wilson-scaled.jpg "Chrysta Wilson")
 
 Chrysta Wilson wants people to thrive. 
 

@@ -1,6 +1,7 @@
 [//]: # (title: Karina Wilhems –Research Practice Director at The Wiseman Group)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2022/12/Karina-Wilhelms-image-01-madam-ambition-water-color-portrait-1-scaled-1.jpg)
+[//]: # (url: https://madamambition.com/research-practice-director-at-the-wiseman-group/)
+[//]: # (filename: research-practice-director-at-the-wiseman-group.md)
+[//]: # (main_image: /articles/images/Karina-Wilhelms-image-01-madam-ambition-water-color-portrait-1-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Karina Wilhems – Research Practice Director at The Wiseman Group
 
 April 12, 2022
 
-![](https://madamambition.com/wp-content/uploads/2022/12/Karina-Wilhelms-image-01-madam-ambition-water-color-portrait-1-scaled-1.jpg "Karina Wilhelms - image 01 madam-ambition-water-color-portrait-1-scaled")
+![](/articles/images/Karina-Wilhelms-image-01-madam-ambition-water-color-portrait-1-scaled-1.jpg "Karina Wilhelms - image 01 madam-ambition-water-color-portrait-1-scaled")
 
 After more than a decade working high-power jobs in publishing and event management, Karina Wilhems has a great deal of impressive experience under her belt. However, over the years, the UC Berkeley graduate has never lost sight of her humanitarian values. “Being smart is not the core of my identity,” says Karina, whose greatest wish is and has always been to serve her community.
 

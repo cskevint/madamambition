@@ -1,6 +1,7 @@
 [//]: # (title: Adwoa Ulzen Setrakian –Social Worker, Full Time Mother, Indiana)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/01/Adwoa-Ulzen-Setrakian-image-01-watercolor.madam-ambition-scaled-1.jpeg)
+[//]: # (url: https://madamambition.com/social-worker-full-time-mother/)
+[//]: # (filename: social-worker-full-time-mother.md)
+[//]: # (main_image: /articles/images/Adwoa-Ulzen-Setrakian-image-01-watercolor.madam-ambition-scaled-1.jpeg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -10,7 +11,7 @@ Social Worker, Full Time Mother, Indiana
 
 May 20, 2022
 
-![](https://madamambition.com/wp-content/uploads/2023/01/Adwoa-Ulzen-Setrakian-image-01-watercolor.madam-ambition-scaled-1.jpeg "Adwoa Ulzen Setrakian - image 01 watercolor.madam-ambition-scaled")
+![](/articles/images/Adwoa-Ulzen-Setrakian-image-01-watercolor.madam-ambition-scaled-1.jpeg "Adwoa Ulzen Setrakian - image 01 watercolor.madam-ambition-scaled")
 
 **Hi Adwoa – Thank you so much for joining me with Madam Ambition. If you want to start by telling me a little about yourself and where you’re from?**
 

@@ -1,6 +1,7 @@
 [//]: # (title: Rachel Pereya – Fractional Business Systems Expertise)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/01/41-Rachel-Pereya-scaled.jpg)
+[//]: # (url: https://madamambition.com/rachel-pereya-fractional-business-systems-expertise/)
+[//]: # (filename: rachel-pereya-fractional-business-systems-expertise.md)
+[//]: # (main_image: /articles/images/41-Rachel-Pereya-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 
@@ -9,7 +10,7 @@ Rachel Pereya – Fractional Business Systems Expertise
 
 January 30, 2023
 
-![Jenna Nicholas](https://madamambition.com/wp-content/uploads/2023/01/41-Rachel-Pereya-scaled.jpg "Rachel Pereya")
+![Jenna Nicholas](/articles/images/41-Rachel-Pereya-scaled.jpg "Rachel Pereya")
 
 [Rachel Pereya is Owner of Mastermind Business Services](https://mastermindbusinessservices.com/)
 

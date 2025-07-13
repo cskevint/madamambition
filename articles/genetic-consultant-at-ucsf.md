@@ -1,6 +1,7 @@
 [//]: # (title: Nicola Stewart –Genetic Consultant at UCSF)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/01/Nicola-Stewart-image-01-madam-ambition-water-color-scaled-1.jpeg)
+[//]: # (url: https://madamambition.com/genetic-consultant-at-ucsf/)
+[//]: # (filename: genetic-consultant-at-ucsf.md)
+[//]: # (main_image: /articles/images/Nicola-Stewart-image-01-madam-ambition-water-color-scaled-1.jpeg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Nicola Stewart – Genetic Consultant at UCSF
 
 April 12, 2022
 
-![](https://madamambition.com/wp-content/uploads/2023/01/Nicola-Stewart-image-01-madam-ambition-water-color-scaled-1.jpeg "Nicola Stewart - image 01 madam-ambition-water-color-scaled")
+![](/articles/images/Nicola-Stewart-image-01-madam-ambition-water-color-scaled-1.jpeg "Nicola Stewart - image 01 madam-ambition-water-color-scaled")
 
 **Welcome to Madam Ambition, if you want to just tell me about your childhood and where you’re from, and anything you want to tell me about your early life.**
 

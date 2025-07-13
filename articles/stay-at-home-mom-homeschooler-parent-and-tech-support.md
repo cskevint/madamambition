@@ -1,5 +1,6 @@
 [//]: # (title: Tamara Bard –)
-
+[//]: # (url: https://madamambition.com/stay-at-home-mom-homeschooler-parent-and-tech-support/)
+[//]: # (filename: stay-at-home-mom-homeschooler-parent-and-tech-support.md)
 [//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/01/Tamara-Bard-image-01-portrait-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
@@ -28,7 +29,7 @@ So she pushed down that desire. She did spend a few weeks shadowing a nurse over
 
 College had been a wonderful experience. She was inspired by women from all backgrounds and their own passions for studying. She felt newly committed to education, though the draw of motherhood was still there. It was difficult for her to think about a career that was full time when she knew that she always wanted to be a full-time mom. She however was very grateful for her years there and the experiences she had, even with the hindsight that they had not given full clarity of what to do with her future career.
 
-![](https://madamambition.com/wp-content/uploads/2023/01/Tamara-Bard.png "Tamara Bard")
+![](/articles/images/Tamara-Bard.png "Tamara Bard")
 
 She kept with her schooling and got into a graduate program in Rochester, New York, where she was going to focus on Neuroscience. There she felt out of place and confused. Not only was she surprised that she got accepted into a program since she did not have the same motivation that the other students had. “As the year went on, I felt more and more isolated and alone, like I was drowning. I just accepted it and tried to fight along. It was overall not a good experience for me. I felt like I was constantly behind like I was missing some vital information everyone else seemed to have, but I had never received. I also found out that the work I was passionate about at that time (research with human subjects) was considered ‘out of scope’ of my program, and the mentor I had found was not acceptable.”
 

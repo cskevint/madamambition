@@ -1,6 +1,7 @@
 [//]: # (title: Sutina Li –Stay at Home Mother and Dental Hygienist)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/01/Sutina-Li-image-01-portrait-madam-ambitionb-scaled-1.jpg)
+[//]: # (url: https://madamambition.com/dental-hygentist/)
+[//]: # (filename: dental-hygentist.md)
+[//]: # (main_image: /articles/images/Sutina-Li-image-01-portrait-madam-ambitionb-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Sutina Li – Stay at Home Mother and Dental Hygienist
 
 January 28, 2021
 
-![](https://madamambition.com/wp-content/uploads/2023/01/Sutina-Li-image-01-portrait-madam-ambitionb-scaled-1.jpg "Sutina Li - image 01 portrait-madam-ambitionb-scaled")
+![](/articles/images/Sutina-Li-image-01-portrait-madam-ambitionb-scaled-1.jpg "Sutina Li - image 01 portrait-madam-ambitionb-scaled")
 
 Sutina did well academically in high school, especially because she excelled at standardized testing, but she never had a clear career path in mind. In college, she majored in Sociology, studied abroad in South Korea, took courses ranging from accounting to French literature, volunteered at a crisis hotline, and joined a sorority but emerged from the college experience with even less clarity. This was in 2008 when the country was reeling, firms were letting go of workers and not hiring. All the graduates that year faced a backlash against new hires, and they all (me included) took jobs where they could get them. Sutina thought about joining the Peace Corps but settled for joining AmeriCorps as a volunteer coordinator in her home state of Minnesota. She loved the job, her co-workers, and the organization where she was placed but she decided to move to Chicago to join her fiance when her service year ended rather than continue to build her own career in the nonprofit sector in Minnesota.
 

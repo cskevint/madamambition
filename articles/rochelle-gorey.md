@@ -1,6 +1,7 @@
 [//]: # (title: Rochelle Gorey – FinTech Founder of SpringFour)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/08/61-scaled.jpg)
+[//]: # (url: https://madamambition.com/rochelle-gorey/)
+[//]: # (filename: rochelle-gorey.md)
+[//]: # (main_image: /articles/images/61-scaled.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 
@@ -9,7 +10,7 @@ Rochelle Gorey – FinTech Founder of SpringFour
 
 September 1, 2023
 
-![Rochelle Gorey Founder of fintech SpringFour](https://madamambition.com/wp-content/uploads/2023/08/61-scaled.jpg "Rochelle Gorey Founder of fintech SpringFour")
+![Rochelle Gorey Founder of fintech SpringFour](/articles/images/61-scaled.jpg "Rochelle Gorey Founder of fintech SpringFour")
 
 Introducing [Rochelle Gorey](https://www.nycfintechwomen.com/post/fintech-female-fridays-meet-rochelle-gorey-co-founder-ceo-at-springfour), the mastermind behind [SpringFour](https://springfour.com/), a fintech company with a social impact committed to empowering individuals and families facing financial difficulties. With a background in the financial services industry and an unwavering determination to positively change people’s lives, Rochelle has successfully developed an innovative platform that connects individuals to local resources, enabling them to regain control over their finances.
 

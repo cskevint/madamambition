@@ -1,6 +1,7 @@
 [//]: # (title: Jenna Nicholas – Investor, Entrepreneur, Board Member in Social Investments)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/08/60_new-scaled.jpg)
+[//]: # (url: https://madamambition.com/jenna-nicholas-investor-entrepreneur-board-member-in-social-investments/)
+[//]: # (filename: jenna-nicholas-investor-entrepreneur-board-member-in-social-investments.md)
+[//]: # (main_image: /articles/images/60_new-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Jenna Nicholas – Investor, Entrepreneur, Board Member in Social Investments
 
 August 5, 2023
 
-![Jenna Nicholas](https://madamambition.com/wp-content/uploads/2023/08/60_new-scaled.jpg "Jenna Nicholas")
+![Jenna Nicholas](/articles/images/60_new-scaled.jpg "Jenna Nicholas")
 
 Jenna Nicholas is a lot of things. She is brilliant, kind, and compassionate. But she also works across several major initiatives. Based out of the Bay Area of California, Jenna is the co-founder and CEO of Impact Experience. This organization focuses on equity across investments, healthcare, education, and climate. And about a year ago, they started another initiative within this org called Business Climate Finance, where they work with companies to decarbonize their financial supply chain and focus on racial and climate equity.
 

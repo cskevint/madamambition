@@ -1,6 +1,7 @@
 [//]: # (title: Pam Kriangkum – Entrepreneur, Brand Photographer and Business Development Leader)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/01/42-Pam-scaled.jpg)
+[//]: # (url: https://madamambition.com/pam-kriangkum-entrepreneur-brand-photographer-and-business-development-leader/)
+[//]: # (filename: pam-kriangkum-entrepreneur-brand-photographer-and-business-development-leader.md)
+[//]: # (main_image: /articles/images/42-Pam-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Pam Kriangkum – Entrepreneur, Brand Photographer and Business Development Lead
 
 January 29, 2023
 
-![Pam Kriangkum](https://madamambition.com/wp-content/uploads/2023/01/42-Pam-scaled.jpg "Pam Kriangkum")
+![Pam Kriangkum](/articles/images/42-Pam-scaled.jpg "Pam Kriangkum")
 
 [Pam Kriangkum is a Branding Photographer in Edmonton, Al Canada. She also helps small businesses with business plans and marketing.](https://pamkriangkum.com/)
 

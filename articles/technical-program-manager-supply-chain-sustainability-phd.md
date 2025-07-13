@@ -1,6 +1,7 @@
 [//]: # (title: Nasim Mullen –Technical Program Manager, Supply Chain Sustainability, PhD)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2022/12/Nasim-Mullen-Image-01-smaller-madam-ambition.jpg)
+[//]: # (url: https://madamambition.com/technical-program-manager-supply-chain-sustainability-phd/)
+[//]: # (filename: technical-program-manager-supply-chain-sustainability-phd.md)
+[//]: # (main_image: /articles/images/Nasim-Mullen-Image-01-smaller-madam-ambition.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Nasim Mullen – Technical Program Manager, Supply Chain Sustainability, PhD
 
 October 19, 2022
 
-![](https://madamambition.com/wp-content/uploads/2022/12/Nasim-Mullen-Image-01-smaller-madam-ambition.jpg "Nasim Mullen Image 01 smaller-madam-ambition")
+![](/articles/images/Nasim-Mullen-Image-01-smaller-madam-ambition.jpg "Nasim Mullen Image 01 smaller-madam-ambition")
 
 Nasim Mullen is many things, and first and foremost, she is powerful. She is a wife and mother of three young girls, ages 5, 3, and 1. She has her PhD, a robust career in building sustainability and environmental accountability within corporate America and a rich internal and external spiritual life through the Baha’i Faith. Nasim has harnessed all of these components that make her who she is, to set a dynamic, multi-faceted, and all the while ever-so-humble example, for her three little girls who will one day become women themselves.
 

@@ -1,6 +1,7 @@
 [//]: # (title: Felicia Widjaja –Clinical Research Supervisor at UCSF)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2022/12/Felicia-Widjaja-image-01-madam-ambition-water-color-portrait-scaled-1.jpg)
+[//]: # (url: https://madamambition.com/clinical-research-supervisor-at-ucsf/)
+[//]: # (filename: clinical-research-supervisor-at-ucsf.md)
+[//]: # (main_image: /articles/images/Felicia-Widjaja-image-01-madam-ambition-water-color-portrait-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Felicia Widjaja – Clinical Research Supervisor at UCSF
 
 April 12, 2022
 
-![](https://madamambition.com/wp-content/uploads/2022/12/Felicia-Widjaja-image-01-madam-ambition-water-color-portrait-scaled-1.jpg "Felicia Widjaja - image 01 madam-ambition-water-color-portrait-scaled")
+![](/articles/images/Felicia-Widjaja-image-01-madam-ambition-water-color-portrait-scaled-1.jpg "Felicia Widjaja - image 01 madam-ambition-water-color-portrait-scaled")
 
 Born in Indonesia on the island of Java, Felicia Widjaja is the elder child amongst two younger sisters and one younger brother. Her grandparents, both maternal and paternal, immigrated to Indonesia and settled in Jakarta from China. Felicia’s parents owned a convenience shop in Jakarta and were so dedicated to it that they never took a day off.  Felicia stated that her family did not take a vacation and that she worked at the store even during her school holidays. The only outings she remembered were visits to grandparents and, on rare occasions, excursions out of town, such as a drive to the mountains after the store closed.
 

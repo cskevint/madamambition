@@ -1,6 +1,7 @@
 [//]: # (title: )
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/02/33-scaled.jpg)
+[//]: # (url: https://madamambition.com/sr-manager-of-learning-development-and-customer-experience-at-vision-insurance-company-california/)
+[//]: # (filename: sr-manager-of-learning-development-and-customer-experience-at-vision-insurance-company-california.md)
+[//]: # (main_image: /articles/images/33-scaled.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@
 
 October 22, 2022
 
-![Amee Sheldon ](https://madamambition.com/wp-content/uploads/2023/02/33-scaled.jpg "Amee Sheldon")
+![Amee Sheldon ](/articles/images/33-scaled.jpg "Amee Sheldon")
 
 Amee Sheldon was born and raised in Mansfield, Texas, to a pair of Iranian immigrants. In  Mansfield, a smaller city part of the greater Dallas-Fort Worth Metroplex, Amee and her family  found themselves in the minority amidst the white homogeneity of the city. It was a family rule  not to speak Farsi outside the house, conceding their culture for the safety of assimilation. “There were some really interesting dynamics of growing up in a small town in Texas and then  having your parents try to teach you your culture and language and religion at home, but then  also say, ‘Hey, you know, we don’t want to draw too much attention to ourselves.’” 
 

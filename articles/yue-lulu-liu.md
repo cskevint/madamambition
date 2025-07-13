@@ -1,6 +1,7 @@
 [//]: # (title: Yue (Lulu) Liu)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/04/53-scaled.jpg)
+[//]: # (url: https://madamambition.com/yue-lulu-liu/)
+[//]: # (filename: yue-lulu-liu.md)
+[//]: # (main_image: /articles/images/53-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Yue (Lulu) Liu
 
 May 12, 2023
 
-![Yue Lulu Liu](https://madamambition.com/wp-content/uploads/2023/04/53-scaled.jpg "Yue Lulu Liu")
+![Yue Lulu Liu](/articles/images/53-scaled.jpg "Yue Lulu Liu")
 
 Current Work
 ------------

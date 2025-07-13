@@ -1,6 +1,7 @@
 [//]: # (title: Connie Yu –)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2022/12/Connie-Yu-image-01-portrait-scaled-1.jpg)
+[//]: # (url: https://madamambition.com/associate-chair-of-administration-and-finance-at-ucsf/)
+[//]: # (filename: associate-chair-of-administration-and-finance-at-ucsf.md)
+[//]: # (main_image: /articles/images/Connie-Yu-image-01-portrait-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -12,7 +13,7 @@ Associate Chair of Administration and Finance at UCSF
 
 December 27, 2021
 
-![](https://madamambition.com/wp-content/uploads/2022/12/Connie-Yu-image-01-portrait-scaled-1.jpg "Connie Yu - image 01 -portrait-scaled")
+![](/articles/images/Connie-Yu-image-01-portrait-scaled-1.jpg "Connie Yu - image 01 -portrait-scaled")
 
 Connie Yu is the Associate Chair for Administration & Finance of the Department for the Department of Obstetrics, Gynecology, & Reproductive Sciences. She is the boss of OBGYN, in other terms. Her rise through the ranks of Human Resources in Hospitals was both unlikely, but also inevitable given each path taken in stages of her life. She oversees over 800 people, ranging from Doctors, Nurses, Professors, researchers, and many support staff who are all part of the great work of overseeing new life that comes into this world through UCSF.
 

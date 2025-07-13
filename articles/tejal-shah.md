@@ -1,6 +1,7 @@
 [//]: # (title: Tejal Shah – Global Investment Banker & Venture Builder)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/05/50-scaled.jpg)
+[//]: # (url: https://madamambition.com/tejal-shah/)
+[//]: # (filename: tejal-shah.md)
+[//]: # (main_image: /articles/images/50-scaled.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 
@@ -9,7 +10,7 @@ Tejal Shah – Global Investment Banker & Venture Builder
 
 September 25, 2023
 
-![Tejal Shah Global Investment Banker | Venture Builder](https://madamambition.com/wp-content/uploads/2023/05/50-scaled.jpg "Tejal Shah Global Investment Banker | Venture Builder")
+![Tejal Shah Global Investment Banker | Venture Builder](/articles/images/50-scaled.jpg "Tejal Shah Global Investment Banker | Venture Builder")
 
 Meet Tejal Shah, Mechanical Engineer, finance, sales, and operations master. She is an International Investment Banker at [US Capital out of San Francisco](https://uscapital.com/). Recently expanding their West Coast operations with her expertise, [she has hit the ground running, expanding their reach](https://uscapital.medium.com/us-capital-global-expands-san-francisco-headquarters-with-appointment-of-vice-president-tejal-shah-2ab5ba6ca79a). Her career in engineering, start-ups, non-profits, wealth management, founder, working in the C-suite, and overall professional services has been an amazing mix of experiences to help make this role a natural fit.
 

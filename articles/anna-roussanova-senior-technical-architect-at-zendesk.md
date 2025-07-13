@@ -1,6 +1,7 @@
 [//]: # (title: Anna Roussanova –Senior technical architect at Zendesk)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2022/12/Anna-Roussanova-image-01-portrait-scaled-1.jpg)
+[//]: # (url: https://madamambition.com/anna-roussanova-senior-technical-architect-at-zendesk/)
+[//]: # (filename: anna-roussanova-senior-technical-architect-at-zendesk.md)
+[//]: # (main_image: /articles/images/Anna-Roussanova-image-01-portrait-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 
@@ -10,7 +11,7 @@ Senior technical architect at Zendesk
 
 January 31, 2021
 
-![](https://madamambition.com/wp-content/uploads/2022/12/Anna-Roussanova-image-01-portrait-scaled-1.jpg "Anna Roussanova - image 01 portrait-scaled")
+![](/articles/images/Anna-Roussanova-image-01-portrait-scaled-1.jpg "Anna Roussanova - image 01 portrait-scaled")
 
 “While these are the actual job titles like teacher, lawyer, doctor, I should have instead been thinking about ‘given the fact that I like these things what are broader careers that I could do?”
 

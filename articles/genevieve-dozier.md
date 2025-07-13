@@ -1,6 +1,7 @@
 [//]: # (title: Genevieve Dozier – Director of Business Development and Business Consultant)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/03/49_Genevieve-Dozier-1-scaled.jpg)
+[//]: # (url: https://madamambition.com/genevieve-dozier/)
+[//]: # (filename: genevieve-dozier.md)
+[//]: # (main_image: /articles/images/49_Genevieve-Dozier-1-scaled.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 
@@ -9,7 +10,7 @@ Genevieve Dozier – Director of Business Development and Business Consultant
 
 March 22, 2023
 
-![Jenna Nicholas](https://madamambition.com/wp-content/uploads/2023/03/49_Genevieve-Dozier-1-scaled.jpg "Genevieve Dozier")
+![Jenna Nicholas](/articles/images/49_Genevieve-Dozier-1-scaled.jpg "Genevieve Dozier")
 
 As a child, Genevieve Dozier developed ideas for her future from the movies. After watching Jurassic Park, she wanted to be an archeologist; Independence Day spurred a desire to be president of the United States.
 

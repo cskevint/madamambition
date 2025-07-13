@@ -1,6 +1,7 @@
 [//]: # (title: Yikee Adje – US Diplomat and Foreign Service Officer)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/11/59-1-scaled.jpg)
+[//]: # (url: https://madamambition.com/yikee-adje/)
+[//]: # (filename: yikee-adje.md)
+[//]: # (main_image: /articles/images/59-1-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Yikee Adje – US Diplomat and Foreign Service Officer
 
 November 24, 2023
 
-![Yikee Adje US Diplomat](https://madamambition.com/wp-content/uploads/2023/11/59-1-scaled.jpg "Yikee Adje US Diplomat")
+![Yikee Adje US Diplomat](/articles/images/59-1-scaled.jpg "Yikee Adje US Diplomat")
 
 US Diplomat, International Development Practitioner, Executive Coach, Master Facilitator, Author
 

@@ -1,5 +1,6 @@
 [//]: # (title: Mariam Shams Goldberg –Physician, Family Doctor, South Africa)
-
+[//]: # (url: https://madamambition.com/physician-family-doctor-south-africa/)
+[//]: # (filename: physician-family-doctor-south-africa.md)
 [//]: # (main_image: https://madamambition.com/wp-content/uploads/2022/02/Mariam-Shams-Goldberg-image-01-water-color-portrait-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
@@ -47,7 +48,7 @@ When I started specializing in family medicine a couple of years ago I was told 
 
 For my internship, I worked in a public hospital in Johannesburg called Charlotte McVicker academic hospital. I worked in trauma hospitals where you see victims of gunshot violence and stab wounds and things like that. They have dedicated trauma hospitals and it’s crazy working there. Like, you know, this whole load shedding thing, when the electricity was off? So it would go off in the hospitals you’d be literally using your flashlight to put in intercostal drains to save lives.
 
-![](https://madamambition.com/wp-content/uploads/2023/01/Mariam-Shams-Goldberg-hospital.png "Mariam Shams Goldberg hospital")
+![](/articles/images/Mariam-Shams-Goldberg-hospital.png "Mariam Shams Goldberg hospital")
 
 **You didn’t have generators?**
 

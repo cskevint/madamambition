@@ -1,6 +1,7 @@
 [//]: # (title: Hoda Toloui-Wallace – Project Manager, Digital Strategy & Innovation at lululemon)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/01/32-scaled.jpg)
+[//]: # (url: https://madamambition.com/hoda-toloui-wallace-project-manager-digital-strategy-innovation-at-lululemon/)
+[//]: # (filename: hoda-toloui-wallace-project-manager-digital-strategy-innovation-at-lululemon.md)
+[//]: # (main_image: /articles/images/32-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Hoda Toloui-Wallace – Project Manager, Digital Strategy & Innovation at lulule
 
 January 29, 2023
 
-![Jenna Nicholas](https://madamambition.com/wp-content/uploads/2023/01/32-scaled.jpg "Hoda Toloui Wallace")
+![Jenna Nicholas](/articles/images/32-scaled.jpg "Hoda Toloui Wallace")
 
 Talking to Hoda is like speaking to the adult version of all the things you wish for your daughter to one day possess. Sure, she has accomplished great things professionally, but it is the qualities Hoda consistently exhibited on that journey that makes for the fantastic human she is. Impressive, humble, unafraid to embrace and learn from failure, service-focused, ambitious, creative, unaverse to adversity, and so on. She can handle the flip side of every coin. The arduous tasks of starting new projects and endeavors are taken with stride and with a continual focus on excellence. She has a tightly knit and loving family, but this did not stop her from moving to the other side of the world to forge a new and uncharted path.
 

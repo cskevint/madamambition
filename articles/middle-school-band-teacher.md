@@ -1,5 +1,6 @@
 [//]: # (title: Vicki Tam –Middle School Band Teacher)
-
+[//]: # (url: https://madamambition.com/middle-school-band-teacher/)
+[//]: # (filename: middle-school-band-teacher.md)
 [//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/01/Vicki-Tam-image-01-portrait.-madamambition-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
@@ -37,6 +38,6 @@ They moved back in with Vicki’s parents at that point, in the suburbs of Minne
 
 Vicki continued to work and grow in her field. She has moved around different school districts in the Western suburbs. She returned to school at the University of St. Thomas where she received a Master’s Degree in education and has gotten to know so many people of the music education community of Minnesota. She had her first child in 2017 and is expecting another in a couple of months. “There is a really good sense of community in the music scene in Minnesota. You have to want to be involved, but there is a large community there to support you.” This includes being part of the state organizations that help support students in their musical aspirations. As well as helping out with music programs and their special events within districts throughout the entire school year.
 
-![](https://madamambition.com/wp-content/uploads/2023/01/Vicky-graduation.png "Vicky graduation")
+![](/articles/images/Vicky-graduation.png "Vicky graduation")
 
 I asked Vicki about her hopes for her future. She wants to continue teaching. She dreams of getting into larger school districts that have more resources to support musical development for the children. This career fits her, especially now that she is having young kids. There are days and times where it is becoming monotonous and easy, but then again that ease comes with a balance of being able to save energy for her young daughter. She could also see herself retiring thirty years down the line in the same school district because she really does enjoy what she does.

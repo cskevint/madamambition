@@ -1,6 +1,7 @@
 [//]: # (title: Sofia Yuen, M.D., M.B.A.)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/04/51_Sofia-Yuen-scaled.jpg)
+[//]: # (url: https://madamambition.com/sofia-yuen/)
+[//]: # (filename: sofia-yuen.md)
+[//]: # (main_image: /articles/images/51_Sofia-Yuen-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 
@@ -9,7 +10,7 @@ Sofia Yuen, M.D., M.B.A.
 
 April 12, 2023
 
-![Sofia Yuen MD MBA](https://madamambition.com/wp-content/uploads/2023/04/51_Sofia-Yuen-scaled.jpg "Sofia Yuen MD MBA")
+![Sofia Yuen MD MBA](/articles/images/51_Sofia-Yuen-scaled.jpg "Sofia Yuen MD MBA")
 
 [Sofia Yuen](https://www.linkedin.com/in/sofia-yuen-md-mba-8984a4105/) is a motivated generator of information and an unbelievably hard worker. She holds an MD and MBA and works within New York University’s hospital system as an Assistant Director, Clinical Quality & Effectiveness. Her work focuses on improving patient care, outcomes, and overall experience. Her mission is to make the healthcare system more understandable for all participants. She has a lot of work cut out but is very driven in this goal.
 

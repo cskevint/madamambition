@@ -1,6 +1,7 @@
 [//]: # (title: Maribel Aburto – Founder in Branding and Web Design)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/01/36-scaled.jpg)
+[//]: # (url: https://madamambition.com/maribel-aburto-founder-in-branding-and-web-design/)
+[//]: # (filename: maribel-aburto-founder-in-branding-and-web-design.md)
+[//]: # (main_image: /articles/images/36-scaled.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 
@@ -9,7 +10,7 @@ Maribel Aburto – Founder in Branding and Web Design
 
 January 30, 2023
 
-![Jenna Nicholas](https://madamambition.com/wp-content/uploads/2023/01/36-scaled.jpg "Maribel Aruto")
+![Jenna Nicholas](/articles/images/36-scaled.jpg "Maribel Aruto")
 
 Growing up in Santiago, Chile, in the 1980s, Maribel Aburto couldn’t imagine life beyond the confines of the country’s military dictatorship. “I lived most of my life in one of the poorest or most marginalized areas in Santiago. So I saw, and I heard as a child, a lot of the things that were  going on around, a lot of violence, protesting, a very tense childhood.”
 

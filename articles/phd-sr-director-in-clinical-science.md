@@ -1,6 +1,7 @@
 [//]: # (title: Sharon Yavrom – PhD, Sr. Director in Clinical Science, California)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/01/Sharon-Yavrom-image-01-madam_ambition_water_color_portrait_50.jpeg)
+[//]: # (url: https://madamambition.com/phd-sr-director-in-clinical-science/)
+[//]: # (filename: phd-sr-director-in-clinical-science.md)
+[//]: # (main_image: /articles/images/Sharon-Yavrom-image-01-madam_ambition_water_color_portrait_50.jpeg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Sharon Yavrom – PhD, Sr. Director in Clinical Science, California
 
 June 1, 2022
 
-![](https://madamambition.com/wp-content/uploads/2023/01/Sharon-Yavrom-image-01-madam_ambition_water_color_portrait_50.jpeg "Sharon Yavrom - image 01 madam_ambition_water_color_portrait_50")
+![](/articles/images/Sharon-Yavrom-image-01-madam_ambition_water_color_portrait_50.jpeg "Sharon Yavrom - image 01 madam_ambition_water_color_portrait_50")
 
 Sharon Yavrom was born to immigrant parents, her mother from Costa Rica, and her father from Iran. Growing up in a multicultural household, she developed a strong understanding of the Spanish language (however not quite as strong ability to speak it)  and practiced the Baháʼí Faith, which teaches the unity of God, Religion, and Humanity.
 

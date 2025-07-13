@@ -1,6 +1,7 @@
 [//]: # (title: Elizabeth Herth –)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2022/12/Elizabeth-Herth-image-01-watercolor-Madam-Ambition-scaled-1.jpg)
+[//]: # (url: https://madamambition.com/elizabeth-herth-national-statistics-officer-mba/)
+[//]: # (filename: elizabeth-herth-national-statistics-officer-mba.md)
+[//]: # (main_image: /articles/images/Elizabeth-Herth-image-01-watercolor-Madam-Ambition-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -12,7 +13,7 @@ National Statistics Officer, MBA
 
 January 13, 2022
 
-![](https://madamambition.com/wp-content/uploads/2022/12/Elizabeth-Herth-image-01-watercolor-Madam-Ambition-scaled-1.jpg "Elizabeth Herth - image 01 watercolor-Madam-Ambition-scaled")
+![](/articles/images/Elizabeth-Herth-image-01-watercolor-Madam-Ambition-scaled-1.jpg "Elizabeth Herth - image 01 watercolor-Madam-Ambition-scaled")
 
 “Listen to your inner voice, explore, try things, do your best — always do your best because you deserve the learning that comes from that and they deserve the outcome,” said Liz Herth.
 

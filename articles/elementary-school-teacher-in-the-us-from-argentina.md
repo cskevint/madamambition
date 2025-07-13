@@ -1,6 +1,7 @@
 [//]: # (title: Leila Gates –Elementary School Teacher in the US from Argentina)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2022/05/Leila-Gates-image-01-madam-ambition-water-color-portrait-scaled-1.jpeg)
+[//]: # (url: https://madamambition.com/elementary-school-teacher-in-the-us-from-argentina/)
+[//]: # (filename: elementary-school-teacher-in-the-us-from-argentina.md)
+[//]: # (main_image: /articles/images/Leila-Gates-image-01-madam-ambition-water-color-portrait-scaled-1.jpeg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Leila Gates – Elementary School Teacher in the US from Argentina
 
 May 5, 2022
 
-![](https://madamambition.com/wp-content/uploads/2022/05/Leila-Gates-image-01-madam-ambition-water-color-portrait-scaled-1.jpeg "Leila Gates - image 01 madam-ambition-water-color-portrait-scaled")
+![](/articles/images/Leila-Gates-image-01-madam-ambition-water-color-portrait-scaled-1.jpeg "Leila Gates - image 01 madam-ambition-water-color-portrait-scaled")
 
 Leila Gates was born and brought up in Buenos Aires, Argentina. She was the third daughter of four sisters. Her father is from California, while her mother is from the Argentine province of Salta and is part of the Indigenous Wichí tribe. Leila’s father became a Baha’i while attending college. He appreciated learning on his own terms and taught himself how to be a computer programmer. When the opportunity presented itself to pioneer to Argentina, he saw that as a new challenge to learn Spanish and learn a new culture. There, he met Leila’s mother.
 

@@ -1,6 +1,7 @@
 [//]: # (title: Ariane Bertrand Director – Thriving Communities at Emerson Collective)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/10/62-1-scaled.jpg)
+[//]: # (url: https://madamambition.com/ariane-bertrand/)
+[//]: # (filename: ariane-bertrand.md)
+[//]: # (main_image: /articles/images/62-1-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Ariane Bertrand Director – Thriving Communities at Emerson Collective
 
 October 31, 2023
 
-![Ariane Bertrand Director, Thriving Communities at Emerson Collective](https://madamambition.com/wp-content/uploads/2023/10/62-1-scaled.jpg "Ariane Bertrand Director, Thriving Communities at Emerson Collective")
+![Ariane Bertrand Director, Thriving Communities at Emerson Collective](/articles/images/62-1-scaled.jpg "Ariane Bertrand Director, Thriving Communities at Emerson Collective")
 
 Ariane Bertrand is a wonderful person. I’m not accusing her of perfection or putting the burden of sainthood on her shoulders, but goodness shines through when one speaks with her. She is friendly, open, generous, funny, and delightful. What I found impressive and unique, however, was that from quite an early age, Ariane wanted to make a positive impact and difference for others and the world around her – and I’m not speaking figuratively. Ariane’s life is devoted to sustainable, healthy ecosystems.
 

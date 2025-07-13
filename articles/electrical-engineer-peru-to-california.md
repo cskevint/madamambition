@@ -1,6 +1,7 @@
 [//]: # (title: Marion Ore – Solar Electrical Engineer, Peru to California)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2022/12/Marion-Ore-Career-Stories.jpeg)
+[//]: # (url: https://madamambition.com/electrical-engineer-peru-to-california/)
+[//]: # (filename: electrical-engineer-peru-to-california.md)
+[//]: # (main_image: /articles/images/Marion-Ore-Career-Stories.jpeg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Marion Ore – Solar Electrical Engineer, Peru to California
 
 August 14, 2022
 
-![](https://madamambition.com/wp-content/uploads/2022/12/Marion-Ore-Career-Stories.jpeg "Marion Ore Career Stories")
+![](/articles/images/Marion-Ore-Career-Stories.jpeg "Marion Ore Career Stories")
 
 Marion Ore grew up in a small city in Peru, amidst the Andes Mountains, 11,000 feet  \above sea level. She was the youngest of five children born to a pair of hard-working parents, her mother a payroll assistant for an educational ministry and her father an instructor at a school for blind persons.
 

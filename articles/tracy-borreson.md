@@ -1,6 +1,7 @@
 [//]: # (title: Tracy Borreson – Master Brand Story Teller and Consultant)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2024/02/66-1-scaled.jpg)
+[//]: # (url: https://madamambition.com/tracy-borreson/)
+[//]: # (filename: tracy-borreson.md)
+[//]: # (main_image: /articles/images/66-1-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Tracy Borreson – Master Brand Story Teller and Consultant
 
 February 15, 2024
 
-![Tracy Borreson - TLB Coaching and Events](https://madamambition.com/wp-content/uploads/2024/02/66-1-scaled.jpg "Tracy Borreson - TLB Coaching and Events")
+![Tracy Borreson - TLB Coaching and Events](/articles/images/66-1-scaled.jpg "Tracy Borreson - TLB Coaching and Events")
 
 Tracy Borreson is obsessed with authenticity. In a world saturated with cookie-cutter marketing campaigns, Tracy helps companies and their employees harness their unique identities. Unlike traditional marketing advisors who peddle generic blueprints, Tracy’s approach uncovers a company’s true essence and guides them toward strategies, tactics, channels, and platforms that showcase their authenticity. She firmly believes that mindlessly following popular or available strategies and tactics has become the poison of marketing.
 

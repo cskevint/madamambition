@@ -1,6 +1,7 @@
 [//]: # (title: Laxmi Ramanath – Founder of a Risk and Compliance Company)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/01/46-Laxmi-scaled.jpg)
+[//]: # (url: https://madamambition.com/laxmi-ramanath/)
+[//]: # (filename: laxmi-ramanath.md)
+[//]: # (main_image: /articles/images/46-Laxmi-scaled.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 
@@ -9,7 +10,7 @@ Laxmi Ramanath – Founder of a Risk and Compliance Company
 
 October 19, 2023
 
-![Laxmi Ramanath](https://madamambition.com/wp-content/uploads/2023/01/46-Laxmi-scaled.jpg "Laxmi Ramanath - Founder of La Meer Inc")
+![Laxmi Ramanath](/articles/images/46-Laxmi-scaled.jpg "Laxmi Ramanath - Founder of La Meer Inc")
 
 Laxmi is the Founder & CEO of La Meer Inc. – A Risk and Compliance Management Software Company for Financial Compliance in Institutions, based out of Silicon Valley. She started this current company coming out of the 2008 Financial crisis that was impacting the entire world. She analyzed the crisis at depth and realized that proper governance, risk, and compliance are necessary in financial institutions for consumer protection and made that the theme of her company and life.
 

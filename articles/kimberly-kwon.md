@@ -1,6 +1,7 @@
 [//]: # (title: Kimberly Kwon – Writer, Pastor, HR Expert, Career Coach)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/04/29-scaled.jpg)
+[//]: # (url: https://madamambition.com/kimberly-kwon/)
+[//]: # (filename: kimberly-kwon.md)
+[//]: # (main_image: /articles/images/29-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Kimberly Kwon – Writer, Pastor, HR Expert, Career Coach
 
 April 6, 2023
 
-![Kimberly Kwon](https://madamambition.com/wp-content/uploads/2023/04/29-scaled.jpg "Kimberly Kwon")
+![Kimberly Kwon](/articles/images/29-scaled.jpg "Kimberly Kwon")
 
 Kimberly Kwon is determined to uplift the beauty and worth of those most hidden. Kimberly was born under 3 pounds with Cerebral Palsy, a group of disorders that can impact mobility, muscle tone, and posture. The diagnosis influenced her family’s decision to immigrate from Korea to the U.S. for better health care and support systems and away from the stigmas around disability that still exists within all cultures worldwide. “It’s still seen as shameful to have a disabled child, who is judged as “less than” and “broken” in Asian cultures; it was not spoken about back then. If you had a disabled child, they were put in homes and hidden away, or given up for adoption. They weren’t even acknowledged as part of the family.”
 

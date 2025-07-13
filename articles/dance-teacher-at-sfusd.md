@@ -1,6 +1,7 @@
 [//]: # (title: Karina Vela –Dance Teacher at SFUSD)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2022/12/Karina-Vela-image-01-watercolor.madam-ambition-scaled-1.jpg)
+[//]: # (url: https://madamambition.com/dance-teacher-at-sfusd/)
+[//]: # (filename: dance-teacher-at-sfusd.md)
+[//]: # (main_image: /articles/images/Karina-Vela-image-01-watercolor.madam-ambition-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Karina Vela – Dance Teacher at SFUSD
 
 January 14, 2022
 
-![](https://madamambition.com/wp-content/uploads/2022/12/Karina-Vela-image-01-watercolor.madam-ambition-scaled-1.jpg "Karina Vela - image 01 watercolor.madam-ambition-scaled")
+![](/articles/images/Karina-Vela-image-01-watercolor.madam-ambition-scaled-1.jpg "Karina Vela - image 01 watercolor.madam-ambition-scaled")
 
 *“I always knew I wanted to be a teacher because I wanted kids to have someone like them. I had always wanted a teacher that looked like me, that understood me more.” – Karina Vela*
 

@@ -1,6 +1,7 @@
 [//]: # (title: Cindy Fei –Internal Medicine Physician)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2022/12/Cindy-Fei-image-01-portrait-scaled-1.jpg)
+[//]: # (url: https://madamambition.com/internal-medicine-physician/)
+[//]: # (filename: internal-medicine-physician.md)
+[//]: # (main_image: /articles/images/Cindy-Fei-image-01-portrait-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Cindy Fei – Internal Medicine Physician
 
 January 31, 2021
 
-![](https://madamambition.com/wp-content/uploads/2022/12/Cindy-Fei-image-01-portrait-scaled-1.jpg "Cindy Fei - image 01 portrait-scaled")
+![](/articles/images/Cindy-Fei-image-01-portrait-scaled-1.jpg "Cindy Fei - image 01 portrait-scaled")
 
 ​​When I first met Cindy during our freshman year of high school, I admired her from afar. Her cool and quiet demeanor, so different from other girls our age, captivated me. She exuded an intelligence devoid of arrogance. Her comments, thoughtful and well-executed, were always able to put others into their place with grace. Though our class schedules would not overlap for years, I was determined to seek her out for friendship.
 

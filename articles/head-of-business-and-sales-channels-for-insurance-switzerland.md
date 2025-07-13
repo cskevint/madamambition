@@ -1,6 +1,7 @@
 [//]: # (title: Felicitas Burgi – Head of Business and Sales Channels for Insurance – Switzerland)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2022/12/Felicitas-Burgi-image-01-watercolor-1-scaled-1.jpg)
+[//]: # (url: https://madamambition.com/head-of-business-and-sales-channels-for-insurance-switzerland/)
+[//]: # (filename: head-of-business-and-sales-channels-for-insurance-switzerland.md)
+[//]: # (main_image: /articles/images/Felicitas-Burgi-image-01-watercolor-1-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Felicitas Burgi – Head of Business and Sales Channels for Insurance – Switze
 
 September 20, 2022
 
-![](https://madamambition.com/wp-content/uploads/2022/12/Felicitas-Burgi-image-01-watercolor-1-scaled-1.jpg "Felicitas Burgi - image 01 watercolor-1-scaled")
+![](/articles/images/Felicitas-Burgi-image-01-watercolor-1-scaled-1.jpg "Felicitas Burgi - image 01 watercolor-1-scaled")
 
 Felicitas was born in the US to a Swiss father and a German mother. They were in the country pursuing their higher education and met together at school. When they completed their degrees and had some work experience, the family knew they wanted to be in Europe. The family relocated back to  Switzerland when Felícitas was just six months old, marking the beginning of a life filled with international adventures.
 

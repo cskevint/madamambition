@@ -1,6 +1,7 @@
 [//]: # (title: Eliza Kosoy – Founder of Eliza Dolls, Ph. D. student at Berkeley in Artificial Intelligence)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/02/48-scaled.jpg)
+[//]: # (url: https://madamambition.com/eliza-kosoy/)
+[//]: # (filename: eliza-kosoy.md)
+[//]: # (main_image: /articles/images/48-scaled.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 
@@ -9,7 +10,7 @@ Eliza Kosoy – Founder of Eliza Dolls, Ph. D. student at Berkeley in Artificial
 
 March 20, 2023
 
-![Eliza Kosoy](https://madamambition.com/wp-content/uploads/2023/02/48-scaled.jpg "Eliza Kosoy - Founder of E-liza Dolls")
+![Eliza Kosoy](/articles/images/48-scaled.jpg "Eliza Kosoy - Founder of E-liza Dolls")
 
 UC Berkeley Ph.D. candidate. Founder of [Eliza Dolls](https://www.elizadolls.com/). First generation American. Female entrepreneur. Disruptor. Innovator. Believer in women’s ability to run the world. These are but a few of the qualities Eliza Kosoy can’t help but exude. Her well-founded belief in her research and development where AI and childhood development intersect, and its ability to elevate women and thus change the world for the better, are galvanizing.
 

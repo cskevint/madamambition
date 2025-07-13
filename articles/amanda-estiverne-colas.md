@@ -1,6 +1,7 @@
 [//]: # (title: Amanda Estiverne-Colas – FinTech Executive)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/10/47-scaled.jpg)
+[//]: # (url: https://madamambition.com/amanda-estiverne-colas/)
+[//]: # (filename: amanda-estiverne-colas.md)
+[//]: # (main_image: /articles/images/47-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 
@@ -9,7 +10,7 @@ Amanda Estiverne-Colas – FinTech Executive
 
 October 30, 2023
 
-![Amanda Estiverne-Colas FinTech Executive](https://madamambition.com/wp-content/uploads/2023/10/47-scaled.jpg "Amanda Estiverne-Colas FinTech Executive")
+![Amanda Estiverne-Colas FinTech Executive](/articles/images/47-scaled.jpg "Amanda Estiverne-Colas FinTech Executive")
 
 Amanda Estiverne-Colas has many accolades to her name, including mother, first-generation American, high-level corporate executive, and visionary leader leading the way to support more women in FinTech and payment spaces. Work so needed as these fields are still predominantly controlled by men. Her work and support of others is helping to build more equitable and worthy systems. She spoke at [Money 2020 Europe this year](https://europe.money2020.com/agenda/speakers/amanda-estiverne-colas-s102-74478), was a[Fourty under 40 leader profiled by ETA](https://www.electran.org/publication/transactiontrends/profiles-on-leadership-eta-celebrates-black-history-month-2023-forty-under-40/), and is [actively supporting people](https://www.facebook.com/watch/?v=385680680283718) to excel but appreciate the process of growth.
 

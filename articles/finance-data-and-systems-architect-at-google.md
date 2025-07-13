@@ -1,6 +1,7 @@
 [//]: # (title: Lianne Zhang –Finance Data and Systems Architect at Google)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2021/12/Lianne-Zhang-image-01-water-color-portrait-scaled-1.jpg)
+[//]: # (url: https://madamambition.com/finance-data-and-systems-architect-at-google/)
+[//]: # (filename: finance-data-and-systems-architect-at-google.md)
+[//]: # (main_image: /articles/images/Lianne-Zhang-image-01-water-color-portrait-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Lianne Zhang – Finance Data and Systems Architect at Google
 
 December 16, 2021
 
-![](https://madamambition.com/wp-content/uploads/2021/12/Lianne-Zhang-image-01-water-color-portrait-scaled-1.jpg "Lianne Zhang - image 01 water-color-portrait-scaled")
+![](/articles/images/Lianne-Zhang-image-01-water-color-portrait-scaled-1.jpg "Lianne Zhang - image 01 water-color-portrait-scaled")
 
 “There’s a lot of failure in my life, which is good. It’s a learning opportunity,” Lianne Zhang.
 

@@ -1,5 +1,6 @@
 [//]: # (title: Leah Straley –Director of Law School Admissions)
-
+[//]: # (url: https://madamambition.com/director-of-law-school-admissions/)
+[//]: # (filename: director-of-law-school-admissions.md)
 [//]: # (main_image: https://madamambition.com/wp-content/uploads/2022/12/Leah-Straley-image-01-watercolor-madam-ambition-wecompress.com_-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
@@ -39,4 +40,4 @@ In Leah’s opinion, the most important aspect of her position is to foster indi
 
 In many ways, Leah has come full circle in her current position. Her own meandering path in life has supplied her with the ability to connect with law students from a multitude of backgrounds, and she is happy seeing law school from this new perspective. As many recent college grads face a new and constantly fluctuating pandemic world, Leah’s mindset is an important one to learn from. She is calm in the face of uncertainty over her career and this allows her to be flexible and patient as she experiments to find her perfect fit for her at each life transition. From West to East and back again, Leah’s resilient outlook on life is an example of how hard-set career goals aren’t the only way to be successful and happy. On the contrary, letting life blow you in whatever direction can lead you to unexpectedly wonderful places.
 
-![](https://madamambition.com/wp-content/uploads/2023/01/Leah-Straley.png "Leah Straley")
+![](/articles/images/Leah-Straley.png "Leah Straley")

@@ -1,6 +1,7 @@
 [//]: # (title: Jamie Higgins –Graphic Artist & Photographer, California)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2022/12/Jamie-Higgins-image-01-water_color_portrait_Madam_Ambition_1_50.jpg)
+[//]: # (url: https://madamambition.com/jamie-higgins/)
+[//]: # (filename: jamie-higgins.md)
+[//]: # (main_image: /articles/images/Jamie-Higgins-image-01-water_color_portrait_Madam_Ambition_1_50.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Jamie Higgins – Graphic Artist & Photographer, California
 
 July 28, 2022
 
-![](https://madamambition.com/wp-content/uploads/2022/12/Jamie-Higgins-image-01-water_color_portrait_Madam_Ambition_1_50.jpg "Jamie Higgins - image 01 water_color_portrait_Madam_Ambition_1_50")
+![](/articles/images/Jamie-Higgins-image-01-water_color_portrait_Madam_Ambition_1_50.jpg "Jamie Higgins - image 01 water_color_portrait_Madam_Ambition_1_50")
 
 With her drive for excellence and dedication to expressing beauty and joy through art, Jamie Higgins has inspired many. Raised as an only child to a working single mother in California’s Bay Area, she came from modest beginnings. Her mother, “a fiercely independent woman,” had a rough start to life and worked hard to give Jamie the stability she longed for as a child. “She is the one person I can count on in my life,” Jamie recalls.
 

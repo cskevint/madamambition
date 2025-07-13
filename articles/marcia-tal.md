@@ -1,6 +1,7 @@
 [//]: # (title: Marcia Tal – CEO, Tal Solutions)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/10/65-scaled.jpg)
+[//]: # (url: https://madamambition.com/marcia-tal/)
+[//]: # (filename: marcia-tal.md)
+[//]: # (main_image: /articles/images/65-scaled.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 
@@ -9,7 +10,7 @@ Marcia Tal – CEO, Tal Solutions
 
 October 26, 2023
 
-![Marcia Tal CEO, Tal Solutions](https://madamambition.com/wp-content/uploads/2023/10/65-scaled.jpg "Marcia Tal CEO, Tal Solutions")
+![Marcia Tal CEO, Tal Solutions](/articles/images/65-scaled.jpg "Marcia Tal CEO, Tal Solutions")
 
 The women I interview for MadamAmbition are epic. But if I may be so bold, Marcia Tal moves a little beyond epic into legendary territory. Marcia is the CEO of [Tal Solutions](https://talsolutions.com/)®, a consulting business with a cutting-edge technology platform, [PositivityTech](https://positivitytech.com/)®,  the Science of Transforming Negatives to Positives®. But when Marcia opened up about her childhood, education, and life in the corporate world, I understood I was speaking to someone who shaped the world of modern business, and what’s more, she did it on her terms.
 

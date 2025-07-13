@@ -1,6 +1,7 @@
 [//]: # (title: Azucena Ramos – MD PhD)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2024/08/67_updated-scaled.jpg)
+[//]: # (url: https://madamambition.com/azucena-ramos-md-phd/)
+[//]: # (filename: azucena-ramos-md-phd.md)
+[//]: # (main_image: /articles/images/67_updated-scaled.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 
@@ -9,7 +10,7 @@ Azucena Ramos – MD PhD
 
 August 7, 2024
 
-![Azucena (Suzy) Ramos Md PhD VC](https://madamambition.com/wp-content/uploads/2024/08/67_updated-scaled.jpg "Azucena (Suzy) Ramos Md PhD VC")
+![Azucena (Suzy) Ramos Md PhD VC](/articles/images/67_updated-scaled.jpg "Azucena (Suzy) Ramos Md PhD VC")
 
 Meet Azucena Ramos
 ------------------

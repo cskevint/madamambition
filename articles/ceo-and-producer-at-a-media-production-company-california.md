@@ -1,6 +1,7 @@
 [//]: # (title: Nava Kavelin – CEO and Producer at a Media Production Company, California)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2022/12/Nava-Kavelin-Image-01-Madam_Ambition_water_color_portrait_50.jpeg)
+[//]: # (url: https://madamambition.com/ceo-and-producer-at-a-media-production-company-california/)
+[//]: # (filename: ceo-and-producer-at-a-media-production-company-california.md)
+[//]: # (main_image: /articles/images/Nava-Kavelin-Image-01-Madam_Ambition_water_color_portrait_50.jpeg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Nava Kavelin – CEO and Producer at a Media Production Company, California
 
 August 14, 2022
 
-![](https://madamambition.com/wp-content/uploads/2022/12/Nava-Kavelin-Image-01-Madam_Ambition_water_color_portrait_50.jpeg "Nava Kavelin Image 01 Madam_Ambition_water_color_portrait_50")
+![](/articles/images/Nava-Kavelin-Image-01-Madam_Ambition_water_color_portrait_50.jpeg "Nava Kavelin Image 01 Madam_Ambition_water_color_portrait_50")
 
 For Nava Kavelin, service to her faith and to wider society has been at the core of her life’s pursuits and her family’s foundation. She was born in California to a pair of dedicated Bahá’í parents who instilled the importance of service in her and her sister early on. Vacations were not solely dedicated to relaxing; when she and her sister were young, the whole family would volunteer with the local Bahá’í community wherever they visited.  “From a very young age, the notion of having a spiritual practice that is the center of  how your family makes decisions, and centering service, in particular, practicing those values  through acts of service, was imprinted on me…it’s just part of who I am.”
 

@@ -1,6 +1,7 @@
 [//]: # (title: Christine Marie –Life Alignment and Menstrual Coach, Germany)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2022/12/Christine-Marie-image-01-water_color_portrait_50.jpeg)
+[//]: # (url: https://madamambition.com/life-alignment-and-menstrual-coach-germany/)
+[//]: # (filename: life-alignment-and-menstrual-coach-germany.md)
+[//]: # (main_image: /articles/images/Christine-Marie-image-01-water_color_portrait_50.jpeg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Christine Marie – Life Alignment and Menstrual Coach, Germany
 
 August 14, 2022
 
-![](https://madamambition.com/wp-content/uploads/2022/12/Christine-Marie-image-01-water_color_portrait_50.jpeg "Christine Marie - image 01 water_color_portrait_50")
+![](/articles/images/Christine-Marie-image-01-water_color_portrait_50.jpeg "Christine Marie - image 01 water_color_portrait_50")
 
 **Welcome to Madam Ambition Christine, thank you so much for joining me! Do you want to talk to me a little bit about who you are and where you are from?**
 

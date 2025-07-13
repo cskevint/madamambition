@@ -1,6 +1,7 @@
 [//]: # (title: Ebony Holden – Lawyer and Entrepreneur)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/01/37-Ebony-Holden-scaled.jpg)
+[//]: # (url: https://madamambition.com/ebony-holden-lawyer-and-entrepreneur/)
+[//]: # (filename: ebony-holden-lawyer-and-entrepreneur.md)
+[//]: # (main_image: /articles/images/37-Ebony-Holden-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Ebony Holden – Lawyer and Entrepreneur
 
 January 29, 2023
 
-![Jenna Nicholas](https://madamambition.com/wp-content/uploads/2023/01/37-Ebony-Holden-scaled.jpg "Ebony Holden")
+![Jenna Nicholas](/articles/images/37-Ebony-Holden-scaled.jpg "Ebony Holden")
 
 Ebony Holden is a Lawyer and Founder of Holden-Ellis & Associates LLC, which helps businesses startup and sets them up for success
 

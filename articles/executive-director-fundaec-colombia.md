@@ -1,6 +1,7 @@
 [//]: # (title: Leslie Stewart –Executive Director, FUNDAEC, Colombia)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2022/05/Leslie-Stewart-image-01-madam-ambition-water-color-portrait-scaled-1.jpg)
+[//]: # (url: https://madamambition.com/executive-director-fundaec-colombia/)
+[//]: # (filename: executive-director-fundaec-colombia.md)
+[//]: # (main_image: /articles/images/Leslie-Stewart-image-01-madam-ambition-water-color-portrait-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Leslie Stewart – Executive Director, FUNDAEC, Colombia
 
 May 16, 2022
 
-![](https://madamambition.com/wp-content/uploads/2022/05/Leslie-Stewart-image-01-madam-ambition-water-color-portrait-scaled-1.jpg "Leslie Stewart - image 01 madam-ambition-water-color-portrait-scaled")
+![](/articles/images/Leslie-Stewart-image-01-madam-ambition-water-color-portrait-scaled-1.jpg "Leslie Stewart - image 01 madam-ambition-water-color-portrait-scaled")
 
 Leslie was born in Quito, the capital city of Ecuador, in 1976, 2,850 feet above sea level. Her parents, born worlds apart–her father in Ontario, Canada, and her mother in Bogota, Colombia–had met at a Baha’i youth conference and, after they were married, had decided to live and serve as “pioneers” in the Baha’i community in Ecuador. From a very young age, Leslie’s life was shaped and guided by faith; as an infant, she met Dr. Rahmatu’llah Muhajir, a prominent figure in the Baha’i faith. He whispered a Baha’i prayer into her ear, setting into motion a legacy of ambition to serve others.
 

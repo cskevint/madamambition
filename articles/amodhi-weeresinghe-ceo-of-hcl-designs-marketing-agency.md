@@ -1,6 +1,7 @@
 [//]: # (title: Amodhi Weeresinghe – CEO of HCL Designs Marketing Agency)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/01/40-Amodhi-scaled.jpg)
+[//]: # (url: https://madamambition.com/amodhi-weeresinghe-ceo-of-hcl-designs-marketing-agency/)
+[//]: # (filename: amodhi-weeresinghe-ceo-of-hcl-designs-marketing-agency.md)
+[//]: # (main_image: /articles/images/40-Amodhi-scaled.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 
@@ -9,7 +10,7 @@ Amodhi Weeresinghe – CEO of HCL Designs Marketing Agency
 
 January 30, 2023
 
-![Jenna Nicholas](https://madamambition.com/wp-content/uploads/2023/01/40-Amodhi-scaled.jpg "Amodhi Weeresinghe")
+![Jenna Nicholas](/articles/images/40-Amodhi-scaled.jpg "Amodhi Weeresinghe")
 
 It is an astounding feat not just to overcome great adversity but to use the life skills developed through surviving it to harness your goals and become everything you dared to dream.
 

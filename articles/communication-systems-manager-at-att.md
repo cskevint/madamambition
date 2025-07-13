@@ -1,6 +1,7 @@
 [//]: # (title: Shirley Morton –Communication Systems Manager at AT&T)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/05/Shirley-Morton-image-01-smaller-shirley-morton.jpeg)
+[//]: # (url: https://madamambition.com/communication-systems-manager-at-att/)
+[//]: # (filename: communication-systems-manager-at-att.md)
+[//]: # (main_image: /articles/images/Shirley-Morton-image-01-smaller-shirley-morton.jpeg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Shirley Morton – Communication Systems Manager at AT&T
 
 May 4, 2022
 
-![](https://madamambition.com/wp-content/uploads/2023/05/Shirley-Morton-image-01-smaller-shirley-morton.jpeg "Shirley Morton - image 01 smaller-shirley-morton")
+![](/articles/images/Shirley-Morton-image-01-smaller-shirley-morton.jpeg "Shirley Morton - image 01 smaller-shirley-morton")
 
 **Hi Shirley! Welcome to Madam Ambition; tell us about yourself?**
 

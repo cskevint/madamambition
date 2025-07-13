@@ -1,6 +1,7 @@
 [//]: # (title: Amy Schultz – Co-Founder of Bolder Money)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/08/55-Amy-scaled.jpg)
+[//]: # (url: https://madamambition.com/amy-schultz-co-founder-of-bolder-money/)
+[//]: # (filename: amy-schultz-co-founder-of-bolder-money.md)
+[//]: # (main_image: /articles/images/55-Amy-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Career Stories](https://madamambition.com/category/career-stories/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 
@@ -9,7 +10,7 @@ Amy Schultz – Co-Founder of Bolder Money
 
 August 14, 2023
 
-![Amy Schultz of Bolder Money](https://madamambition.com/wp-content/uploads/2023/08/55-Amy-scaled.jpg "Amy Schultz of Bolder Money")
+![Amy Schultz of Bolder Money](/articles/images/55-Amy-scaled.jpg "Amy Schultz of Bolder Money")
 
 Financial guidance is important for everyone,  but not always accessible. Millions of Americans are disqualified from working with financial advisors because they lack investable assets, and they are left not knowing where to turn for wealth-building guidance that could help them catch up to their peers.
 

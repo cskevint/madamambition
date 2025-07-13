@@ -1,6 +1,7 @@
 [//]: # (title: Alyssa Phillips is  Vice President in Wealth Management)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/01/45-scaled.jpg)
+[//]: # (url: https://madamambition.com/alyssa-phillips-careers-in-wealth-management/)
+[//]: # (filename: alyssa-phillips-careers-in-wealth-management.md)
+[//]: # (main_image: /articles/images/45-scaled.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 
@@ -9,7 +10,7 @@ Alyssa Phillips is  Vice President in Wealth Management
 
 February 25, 2023
 
-![Alyssa Philips](https://madamambition.com/wp-content/uploads/2023/01/45-scaled.jpg "Alyssa Philips")
+![Alyssa Philips](/articles/images/45-scaled.jpg "Alyssa Philips")
 
 Alyssa Phillips is  Vice President, Operations at Centura Wealth Advisory an Executive-Level leader at a wealth management firm in Del Mar, CA.
 

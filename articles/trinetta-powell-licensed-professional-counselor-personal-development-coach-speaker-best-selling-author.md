@@ -1,6 +1,7 @@
 [//]: # (title: Trinetta Powell – Licensed Professional Counselor, Personal Development Coach, Speaker, Best Selling Author)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/01/43_Trinetta-scaled.jpg)
+[//]: # (url: https://madamambition.com/trinetta-powell-licensed-professional-counselor-personal-development-coach-speaker-best-selling-author/)
+[//]: # (filename: trinetta-powell-licensed-professional-counselor-personal-development-coach-speaker-best-selling-author.md)
+[//]: # (main_image: /articles/images/43_Trinetta-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Trinetta Powell – Licensed Professional Counselor, Personal Development Coach,
 
 January 29, 2023
 
-![Jenna Nicholas](https://madamambition.com/wp-content/uploads/2023/01/43_Trinetta-scaled.jpg "43_Trinetta")
+![Jenna Nicholas](/articles/images/43_Trinetta-scaled.jpg "43_Trinetta")
 
 If the meaning of the word “resilience” had a namesake, it might just be Trinetta Powell. This impressive, perseverant human who personally is called mother, wife, Gigi, sister, and friend, and professionally is called best-selling author, motivational speaker, professional coach, and entrepreneur has worked for and earned each and every one of those titles that adorn the crown upon her head.
 

@@ -1,5 +1,6 @@
 [//]: # (title: Claire Harding –Global Marketing and Brand Executive | Education and Learning Technology Leader)
-
+[//]: # (url: https://madamambition.com/global-marketing-and-brand-executive-education-and-learning-technology-leader/)
+[//]: # (filename: global-marketing-and-brand-executive-education-and-learning-technology-leader.md)
 [//]: # (main_image: https://madamambition.com/wp-content/uploads/2022/12/Claire-Harding-image-01-water-color-portrait-Madam-Ambition-1-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
@@ -49,7 +50,7 @@ Claire decided to apply to Berklee College of Music in Boston, where she could f
 
 Claire’s experience at Berklee was one of innovation and hard work. By studying in advance to test out of classes, she was fulfilling Berklee’s graduation requirements by squeezing eight semesters into 2.5 years. In fact, Claire would often take the beginner course while simultaneously auditing the higher level one so she could test out of it later. During this time, she helped write the score for the film Could Be Worse, a musical documentary about a Greek man coming out to his family. The film won an award at Sundance, and Claire left Berklee to go to the festival. She did not officially complete her degree, but her professors allowed her to finish her coursework while pursuing this film.
 
-![](https://madamambition.com/wp-content/uploads/2023/01/Claire-Harding-Musician.png "Claire Harding - Musician")
+![](/articles/images/Claire-Harding-Musician.png "Claire Harding - Musician")
 
 Claire Harding – Musician
 

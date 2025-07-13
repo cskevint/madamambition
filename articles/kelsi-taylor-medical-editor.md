@@ -1,6 +1,7 @@
 [//]: # (title: Kelsi Taylor – Medical Editor)
-
-[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/06/39-Kelsi-scaled.jpg)
+[//]: # (url: https://madamambition.com/kelsi-taylor-medical-editor/)
+[//]: # (filename: kelsi-taylor-medical-editor.md)
+[//]: # (main_image: /articles/images/39-Kelsi-scaled.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +10,7 @@ Kelsi Taylor – Medical Editor
 
 June 7, 2023
 
-![Jenna Nicholas](https://madamambition.com/wp-content/uploads/2023/06/39-Kelsi-scaled.jpg "39 Kelsi")
+![Jenna Nicholas](/articles/images/39-Kelsi-scaled.jpg "39 Kelsi")
 
 Meet Kelsi Taylor
 -----------------
