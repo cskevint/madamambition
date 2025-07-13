@@ -1,6 +1,6 @@
-# Felicia Widjaja –Clinical Research Supervisor at UCSF
+[//]: # (title: Felicia Widjaja –Clinical Research Supervisor at UCSF)
 
-![Felicia Widjaja –Clinical Research Supervisor at UCSF](https://madamambition.com/wp-content/uploads/2022/12/Felicia-Widjaja-image-01-madam-ambition-water-color-portrait-scaled-1.jpg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2022/12/Felicia-Widjaja-image-01-madam-ambition-water-color-portrait-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 

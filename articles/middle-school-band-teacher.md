@@ -1,6 +1,6 @@
-# Vicki Tam –Middle School Band Teacher
+[//]: # (title: Vicki Tam –Middle School Band Teacher)
 
-![Vicki Tam –Middle School Band Teacher](https://madamambition.com/wp-content/uploads/2023/01/Vicki-Tam-image-01-portrait.-madamambition-scaled-1.jpg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/01/Vicki-Tam-image-01-portrait.-madamambition-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 

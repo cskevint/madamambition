@@ -1,6 +1,6 @@
-# Nava Kavelin – CEO and Producer at a Media Production Company, California
+[//]: # (title: Nava Kavelin – CEO and Producer at a Media Production Company, California)
 
-![Nava Kavelin – CEO and Producer at a Media Production Company, California](https://madamambition.com/wp-content/uploads/2022/12/Nava-Kavelin-Image-01-Madam_Ambition_water_color_portrait_50.jpeg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2022/12/Nava-Kavelin-Image-01-Madam_Ambition_water_color_portrait_50.jpeg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 

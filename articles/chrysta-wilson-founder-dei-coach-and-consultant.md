@@ -1,6 +1,6 @@
-# Chrysta Wilson – Founder & DEI Coach and Consultant
+[//]: # (title: Chrysta Wilson – Founder & DEI Coach and Consultant)
 
-![Chrysta Wilson – Founder & DEI Coach and Consultant](https://madamambition.com/wp-content/uploads/2023/01/38-Chrysta-Wilson-scaled.jpg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/01/38-Chrysta-Wilson-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Career Stories](https://madamambition.com/category/career-stories/)
 

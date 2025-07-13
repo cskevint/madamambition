@@ -1,6 +1,6 @@
-# Tracy Borreson – Master Brand Story Teller and Consultant
+[//]: # (title: Tracy Borreson – Master Brand Story Teller and Consultant)
 
-![Tracy Borreson – Master Brand Story Teller and Consultant](https://madamambition.com/wp-content/uploads/2024/02/66-1-scaled.jpg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2024/02/66-1-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Career Stories](https://madamambition.com/category/career-stories/)
 

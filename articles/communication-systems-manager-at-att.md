@@ -1,6 +1,6 @@
-# Shirley Morton –Communication Systems Manager at AT&T
+[//]: # (title: Shirley Morton –Communication Systems Manager at AT&T)
 
-![Shirley Morton –Communication Systems Manager at AT&T](https://madamambition.com/wp-content/uploads/2023/05/Shirley-Morton-image-01-smaller-shirley-morton.jpeg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/05/Shirley-Morton-image-01-smaller-shirley-morton.jpeg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 

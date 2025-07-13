@@ -1,6 +1,6 @@
-# Ebony Holden – Lawyer and Entrepreneur
+[//]: # (title: Ebony Holden – Lawyer and Entrepreneur)
 
-![Ebony Holden – Lawyer and Entrepreneur](https://madamambition.com/wp-content/uploads/2023/01/37-Ebony-Holden-scaled.jpg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/01/37-Ebony-Holden-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Career Stories](https://madamambition.com/category/career-stories/)
 

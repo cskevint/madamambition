@@ -1,6 +1,6 @@
-# Hoda Toloui-Wallace – Project Manager, Digital Strategy & Innovation at lululemon
+[//]: # (title: Hoda Toloui-Wallace – Project Manager, Digital Strategy & Innovation at lululemon)
 
-![Hoda Toloui-Wallace – Project Manager, Digital Strategy & Innovation at lululemon](https://madamambition.com/wp-content/uploads/2023/01/32-scaled.jpg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/01/32-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Career Stories](https://madamambition.com/category/career-stories/)
 

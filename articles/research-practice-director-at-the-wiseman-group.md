@@ -1,6 +1,6 @@
-# Karina Wilhems –Research Practice Director at The Wiseman Group
+[//]: # (title: Karina Wilhems –Research Practice Director at The Wiseman Group)
 
-![Karina Wilhems –Research Practice Director at The Wiseman Group](https://madamambition.com/wp-content/uploads/2022/12/Karina-Wilhelms-image-01-madam-ambition-water-color-portrait-1-scaled-1.jpg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2022/12/Karina-Wilhelms-image-01-madam-ambition-water-color-portrait-1-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 

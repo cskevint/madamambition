@@ -1,6 +1,6 @@
-# Amy Schultz – Co-Founder of Bolder Money
+[//]: # (title: Amy Schultz – Co-Founder of Bolder Money)
 
-![Amy Schultz – Co-Founder of Bolder Money](https://madamambition.com/wp-content/uploads/2023/08/55-Amy-scaled.jpg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/08/55-Amy-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Career Stories](https://madamambition.com/category/career-stories/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 

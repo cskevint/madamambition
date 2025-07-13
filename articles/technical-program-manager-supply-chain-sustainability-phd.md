@@ -1,6 +1,6 @@
-# Nasim Mullen –Technical Program Manager, Supply Chain Sustainability, PhD
+[//]: # (title: Nasim Mullen –Technical Program Manager, Supply Chain Sustainability, PhD)
 
-![Nasim Mullen –Technical Program Manager, Supply Chain Sustainability, PhD](https://madamambition.com/wp-content/uploads/2022/12/Nasim-Mullen-Image-01-smaller-madam-ambition.jpg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2022/12/Nasim-Mullen-Image-01-smaller-madam-ambition.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 

@@ -1,6 +1,6 @@
-# Maribel Aburto – Founder in Branding and Web Design
+[//]: # (title: Maribel Aburto – Founder in Branding and Web Design)
 
-![Maribel Aburto – Founder in Branding and Web Design](https://madamambition.com/wp-content/uploads/2023/01/36-scaled.jpg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/01/36-scaled.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 

@@ -1,6 +1,6 @@
-# Kelsi Taylor – Medical Editor
+[//]: # (title: Kelsi Taylor – Medical Editor)
 
-![Kelsi Taylor – Medical Editor](https://madamambition.com/wp-content/uploads/2023/06/39-Kelsi-scaled.jpg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/06/39-Kelsi-scaled.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 

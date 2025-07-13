@@ -1,6 +1,6 @@
-# Alyssa Phillips is  Vice President in Wealth Management
+[//]: # (title: Alyssa Phillips is  Vice President in Wealth Management)
 
-![Alyssa Phillips is  Vice President in Wealth Management](https://madamambition.com/wp-content/uploads/2023/01/45-scaled.jpg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/01/45-scaled.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 

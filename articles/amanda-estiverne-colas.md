@@ -1,6 +1,6 @@
-# Amanda Estiverne-Colas – FinTech Executive
+[//]: # (title: Amanda Estiverne-Colas – FinTech Executive)
 
-![Amanda Estiverne-Colas – FinTech Executive](https://madamambition.com/wp-content/uploads/2023/10/47-scaled.jpg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/10/47-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 

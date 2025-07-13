@@ -1,6 +1,6 @@
-# Pam Kriangkum – Entrepreneur, Brand Photographer and Business Development Leader
+[//]: # (title: Pam Kriangkum – Entrepreneur, Brand Photographer and Business Development Leader)
 
-![Pam Kriangkum – Entrepreneur, Brand Photographer and Business Development Leader](https://madamambition.com/wp-content/uploads/2023/01/42-Pam-scaled.jpg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/01/42-Pam-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Career Stories](https://madamambition.com/category/career-stories/)
 

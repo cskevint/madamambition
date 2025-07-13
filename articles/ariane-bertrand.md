@@ -1,6 +1,6 @@
-# Ariane Bertrand Director – Thriving Communities at Emerson Collective
+[//]: # (title: Ariane Bertrand Director – Thriving Communities at Emerson Collective)
 
-![Ariane Bertrand Director – Thriving Communities at Emerson Collective](https://madamambition.com/wp-content/uploads/2023/10/62-1-scaled.jpg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/10/62-1-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Career Stories](https://madamambition.com/category/career-stories/)
 

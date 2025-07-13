@@ -1,6 +1,6 @@
-# Sibby Thomsen – Maker of Cupcake Magic
+[//]: # (title: Sibby Thomsen – Maker of Cupcake Magic)
 
-![Sibby Thomsen – Maker of Cupcake Magic](https://madamambition.com/wp-content/uploads/2023/06/58-scaled.jpg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/06/58-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Career Stories](https://madamambition.com/category/career-stories/)
 

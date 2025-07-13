@@ -1,6 +1,6 @@
-# Azucena Ramos – MD PhD
+[//]: # (title: Azucena Ramos – MD PhD)
 
-![Azucena Ramos – MD PhD](https://madamambition.com/wp-content/uploads/2024/08/67_updated-scaled.jpg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2024/08/67_updated-scaled.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 

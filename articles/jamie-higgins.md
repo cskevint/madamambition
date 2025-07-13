@@ -1,6 +1,6 @@
-# Jamie Higgins –Graphic Artist & Photographer, California
+[//]: # (title: Jamie Higgins –Graphic Artist & Photographer, California)
 
-![Jamie Higgins –Graphic Artist & Photographer, California](https://madamambition.com/wp-content/uploads/2022/12/Jamie-Higgins-image-01-water_color_portrait_Madam_Ambition_1_50.jpg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2022/12/Jamie-Higgins-image-01-water_color_portrait_Madam_Ambition_1_50.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 

@@ -1,6 +1,6 @@
-# Karina Vela –Dance Teacher at SFUSD
+[//]: # (title: Karina Vela –Dance Teacher at SFUSD)
 
-![Karina Vela –Dance Teacher at SFUSD](https://madamambition.com/wp-content/uploads/2022/12/Karina-Vela-image-01-watercolor.madam-ambition-scaled-1.jpg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2022/12/Karina-Vela-image-01-watercolor.madam-ambition-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 

@@ -1,6 +1,6 @@
-# Sutina Li –Stay at Home Mother and Dental Hygienist
+[//]: # (title: Sutina Li –Stay at Home Mother and Dental Hygienist)
 
-![Sutina Li –Stay at Home Mother and Dental Hygienist](https://madamambition.com/wp-content/uploads/2023/01/Sutina-Li-image-01-portrait-madam-ambitionb-scaled-1.jpg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/01/Sutina-Li-image-01-portrait-madam-ambitionb-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 

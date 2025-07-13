@@ -1,6 +1,6 @@
-# Jenna Nicholas – Investor, Entrepreneur, Board Member in Social Investments
+[//]: # (title: Jenna Nicholas – Investor, Entrepreneur, Board Member in Social Investments)
 
-![Jenna Nicholas – Investor, Entrepreneur, Board Member in Social Investments](https://madamambition.com/wp-content/uploads/2023/08/60_new-scaled.jpg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/08/60_new-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Career Stories](https://madamambition.com/category/career-stories/)
 

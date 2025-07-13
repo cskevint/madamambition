@@ -67,8 +67,8 @@ def process_article(article_data):
 
     filename = os.path.join(ARTICLE_FOLDER, article_data['filename'])
     with open(filename, 'w', encoding='utf-8') as f:
-        f.write(f"# {article_data['title']}\n\n")
-        f.write(f"![{article_data['title']}]({article_data['main_image']})\n\n")
+        f.write(f"[//]: # (title: {article_data['title']})\n\n")
+        f.write(f"[//]: # (main_image: {article_data['main_image']})\n\n")
         f.write(article_data['content'])
 
     for img in article_data['images']:

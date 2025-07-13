@@ -1,6 +1,6 @@
-# Genevieve Dozier – Director of Business Development and Business Consultant
+[//]: # (title: Genevieve Dozier – Director of Business Development and Business Consultant)
 
-![Genevieve Dozier – Director of Business Development and Business Consultant](https://madamambition.com/wp-content/uploads/2023/03/49_Genevieve-Dozier-1-scaled.jpg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/03/49_Genevieve-Dozier-1-scaled.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 

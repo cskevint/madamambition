@@ -1,6 +1,6 @@
-# Kimberly Kwon – Writer, Pastor, HR Expert, Career Coach
+[//]: # (title: Kimberly Kwon – Writer, Pastor, HR Expert, Career Coach)
 
-![Kimberly Kwon – Writer, Pastor, HR Expert, Career Coach](https://madamambition.com/wp-content/uploads/2023/04/29-scaled.jpg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/04/29-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Career Stories](https://madamambition.com/category/career-stories/)
 

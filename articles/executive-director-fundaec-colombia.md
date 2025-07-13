@@ -1,6 +1,6 @@
-# Leslie Stewart –Executive Director, FUNDAEC, Colombia
+[//]: # (title: Leslie Stewart –Executive Director, FUNDAEC, Colombia)
 
-![Leslie Stewart –Executive Director, FUNDAEC, Colombia](https://madamambition.com/wp-content/uploads/2022/05/Leslie-Stewart-image-01-madam-ambition-water-color-portrait-scaled-1.jpg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2022/05/Leslie-Stewart-image-01-madam-ambition-water-color-portrait-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 

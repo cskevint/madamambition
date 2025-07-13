@@ -1,6 +1,6 @@
-# Laxmi Ramanath – Founder of a Risk and Compliance Company
+[//]: # (title: Laxmi Ramanath – Founder of a Risk and Compliance Company)
 
-![Laxmi Ramanath – Founder of a Risk and Compliance Company](https://madamambition.com/wp-content/uploads/2023/01/46-Laxmi-scaled.jpg)
+[//]: # (main_image: https://madamambition.com/wp-content/uploads/2023/01/46-Laxmi-scaled.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 
