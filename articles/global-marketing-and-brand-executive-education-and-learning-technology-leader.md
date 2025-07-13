@@ -1,0 +1,68 @@
+# TITLE NOT FOUND
+
+![TITLE NOT FOUND](https://madamambition.com/wp-content/uploads/2022/12/Claire-Harding-image-01-water-color-portrait-Madam-Ambition-1-scaled-1.jpg)
+
+[Career Stories](https://madamambition.com/category/career-stories/)
+
+Claire Harding – Global Marketing and Brand Executive | Education and Learning Technology Leader
+================================================================================================
+
+January 5, 2022
+
+![](https://madamambition.com/wp-content/uploads/2022/12/Claire-Harding-image-01-water-color-portrait-Madam-Ambition-1-scaled-1.jpg "Claire Harding - image 01 water-color-portrait-Madam-Ambition-1-scaled")
+
+Many musicians and creatives are very familiar with the concept of a day job that supports your livelihood while pursuing your passion in whatever free time you can piece together. Not many artists, musical or otherwise, can claim that this day job became their true calling later on in life. Claire Harding, however, was able to combine her musical talents with her experience in marketing and technology to create the unique niche that she currently resides in.
+
+Claire’s musical journey began when she was very young. When she was about 10 years old, she received her first guitar as a present, and immediately discovered the power of songwriting as a tool of healing and self-expression. A highly self-motivated child, Claire remarks that she goes after things she connects to with “dogged pursuit.” She considers herself very lucky to be driven by her passion from such a young age.
+
+Growing up, Claire’s father was a marketing and sales executive, and her mother did volunteer work, such as community organizing and playing the organ at Mass, among other things. As a child, her family moved around a lot, and she did not really consider herself “belonging to one particular place.” She reflects that this state of constant transition allowed her to go through many periods of “reinvention” and grow into a flexible and adaptable adult.
+
+![](https://madamambition.com/wp-content/uploads/2023/01/claire-harding-playing.png "claire-harding-playing")
+
+Claire had an active and sports filled childhood
+
+Claire went to four different high schools in three years, where she was in a band, and participated in theater and sports. Her connection to music and songwriting helped get her through the more turbulent periods of adolescence. When the time came for college applications, Claire selected from a brochure (this was in the days of paper applications) and went on a road trip to visit the schools that caught her interest. On a whim, she toured Smith College, where she felt like she “came alive.” But before college, Claire would embark on another adventure entirely.
+
+In Claire’s senior year, she deferred from Smith for a year to participate in Up With People, an international student organization. Up With People was committed to spreading peace and building an international community by bringing students together from all around the world. Claire traveled with 100 fellow students, staying with about 80 different host families and putting on live shows. During this gap year experience, Claire was able to see from all angles the intricacies of the music production process, which would serve her very well later in her career.
+
+Claire went to four different high schools in three years, where she was in a band, and participated in theater and sports. Her connection to music and songwriting helped get her through the more turbulent periods of adolescence. When the time came for college applications, Claire selected from a brochure (this was in the days of paper applications) and went on a road trip to visit the schools that caught her interest. On a whim, she toured Smith College, where she felt like she “came alive.” But before college, Claire would embark on another adventure entirely.
+
+In Claire’s senior year, she deferred from Smith for a year to participate in Up With People, an international student organization. Up With People was committed to spreading peace and building an international community by bringing students together from all around the world. Claire traveled with 100 fellow students, staying with about 80 different host families and putting on live shows. During this gap year experience, Claire was able to see from all angles the intricacies of the music production process, which would serve her very well later in her career.
+
+After her excursion making international connections through Up With People, Claire set off to Smith, where she would further develop her skills as a musician and producer. She settled on a music major, which was in many ways an uphill battle, despite her wide range of talents. Claire was self-taught, and much of Smith’s music program was theory-heavy and focused on reading scores. However, Claire rose to this particular challenge while also participating in a musical duo at Smith. Much of her identity as a young adult was wrapped up in writing music, and she was focused in college on getting a record deal post-grad.
+
+While at Smith, Claire recorded her first album on a cassette recorder, doing all the dubs herself. Without social media, all of Claire’s self-promotion was mostly word of mouth. She would sell this ten-song tape at her shows, and during her senior year at Smith, she was able to find a studio and had her first experience with recording equipment to make her second album. So while she was studying music in a more official capacity, Claire was already beginning to follow her passion and launch her music career in a more underground way.
+
+![](https://madamambition.com/wp-content/uploads/2023/01/Claire-Smith-Graduate.png "Claire - Smith Graduate")
+
+Claire – Smith Graduate
+
+Claire went to four different high schools in three years, where she was in a band, and participated in theater and sports. Her connection to music and songwriting helped get her through the more turbulent periods of adolescence. When the time came for college applications, Claire selected from a brochure (this was in the days of paper applications) and went on a road trip to visit the schools that caught her interest. On a whim, she toured Smith College, where she felt like she “came alive.” But before college, Claire would embark on another adventure entirely.
+
+In Claire’s senior year, she deferred from Smith for a year to participate in Up With People, an international student organization. Up With People was committed to spreading peace and building an international community by bringing students together from all around the world. Claire traveled with 100 fellow students, staying with about 80 different host families and putting on live shows. During this gap year experience, Claire was able to see from all angles the intricacies of the music production process, which would serve her very well later in her career.
+
+Claire’s life post-grad would be split between her salary-earning day job and her exploration of her talents as an artist. She moved to Boston and was working at Tower Records as well as other various temp jobs while playing with her band all over the city. This is where Claire’s “dogged pursuit” that she spoke about in her childhood would truly pay off.
+
+Claire sent her tapes everywhere, hoping to collaborate with producers. In 1998, Claire got a more official day job through Smith connections working in publishing at Prentice Hall while she continued with her band on the side. She was performing in Harvard Square when she was approached by a filmmaker who asked her to write a theme song for his movie. Although Claire had no experience with making music for film at the time, she jumped on the opportunity and recorded the entire score. She matched her synthesizer to the VCR and created the music based on the moment in the sequence. She would even go on to act in the movie and see it at various film festivals. It was through this project that Claire realized that there was money to be made in film scoring, and she was ready to make her next move.
+
+Claire decided to apply to Berklee College of Music in Boston, where she could fine-tune her film scoring talents. During this time, Claire’s life was firing at all cylinders, and going in many different directions at once. Her wife was pregnant with their daughter, Claire was studying full-time at Berklee, and she was also still working at Prentice Hall.
+
+Claire’s experience at Berklee was one of innovation and hard work. By studying in advance to test out of classes, she was fulfilling Berklee’s graduation requirements by squeezing eight semesters into 2.5 years. In fact, Claire would often take the beginner course while simultaneously auditing the higher level one so she could test out of it later. During this time, she helped write the score for the film Could Be Worse, a musical documentary about a Greek man coming out to his family. The film won an award at Sundance, and Claire left Berklee to go to the festival. She did not officially complete her degree, but her professors allowed her to finish her coursework while pursuing this film.
+
+![](https://madamambition.com/wp-content/uploads/2023/01/Claire-Harding-Musician.png "Claire Harding - Musician")
+
+Claire Harding – Musician
+
+Claire’s work with technology marketing at Prentice Hall, which later became incorporated by Pearson, was blossoming. From her music, Claire was used to being self-taught when it came to new technology. This internal motivation and entrepreneurial spirit allowed her to start making videos for Pearson showing teachers how to use technology. She collaborated with the marketing director and started going into schools and doing this education in person. This product managing work put her on the track to start learning the ins and outs of being a project manager.
+
+It was around this time that Claire realized that this day job had the potential to become a “real” job, one that could support her family and combine many of her talents and interests. In her band days, when she thought about her career, it felt like she could never be creative in an office, but she reflects now that she “didn’t realize at the time how creative business could be.” The nature of the work she was doing allowed her to be a storyteller, to connect with a narrative that would evoke an emotional response from her target audience, much like what she did during her days doing filmmaking. This was the beginning of Claire’s two separate worlds merging into one.
+
+After Claire moved on from Pearson, she set about looking for music-related jobs. On a whim, she applied for a project manager position at iZotope, a music software production company. By this time she was the VP at Pearson, so she was very overqualified for this job, but after having lunch with the CEO, the company created a position suited to her unique qualifications. At iZotope, Claire incorporated education into her content marketing strategies and collaborated with an engineer to make an interactive game aimed at issues with audio recording, which would go on to win an award.
+
+Claire grew a lot at iZotope, and when she was eventually laid off, she decided to take her talents to a nonprofit called Facing History and Ourselves. She brought her experience in educator engagement to professional development for teachers. Facing History’s mission was to foster conversations with students about issues of race, gender, identity, and how genocides happen. Since Claire came to this position during Trump’s election, the work she was doing was incredibly relevant to political events. However, Claire was very business-minded, and her innovations were very different from the motivations of the nonprofit world. She was eventually laid off and decided to apply her talents elsewhere.
+
+After Facing History, Claire went to work as VP of Product Marketing at Houghton Mifflin Harcourt, a producer of educational materials. Through this position, she learned more about doing marketing research and incorporating customer feedback into future design strategies. She would take these skills on to her latest position at TrueFire Studios, an online music education company that made instructional videos teaching guitar. Around this time, the pandemic hit, and business was booming with people trying to fill up their time during quarantine. However, this sudden increase was masking the pitfalls of the company’s strategies. As the company began to outsource to contractors, Claire decided to move on once again.
+
+This brings us to the present, where Claire has decided to take a big step back, as many of us have during uncertain times. She recounts that she has “had to go through a lot with the emotional toll of being laid off, not for reason but for the circumstance.” Now, she is trying to take it easy, and really make an educated decision about what she wants to do next. Her own daughter is graduating from Smith, and her partner is retiring, so Claire has a lot of thinking to do.
+
+Claire’s career thus far carries a message that your creative side does not necessarily have to be stifled by working in the corporate world. Not only was Claire able to develop a unique voice in the music industry, she was also able to transform her day job into something intellectually stimulating that she genuinely loved. Many readers of all ages can relate to the complicated nature of the pandemic job market, but whatever Claire does next, she will continue to personify what hard work and inventiveness can bring when combined with artistic passion.

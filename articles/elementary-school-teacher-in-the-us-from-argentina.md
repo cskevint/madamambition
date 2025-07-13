@@ -1,0 +1,55 @@
+# TITLE NOT FOUND
+
+![TITLE NOT FOUND](https://madamambition.com/wp-content/uploads/2022/05/Leila-Gates-image-01-madam-ambition-water-color-portrait-scaled-1.jpeg)
+
+[Career Stories](https://madamambition.com/category/career-stories/)
+
+Leila Gates – Elementary School Teacher in the US from Argentina
+================================================================
+
+May 5, 2022
+
+![](https://madamambition.com/wp-content/uploads/2022/05/Leila-Gates-image-01-madam-ambition-water-color-portrait-scaled-1.jpeg "Leila Gates - image 01 madam-ambition-water-color-portrait-scaled")
+
+Leila Gates was born and brought up in Buenos Aires, Argentina. She was the third daughter of four sisters. Her father is from California, while her mother is from the Argentine province of Salta and is part of the Indigenous Wichí tribe. Leila’s father became a Baha’i while attending college. He appreciated learning on his own terms and taught himself how to be a computer programmer. When the opportunity presented itself to pioneer to Argentina, he saw that as a new challenge to learn Spanish and learn a new culture. There, he met Leila’s mother.
+
+Leila’s mother grew up in Misión Chaqueña, Salta, Argentina, and only lived with her parents until she was fourteen years old. Growing up, she was discouraged from speaking her native Wichí language at school. All opportunities, jobs, and education were for Spanish speakers. So when they deemed her old enough, she left the home to find work in Buenos Aires.  Leila’s mother worked as a caretaker for the elderly and was a house cleaner and completed school by taking evening classes. Her brother also lived in Buenos Aires, and through him, she learned of the Baha’i Faith as well.  After a few years of studying, she enrolled in the Faith and met Leila’s father in Bahá’í activities.
+
+Before Leila was born, her parents lived in Northern Argentina where they lived in an adobe house, and had no hot water or electricity. Leila was the third of four girls and was born in Buenos Aires, where she would live through high school. Her dad did different jobs, he was a carpenter, a delivery person, an English teacher, and a programmer, and her mother was a homemaker and the secretary of the Baha’i National Assembly. When she was three, her younger sister was born, and the family decided to send Leila to school temporarily to help give her mother time alone with the baby. However, when her mother started feeling better and her baby sister was a few weeks older, the family tried to have her stay home again. However, she loved school so much that she insisted she go back, so her family agreed.
+
+Leila’s parents insisted Leila and her sisters go to private schools. Public schools were of course free, and money was always a concern. But the public schools in Buenos Aires lacked funding, and the teachers and staff often went on strike, leaving kids at home with no one to care for them since they could not go to school. Because of that, her parents decided to send her and her sister’s studies to private schools. She recalled her preschool days, saying that her preschool, “Jacaranda,” was run by two sisters, who later opened an elementary school. She is still in touch with her childhood preschool principal through social media.
+
+When it came to her academic and social life at school, Leila was quite shy, but she always had extroverted friends who talked to her. Even her teachers were friendly, helpful, kind, and supportive. So, she had a good time at school and very much enjoyed the experience.
+
+Childhood Dreams
+----------------
+
+When she was little, her father replaced the door between the rooms with wood, so she painted it with black chalk paint and went to playschool with her sisters. She would play teacher and students with her sisters. When asked about the dreams of her future at a young age, she recalls this as the time when she first thought about work and what she wanted to do. When her younger sister went to kindergarten, she remembers that she could read as they taught her. She also recalls wanting to be a singer or actor but recognized her own shyness at the time as holding her back from practicing in front of groups of people.
+
+After completing elementary school, Leila went to a small private high school. That school was open when she joined it and closed when she finished. She learned biology, literature, math, computers, etc. After Leila graduated in 1997, her parents moved to the US with her younger sister. As Argentina’s economy was challenging, her father started to travel to the US for work and used to stay there for six months and then come to visit them in Argentina.
+
+One of her elder sisters got married when Leila was 15, and she moved to Chile, and the other, after she moved to Bolivia. She went to a university called UTEPSA, run by Baháʼí, but then her older sister worked for Nur as a teacher. And her younger sister got her bachelor’s from Nur University. Now her nuclear family was becoming more detached from Argentina and Leila saw more of the world’s opportunities as more worthwhile to pursue.
+
+Adult Life
+----------
+
+Although Leila’s parents moved to California with her younger sister, she did a year of service in Zimbabwe. Leila had met two youth from Zimbabwe who came to Chile, South America, to attend a youth conference where Leila met them. She spoke on ICQ with some of these friends, and they encouraged her to do a year of service in Zimbabwe. So while she was unsure of what she wanted to do next for schooling, and felt untethered to Argentina, she thought this was the next right step for her as it was a clear invitation. While on the year of service, she supported children’s classes and worked with the kids in the local communities in both structured and unstructured environments. It was not the most well-coordinated year, but she appreciated the growth and independence while living away from her family for the first time.
+
+Leila was confused about choosing a career when she was in late high school and during service time as well. Her high school had offered her a career test which told her she should study sociology and psychology. However, with no clear guidance. She was already interested in psychology but didn’t want to pursue that. On the other hand, she doesn’t remember if anthropology was mentioned in the results, but she was very interested in learning about people, traditions, and culture. So, she took a year off to decide what she wanted to do, and during that time, she completed her service in Zimbabwe.
+
+Even though her father was from the US and spoke English, he always had a culture of speaking Spanish at home with his kids. He was constantly working to improve his own Spanish, which helped him get better work, but it resulted in Leila not learning English as a native speaker. So when Leila moved to the US before her year of service, she watched a lot of TV – in particular Friends – to practice. She also used ICQ as a way to practice reading and writing. But it was not until her year of service that she became confident in speaking English. In the US, she could often find Spanish speakers in a group who could speak for her. In Zimbabwe, she had no Spanish support, and so it helped her speak more English and to be confident while she did so.
+
+After her year of service, she went to Chile and started studying anthropology. She loved the subject, as she felt more connected to the material as she learned more about other cultures – coming from different cultures herself, but she wasn’t happy as there was too much air pollution in Santiago. As she was not feeling happy and healthy there, she moved to Ecuador for a few months where she attended a youth conference and training for youth who would themselves do a year of service. However, she did not have much connection, nor did she want to do another year of service, so she moved to California again with her parents where she worked some retail jobs. A friend of hers from Chile reached out and asked her to move with her to Santa Fe, and she gladly went. She did not have a strong desire of what to do for schooling, though she did know she wanted to go back to university eventually. There she also worked more retail work, but also applied to serve at the Bahá’í World Centre in Israel with several other young women from the community. She moved to Haifa in 2002 where
+
+Leila Gates got married in 2003 and then she moved with him back to California in 2005 and started attending university again. The process was slow as Leila didn’t know what she wanted to do. She started with business at a community college, but then she decided that she wanted to be a registered dietician, so she took biology classes, which were quite difficult for her to learn. In 2007, Leila got pregnant with her first child, and in 2011, when her younger daughter was born, her elder daughter started going to Montessori preschool. Leila said the school and teachers were very inspirational. So, in the meantime, Leila decided to complete her bachelor’s in early childhood education. Afterward, she was looking for a school for her elder daughter, and there was Sycamore Valley Academy with an amazing philosophy and values. When her elder daughter started going to school and was in first grade, there was an opening for a Spanish teacher, and Leila got the job. Leila started working on her teaching credentials for a single subject in Spanish. Later on, her younger daughter also joined the same school.
+
+Leila said that after some time, she realized that she really loved teaching Spanish. And she learned more about teaching that is not traditional but comprehensive, like acquisition, and it’s the same way a baby learns a language. She used to make children learn Spanish with visuals and by telling stories. She teaches kindergarten to 6th grade at Sycamore Valley Academy to a nearby 280-300 students.
+
+New Goals and Aspiration for the career
+---------------------------------------
+
+She always wanted to be a better teacher, and that’s what she loved about education. She constantly reflects and tries new things and listens to other teachers. Every year is different, with much to learn and much to practice. But she wanted to try teaching one college class and see if she liked it. Although she likes to teach young students, as they looked up to her. They are encouraging, sweet, and challenging. However, she always thinks more about how to do things better and become a better teacher and has thought of teaching other students who are interested in teaching.
+
+Currently, her daughter is graduating from middle school this year, and the youngest one is a fifth-grader, and she has three more years of school. Leila hoped they could be at the same school.
+
+Leila said that it is always important to have patience and keep learning, some advice she would give to her younger self.
