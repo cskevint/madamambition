@@ -106,7 +106,6 @@ def main():
     for page in ARTICLE_LIST_PAGES:
         articles = find_all_articles(page)
         articles_found.extend(articles)
-    articles_found = articles_found[:5]  # Limit to first 10 articles for demonstration
 
     for article_url in articles_found:
         article = download_article_data(article_url)
