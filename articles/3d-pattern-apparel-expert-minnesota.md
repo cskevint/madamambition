@@ -1,6 +1,6 @@
-# TITLE NOT FOUND
+# Anna Nahashon–3D Pattern Apparel Expert, Minnesota
 
-![TITLE NOT FOUND](https://madamambition.com/wp-content/uploads/2022/12/Anna-Nahashon-image-01-smaller-madam-ambition-portrait.jpeg)
+![Anna Nahashon–3D Pattern Apparel Expert, Minnesota](https://madamambition.com/wp-content/uploads/2022/12/Anna-Nahashon-image-01-smaller-madam-ambition-portrait.jpeg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 

@@ -1,6 +1,6 @@
-# TITLE NOT FOUND
+# Leah Straley –Director of Law School Admissions
 
-![TITLE NOT FOUND](https://madamambition.com/wp-content/uploads/2022/12/Leah-Straley-image-01-watercolor-madam-ambition-wecompress.com_-scaled-1.jpg)
+![Leah Straley –Director of Law School Admissions](https://madamambition.com/wp-content/uploads/2022/12/Leah-Straley-image-01-watercolor-madam-ambition-wecompress.com_-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 

@@ -1,6 +1,6 @@
-# TITLE NOT FOUND
+# Rachel Pereya – Fractional Business Systems Expertise
 
-![TITLE NOT FOUND](https://madamambition.com/wp-content/uploads/2023/01/41-Rachel-Pereya-scaled.jpg)
+![Rachel Pereya – Fractional Business Systems Expertise](https://madamambition.com/wp-content/uploads/2023/01/41-Rachel-Pereya-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 

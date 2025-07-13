@@ -1,6 +1,6 @@
-# TITLE NOT FOUND
+# Cindy Fei –Internal Medicine Physician
 
-![TITLE NOT FOUND](https://madamambition.com/wp-content/uploads/2022/12/Cindy-Fei-image-01-portrait-scaled-1.jpg)
+![Cindy Fei –Internal Medicine Physician](https://madamambition.com/wp-content/uploads/2022/12/Cindy-Fei-image-01-portrait-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 

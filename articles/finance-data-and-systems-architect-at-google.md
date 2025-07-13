@@ -1,6 +1,6 @@
-# TITLE NOT FOUND
+# Lianne Zhang –Finance Data and Systems Architect at Google
 
-![TITLE NOT FOUND](https://madamambition.com/wp-content/uploads/2021/12/Lianne-Zhang-image-01-water-color-portrait-scaled-1.jpg)
+![Lianne Zhang –Finance Data and Systems Architect at Google](https://madamambition.com/wp-content/uploads/2021/12/Lianne-Zhang-image-01-water-color-portrait-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 

@@ -1,6 +1,6 @@
-# TITLE NOT FOUND
+# Yikee Adje – US Diplomat and Foreign Service Officer
 
-![TITLE NOT FOUND](https://madamambition.com/wp-content/uploads/2023/11/59-1-scaled.jpg)
+![Yikee Adje – US Diplomat and Foreign Service Officer](https://madamambition.com/wp-content/uploads/2023/11/59-1-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Career Stories](https://madamambition.com/category/career-stories/)
 

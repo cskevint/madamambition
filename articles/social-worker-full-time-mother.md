@@ -1,6 +1,6 @@
-# TITLE NOT FOUND
+# Adwoa Ulzen Setrakian –Social Worker, Full Time Mother, Indiana
 
-![TITLE NOT FOUND](https://madamambition.com/wp-content/uploads/2023/01/Adwoa-Ulzen-Setrakian-image-01-watercolor.madam-ambition-scaled-1.jpeg)
+![Adwoa Ulzen Setrakian –Social Worker, Full Time Mother, Indiana](https://madamambition.com/wp-content/uploads/2023/01/Adwoa-Ulzen-Setrakian-image-01-watercolor.madam-ambition-scaled-1.jpeg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 

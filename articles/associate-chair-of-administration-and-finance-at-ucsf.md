@@ -1,6 +1,6 @@
-# TITLE NOT FOUND
+# Connie Yu –
 
-![TITLE NOT FOUND](https://madamambition.com/wp-content/uploads/2022/12/Connie-Yu-image-01-portrait-scaled-1.jpg)
+![Connie Yu –](https://madamambition.com/wp-content/uploads/2022/12/Connie-Yu-image-01-portrait-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 

@@ -1,6 +1,6 @@
-# TITLE NOT FOUND
+# Elizabeth Herth –
 
-![TITLE NOT FOUND](https://madamambition.com/wp-content/uploads/2022/12/Elizabeth-Herth-image-01-watercolor-Madam-Ambition-scaled-1.jpg)
+![Elizabeth Herth –](https://madamambition.com/wp-content/uploads/2022/12/Elizabeth-Herth-image-01-watercolor-Madam-Ambition-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 

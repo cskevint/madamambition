@@ -1,6 +1,6 @@
-# TITLE NOT FOUND
+# Tejal Shah – Global Investment Banker & Venture Builder
 
-![TITLE NOT FOUND](https://madamambition.com/wp-content/uploads/2023/05/50-scaled.jpg)
+![Tejal Shah – Global Investment Banker & Venture Builder](https://madamambition.com/wp-content/uploads/2023/05/50-scaled.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 

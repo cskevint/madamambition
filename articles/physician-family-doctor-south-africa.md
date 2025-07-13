@@ -1,6 +1,6 @@
-# TITLE NOT FOUND
+# Mariam Shams Goldberg –Physician, Family Doctor, South Africa
 
-![TITLE NOT FOUND](https://madamambition.com/wp-content/uploads/2022/02/Mariam-Shams-Goldberg-image-01-water-color-portrait-scaled-1.jpg)
+![Mariam Shams Goldberg –Physician, Family Doctor, South Africa](https://madamambition.com/wp-content/uploads/2022/02/Mariam-Shams-Goldberg-image-01-water-color-portrait-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 

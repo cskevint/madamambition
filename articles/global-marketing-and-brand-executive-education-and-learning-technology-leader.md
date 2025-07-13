@@ -1,6 +1,6 @@
-# TITLE NOT FOUND
+# Claire Harding –Global Marketing and Brand Executive | Education and Learning Technology Leader
 
-![TITLE NOT FOUND](https://madamambition.com/wp-content/uploads/2022/12/Claire-Harding-image-01-water-color-portrait-Madam-Ambition-1-scaled-1.jpg)
+![Claire Harding –Global Marketing and Brand Executive | Education and Learning Technology Leader](https://madamambition.com/wp-content/uploads/2022/12/Claire-Harding-image-01-water-color-portrait-Madam-Ambition-1-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 

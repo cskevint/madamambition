@@ -1,6 +1,6 @@
-# TITLE NOT FOUND
+# Felicitas Burgi – Head of Business and Sales Channels for Insurance – Switzerland
 
-![TITLE NOT FOUND](https://madamambition.com/wp-content/uploads/2022/12/Felicitas-Burgi-image-01-watercolor-1-scaled-1.jpg)
+![Felicitas Burgi – Head of Business and Sales Channels for Insurance – Switzerland](https://madamambition.com/wp-content/uploads/2022/12/Felicitas-Burgi-image-01-watercolor-1-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 

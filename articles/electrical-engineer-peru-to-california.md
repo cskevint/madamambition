@@ -1,6 +1,6 @@
-# TITLE NOT FOUND
+# Marion Ore – Solar Electrical Engineer, Peru to California
 
-![TITLE NOT FOUND](https://madamambition.com/wp-content/uploads/2022/12/Marion-Ore-Career-Stories.jpeg)
+![Marion Ore – Solar Electrical Engineer, Peru to California](https://madamambition.com/wp-content/uploads/2022/12/Marion-Ore-Career-Stories.jpeg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 

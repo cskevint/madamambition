@@ -1,6 +1,6 @@
-# TITLE NOT FOUND
+# Kelsi Taylor – Medical Editor
 
-![TITLE NOT FOUND](https://madamambition.com/wp-content/uploads/2023/06/39-Kelsi-scaled.jpg)
+![Kelsi Taylor – Medical Editor](https://madamambition.com/wp-content/uploads/2023/06/39-Kelsi-scaled.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 

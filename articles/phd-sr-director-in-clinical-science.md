@@ -1,6 +1,6 @@
-# TITLE NOT FOUND
+# Sharon Yavrom – PhD, Sr. Director in Clinical Science, California
 
-![TITLE NOT FOUND](https://madamambition.com/wp-content/uploads/2023/01/Sharon-Yavrom-image-01-madam_ambition_water_color_portrait_50.jpeg)
+![Sharon Yavrom – PhD, Sr. Director in Clinical Science, California](https://madamambition.com/wp-content/uploads/2023/01/Sharon-Yavrom-image-01-madam_ambition_water_color_portrait_50.jpeg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 

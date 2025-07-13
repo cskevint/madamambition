@@ -34,7 +34,7 @@ def download_article_data(url):
     if response.status_code == 200:
         path = url.replace("https://madamambition.com/", "").strip("/")
         soup = BeautifulSoup(response.content, 'html.parser')
-        title_elem = soup.select_one('h1.entry-title')
+        title_elem = soup.select_one('h1')
         title = title_elem.get_text(strip=True) if title_elem else "TITLE NOT FOUND"
         main_image_elem = soup.select_one('.et-last-child .et_pb_image img')
         main_image = main_image_elem['src'] if main_image_elem else None
@@ -75,6 +75,8 @@ def process_article(article_data):
         img_response = requests.get(img['src'])
         if img_response.status_code == 200:
             img_filename = os.path.join(IMAGES_FOLDER, os.path.basename(img['src']))
+            if os.path.exists(img_filename):
+                continue
             with open(img_filename, 'wb') as img_file:
                 img_file.write(img_response.content)
             print(f"Downloaded image {img['src']} to {img_filename}")
@@ -100,8 +102,6 @@ def reset_downloaded_data():
                 os.remove(file_path)
 
 def main():
-    reset_downloaded_data()
-
     articles_found = []
     for page in ARTICLE_LIST_PAGES:
         articles = find_all_articles(page)

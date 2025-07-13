@@ -1,6 +1,6 @@
-# TITLE NOT FOUND
+# Sofia Yuen, M.D., M.B.A.
 
-![TITLE NOT FOUND](https://madamambition.com/wp-content/uploads/2023/04/51_Sofia-Yuen-scaled.jpg)
+![Sofia Yuen, M.D., M.B.A.](https://madamambition.com/wp-content/uploads/2023/04/51_Sofia-Yuen-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 

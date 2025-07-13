@@ -1,6 +1,6 @@
-# TITLE NOT FOUND
+# Trinetta Powell – Licensed Professional Counselor, Personal Development Coach, Speaker, Best Selling Author
 
-![TITLE NOT FOUND](https://madamambition.com/wp-content/uploads/2023/01/43_Trinetta-scaled.jpg)
+![Trinetta Powell – Licensed Professional Counselor, Personal Development Coach, Speaker, Best Selling Author](https://madamambition.com/wp-content/uploads/2023/01/43_Trinetta-scaled.jpg)
 
 [All Careers](https://madamambition.com/category/career-stories/all-careers/) | [Career Stories](https://madamambition.com/category/career-stories/)
 

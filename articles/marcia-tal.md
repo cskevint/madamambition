@@ -1,6 +1,6 @@
-# TITLE NOT FOUND
+# Marcia Tal – CEO, Tal Solutions
 
-![TITLE NOT FOUND](https://madamambition.com/wp-content/uploads/2023/10/65-scaled.jpg)
+![Marcia Tal – CEO, Tal Solutions](https://madamambition.com/wp-content/uploads/2023/10/65-scaled.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 

@@ -1,6 +1,6 @@
-# TITLE NOT FOUND
+# Amodhi Weeresinghe – CEO of HCL Designs Marketing Agency
 
-![TITLE NOT FOUND](https://madamambition.com/wp-content/uploads/2023/01/40-Amodhi-scaled.jpg)
+![Amodhi Weeresinghe – CEO of HCL Designs Marketing Agency](https://madamambition.com/wp-content/uploads/2023/01/40-Amodhi-scaled.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 

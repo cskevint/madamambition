@@ -1,6 +1,6 @@
-# TITLE NOT FOUND
+# 
 
-![TITLE NOT FOUND](https://madamambition.com/wp-content/uploads/2023/02/33-scaled.jpg)
+![](https://madamambition.com/wp-content/uploads/2023/02/33-scaled.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 

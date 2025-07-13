@@ -1,6 +1,6 @@
-# TITLE NOT FOUND
+# Anna Roussanova –Senior technical architect at Zendesk
 
-![TITLE NOT FOUND](https://madamambition.com/wp-content/uploads/2022/12/Anna-Roussanova-image-01-portrait-scaled-1.jpg)
+![Anna Roussanova –Senior technical architect at Zendesk](https://madamambition.com/wp-content/uploads/2022/12/Anna-Roussanova-image-01-portrait-scaled-1.jpg)
 
 [Career Stories](https://madamambition.com/category/career-stories/) | [Careers in Finance and Tech](https://madamambition.com/category/career-stories/careers-in-finance-and-tech/)
 

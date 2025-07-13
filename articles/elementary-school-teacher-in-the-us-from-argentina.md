@@ -1,6 +1,6 @@
-# TITLE NOT FOUND
+# Leila Gates –Elementary School Teacher in the US from Argentina
 
-![TITLE NOT FOUND](https://madamambition.com/wp-content/uploads/2022/05/Leila-Gates-image-01-madam-ambition-water-color-portrait-scaled-1.jpeg)
+![Leila Gates –Elementary School Teacher in the US from Argentina](https://madamambition.com/wp-content/uploads/2022/05/Leila-Gates-image-01-madam-ambition-water-color-portrait-scaled-1.jpeg)
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
