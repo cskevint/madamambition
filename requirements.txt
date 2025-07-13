@@ -1,0 +1,4 @@
+# requirements.txt for the web crawler
+requests
+beautifulsoup4
+markdownify
