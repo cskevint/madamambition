@@ -125,11 +125,13 @@ def main():
     for page in ARTICLE_LIST_PAGES:
         articles = find_all_articles(page)
         articles_found.extend(articles)
+    for article_url in articles_found:
+        print(article_url)
     # articles_found = articles_found[:2]  # Limit to first 10 articles for testing
 
-    for article_url in articles_found:
-        article = download_article_data(article_url)
-        process_article(article)
+    # for article_url in articles_found:
+    #     article = download_article_data(article_url)
+    #     process_article(article)
 
 
 if __name__ == "__main__":
