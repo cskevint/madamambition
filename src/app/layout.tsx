@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Abril_Fatface, Marcellus } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-sans",
+const marcellus = Marcellus({
+  weight: "400",
   subsets: ["latin"],
+  variable: "--font-sans",
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-serif",
+const abril = Abril_Fatface({
+  weight: "400",
   subsets: ["latin"],
+  variable: "--font-serif",
 });
 
 export const metadata: Metadata = {
@@ -27,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${playfair.variable} font-sans antialiased`}
+        className={`${marcellus.variable} ${abril.variable} font-sans antialiased`}
       >
         <nav className="bg-brand-nav text-brand-beige px-8 py-5 flex items-center justify-between border-b border-brand-greyblue">
           <div className="flex flex-col items-center">
