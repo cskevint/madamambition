@@ -2,7 +2,6 @@ import { getAllArticles, getArticleBySlug } from "../../../lib/markdown";
 import ReactMarkdown from 'react-markdown';
 import { notFound } from "next/navigation";
 import type { Metadata } from 'next';
-import Image from "next/image";
 import Link from "next/link";
 
 type Props = {
@@ -46,73 +45,82 @@ export default async function ArticlePage({ params }: Props) {
   }
 
   return (
-    <main className="bg-brand-beige min-h-screen pb-24">
-      <article className="max-w-4xl mx-auto px-6 pt-24 pb-12 bg-white font-sans shadow-lg mb-12 relative top-12 z-10">
-        {article.mainImage && (
-          <div className="w-full h-[400px] mb-12 overflow-hidden shadow-xl rounded-sm relative">
-            <Image src={article.mainImage} alt={article.title} fill className="object-cover" />
+    <main className="bg-white min-h-screen font-sans antialiased">
+      {/* Article Header */}
+      <header className="bg-brand-beige py-24 px-6 md:px-12 lg:px-24 border-b border-brand-darkbeige">
+        <div className="max-w-4xl mx-auto flex flex-col items-center text-center space-y-6">
+          <div className="flex gap-4 items-center">
+            <span className="text-[10px] font-bold text-brand-copper uppercase tracking-[0.4em]">Journal Entry</span>
+            <div className="w-12 h-[1px] bg-brand-brown/20"></div>
           </div>
-        )}
-        <h1 className="text-4xl md:text-5xl font-serif text-brand-brown mb-8 leading-tight">
-          {article.title}
-        </h1>
-        <div className="prose prose-stone lg:prose-lg max-w-none text-gray-800 font-light leading-relaxed markdown-content">
-          <ReactMarkdown>{article.content}</ReactMarkdown>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-brand-brown font-extrabold tracking-tight leading-tight">
+            {article.title}
+          </h1>
+          <div className="pt-4">
+             <Link href="/articles" className="text-[10px] uppercase tracking-[0.2em] font-normal text-gray-500 hover:text-brand-copper transition-colors">
+               ← Back to Archive
+             </Link>
+          </div>
         </div>
-      </article>
-      
-      {/* Footer Contact Form */}
-      <section id="contact" className="py-24 bg-brand-beige border-t border-brand-darkbeige bg-linear-to-b from-brand-beige to-brand-darkbeige">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row bg-white shadow-xl">
-           <div className="md:w-1/2 min-h-[300px] bg-gray-200"></div>
-           <div className="md:w-1/2 p-12 flex flex-col justify-center">
-             <h3 className="text-3xl font-serif text-brand-copper mb-4">Let&apos;s chat</h3>
-             <p className="text-sm font-light text-gray-600 mb-8 leading-relaxed">
-               Ready to take the next step towards a revitalized career? Connect with me to see if my services are right for you.
-             </p>
-             <button className="bg-black text-white px-8 py-3 tracking-widest text-xs font-semibold self-start hover:bg-gray-800 transition">
-               GET IN TOUCH
-             </button>
-           </div>
+      </header>
+
+      {/* Main Content Area */}
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row py-24 px-6 md:px-12 lg:px-24 gap-20">
+        
+        {/* Left: Article Body */}
+        <article className="lg:w-2/3">
+          {/* Main Image Placeholder */}
+          <div className="w-full aspect-video bg-gray-100 border border-gray-200 mb-16 flex items-center justify-center text-center relative shadow-sm">
+             <div className="text-gray-400 font-serif italic text-lg opacity-60">
+               [PRINCIPAL ARTICLE IMAGE]<br/>
+               <span className="text-[10px] font-sans not-italic uppercase tracking-widest mt-2 block">
+                {article.mainImage || 'Default Article Image'}
+               </span>
+             </div>
+          </div>
+
+          <div className="prose prose-stone lg:prose-xl max-w-none text-gray-800 font-light leading-relaxed markdown-content 
+            prose-headings:font-serif prose-headings:text-brand-brown prose-headings:font-extrabold 
+            prose-p:mb-8 prose-strong:font-bold prose-strong:text-black prose-blockquote:border-l-brand-beige prose-blockquote:italic">
+            <ReactMarkdown>{article.content}</ReactMarkdown>
+          </div>
+        </article>
+
+        {/* Right: Sidebar / Related Info */}
+        <aside className="lg:w-1/3 space-y-16">
+          <div className="bg-brand-beige/30 p-10 border border-brand-beige">
+            <h4 className="font-serif text-xl font-bold text-brand-brown mb-6">About the Author</h4>
+            <div className="w-24 h-24 rounded-full bg-gray-200 mb-6 border-4 border-white shadow-sm flex items-center justify-center text-[10px] text-gray-400 uppercase tracking-tighter text-center px-4 leading-tight">
+              [Selena Portrait]
+            </div>
+            <p className="text-sm text-gray-600 font-light leading-relaxed mb-8">
+              Selena Trotter is an Executive Coach for women in Finance and Tech, helping them build careers they love without losing themselves.
+            </p>
+            <Link href="/#about" className="text-[10px] font-bold uppercase tracking-widest text-brand-copper border-b border-brand-copper pb-1">Learn More</Link>
+          </div>
+
+          <div>
+            <h4 className="font-serif text-xl font-bold text-brand-brown mb-8">Executive Coaching</h4>
+            <div className="bg-brand-nav p-8 text-white">
+              <p className="text-sm font-light leading-relaxed mb-6 opacity-80">
+                Ready to take the next step towards a revitalized career? 
+              </p>
+              <Link href="/#contact" className="block text-center bg-brand-copper text-white py-4 uppercase text-[10px] tracking-widest font-bold hover:bg-white hover:text-brand-brown transition-all">
+                Let&apos;s Chat
+              </Link>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      {/* Navigation Footer */}
+      <section className="bg-brand-beige py-16 px-6 md:px-12 lg:px-24">
+        <div className="max-w-4xl mx-auto flex justify-between items-center text-[10px] uppercase tracking-widest font-bold">
+           <Link href="/articles" className="text-gray-400 hover:text-brand-copper">← Archive</Link>
+           <div className="text-brand-brown opacity-20 hidden md:block">Madam Ambition Journal</div>
+           <Link href="/#contact" className="text-brand-copper hover:text-brand-brown">Coaching →</Link>
         </div>
       </section>
-
-      <footer className="bg-brand-brown text-center pt-24 text-white">
-        <div className="bg-black text-white py-12 px-6 flex flex-col items-center">
-          <p className="font-serif text-3xl italic max-w-2xl leading-normal mb-4">
-            &quot;Let go of who you think you&apos;re supposed to be; embrace who you are.&quot;
-          </p>
-          <p className="font-sans font-bold text-sm tracking-widest">— Brené Brown</p>
-        </div>
-        
-        <div className="bg-brand-greyblue py-16 px-6 relative flex justify-center text-sm font-light">
-          <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left text-white">
-            <div>
-              <h4 className="font-bold tracking-wider mb-4 uppercase text-[#d1ba98]">About Madam Ambition</h4>
-              <p className="leading-relaxed">Madam Ambition is an executive coaching and career platform dedicated to elevating women in Tech and Finance.</p>
-            </div>
-            <div>
-              <h4 className="font-bold tracking-wider mb-4 uppercase text-[#d1ba98]">Explore</h4>
-              <ul className="space-y-2">
-                <li><Link href="/" className="hover:text-brand-beige transition">Home</Link></li>
-                <li><Link href="/articles" className="hover:text-brand-beige transition">All Articles</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold tracking-wider mb-4 uppercase text-[#d1ba98]">Social Media Links</h4>
-              <div className="flex justify-center md:justify-start space-x-4">
-                <span className="w-8 h-8 rounded-full bg-brand-brown flex items-center justify-center">F</span>
-                <span className="w-8 h-8 rounded-full bg-brand-brown flex items-center justify-center">I</span>
-                <span className="w-8 h-8 rounded-full bg-brand-brown flex items-center justify-center">L</span>
-                <span className="w-8 h-8 rounded-full bg-brand-brown flex items-center justify-center">T</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="bg-brand-nav text-[#d1ba98] py-4 text-xs tracking-widest">
-           <p>© 2026 Madam Ambition. All rights reserved.</p>
-        </div>
-      </footer>
     </main>
   );
 }
