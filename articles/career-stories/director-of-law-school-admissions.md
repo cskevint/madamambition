@@ -1,7 +1,7 @@
 [//]: # "title: Leah Straley –Director of Law School Admissions"
 [//]: # "url: https://madamambition.com/director-of-law-school-admissions/"
 [//]: # "filename: director-of-law-school-admissions.md"
-[//]: # "main_image: https://madamambition.com/wp-content/uploads/2022/12/Leah-Straley-image-01-watercolor-madam-ambition-wecompress.com_-scaled-1.jpg"
+[//]: # "main_image: /articles/images/Leah-Straley-image-01-watercolor-madam-ambition-wecompress.com_-scaled-1.jpg"
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +9,7 @@
 
 December 15, 2021
 
-![](https://madamambition.com/wp-content/uploads/2022/12/Leah-Straley-image-01-watercolor-madam-ambition-wecompress.com_-scaled-1.jpg "Leah Straley - image 01 watercolor-madam-ambition-wecompress.com_-scaled")
+![](/articles/images/Leah-Straley-image-01-watercolor-madam-ambition-wecompress.com_-scaled-1.jpg "Leah Straley - image 01 watercolor-madam-ambition-wecompress.com_-scaled")
 
 Leah Straley, JD: Assistant Dean of Admissions at Willamette University
 

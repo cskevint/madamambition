@@ -1,7 +1,7 @@
 [//]: # "title: Mariam Shams Goldberg –Physician, Family Doctor, South Africa"
 [//]: # "url: https://madamambition.com/physician-family-doctor-south-africa/"
 [//]: # "filename: physician-family-doctor-south-africa.md"
-[//]: # "main_image: https://madamambition.com/wp-content/uploads/2022/02/Mariam-Shams-Goldberg-image-01-water-color-portrait-scaled-1.jpg"
+[//]: # "main_image: /articles/images/Mariam-Shams-Goldberg-image-01-water-color-portrait-scaled-1.jpg"
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +9,7 @@
 
 February 10, 2022
 
-![](https://madamambition.com/wp-content/uploads/2022/02/Mariam-Shams-Goldberg-image-01-water-color-portrait-scaled-1.jpg "Mariam Shams Goldberg - image 01 water-color-portrait-scaled")
+![](/articles/images/Mariam-Shams-Goldberg-image-01-water-color-portrait-scaled-1.jpg "Mariam Shams Goldberg - image 01 water-color-portrait-scaled")
 
 **Welcome to Madam Ambition, tell us about yourself?**
 
@@ -19,7 +19,7 @@ I’ll briefly start with the origins of my parents. My parents are originally I
 
 I was really influenced by watching my mom with how passionate she was about medicine. When I got a little bit older, I was really lucky to be able to travel with her throughout South Africa to support a variety of health campaigns. She was really passionate about HIV/AIDS work and so she would get into the car with one of her nurse Baha’i friends and they would literally travel throughout South Africa and participate in conferences to talk about HIV/AIDS in the local townships and villages. I was really lucky I was able to come with her. I really remember how passionate she was about this and that kind of stuck with me –– the passion that she had for medicine. I thought I could do that too one day. So **Umtata**, we moved to Botswana to a little city called Gaborone and we lived there for probably about six years, and I went to high school there.
 
-![](https://madamambition.com/wp-content/uploads/2023/01/Mariam-Shams-Goldberg.png "Mariam Shams Goldberg")
+![](/articles/images/Mariam-Shams-Goldberg.png "Mariam Shams Goldberg")
 
 **Did you like school? Did you already have a knack for Sciences at this point?**
 

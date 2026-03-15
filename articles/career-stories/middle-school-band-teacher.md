@@ -1,7 +1,7 @@
 [//]: # "title: Vicki Tam –Middle School Band Teacher"
 [//]: # "url: https://madamambition.com/middle-school-band-teacher/"
 [//]: # "filename: middle-school-band-teacher.md"
-[//]: # "main_image: https://madamambition.com/wp-content/uploads/2023/01/Vicki-Tam-image-01-portrait.-madamambition-scaled-1.jpg"
+[//]: # "main_image: /articles/images/Vicki-Tam-image-01-portrait.-madamambition-scaled-1.jpg"
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +9,7 @@
 
 February 3, 2021
 
-![](https://madamambition.com/wp-content/uploads/2023/01/Vicki-Tam-image-01-portrait.-madamambition-scaled-1.jpg "Vicki Tam - image 01 portrait.-madamambition-scaled")
+![](/articles/images/Vicki-Tam-image-01-portrait.-madamambition-scaled-1.jpg "Vicki Tam - image 01 portrait.-madamambition-scaled")
 
 “The intent was never to put me in a career with music. They wanted me to be a doctor or a lawyer.”
 
@@ -27,7 +27,7 @@ She got accepted into the University of Wisconsin at Madison and entered their m
 
 While attending Madison, she also met her future husband Mike who was also a Music Ed major and they graduated at the same time. Upon graduation, he was able to get a job as a teacher in Winona Minnesota and Vicki did not. She did however work as a substitute teacher for several months in the metro area of Minneapolis, which she looks back on as a great time to build relationships with the music departments in many different school districts in Minnesota. One of the highlights was also bringing Vicki out of her comfort zone as a quiet and mild-mannered person. When she was teaching a class of unknown kids, she was forced to captivate their attention. Her student teacher advisor had mentioned to her that she needed to work harder to entertain the kids, which she had chased at initially. After all, she was an educator and not there for their personal enjoyment. However, she found that in order to help control the classroom, she actually did need to be more personable, loud, and fun to be with. She was in so many different situations, classrooms, and groups of people, she needed to come out of her shell. “I was doing things I never thought I’d be capable of doing, like singing and dancing for the kids. I’m not an entertainer, but I am entertaining.” This was a big change for Vicki and really helped her grow as a professional.
 
-![](https://madamambition.com/wp-content/uploads/2023/01/Vicki-Tam.png "Vicki Tam")
+![](/articles/images/Vicki-Tam.png "Vicki Tam")
 
 That year, Winona suffered through a large budget cut (as did most of Minnesota) and her boyfriend lost his job. While on a tour of Germany through a program called Blue Blake out of Michigan, he was offered a job at a Waldorf school and was able to help secure employment for Vicki as well who still was not able to find a steady teaching job. They would be band, choir, and English teachers in Germany for three years. When asked how she prepared to be a teacher, she reflected that she had 2 years of Choir in elementary school and that just part of teaching (especially as substitutes in small towns), you just have to adapt on the fly.
 

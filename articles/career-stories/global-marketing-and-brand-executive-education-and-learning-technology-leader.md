@@ -1,7 +1,7 @@
 [//]: # "title: Claire Harding –Global Marketing and Brand Executive | Education and Learning Technology Leader"
 [//]: # "url: https://madamambition.com/global-marketing-and-brand-executive-education-and-learning-technology-leader/"
 [//]: # "filename: global-marketing-and-brand-executive-education-and-learning-technology-leader.md"
-[//]: # "main_image: https://madamambition.com/wp-content/uploads/2022/12/Claire-Harding-image-01-water-color-portrait-Madam-Ambition-1-scaled-1.jpg"
+[//]: # "main_image: /articles/images/Claire-Harding-image-01-water-color-portrait-Madam-Ambition-1-scaled-1.jpg"
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -9,7 +9,7 @@
 
 January 5, 2022
 
-![](https://madamambition.com/wp-content/uploads/2022/12/Claire-Harding-image-01-water-color-portrait-Madam-Ambition-1-scaled-1.jpg "Claire Harding - image 01 water-color-portrait-Madam-Ambition-1-scaled")
+![](/articles/images/Claire-Harding-image-01-water-color-portrait-Madam-Ambition-1-scaled-1.jpg "Claire Harding - image 01 water-color-portrait-Madam-Ambition-1-scaled")
 
 Many musicians and creatives are very familiar with the concept of a day job that supports your livelihood while pursuing your passion in whatever free time you can piece together. Not many artists, musical or otherwise, can claim that this day job became their true calling later on in life. Claire Harding, however, was able to combine her musical talents with her experience in marketing and technology to create the unique niche that she currently resides in.
 
@@ -17,7 +17,7 @@ Claire’s musical journey began when she was very young. When she was about 10 
 
 Growing up, Claire’s father was a marketing and sales executive, and her mother did volunteer work, such as community organizing and playing the organ at Mass, among other things. As a child, her family moved around a lot, and she did not really consider herself “belonging to one particular place.” She reflects that this state of constant transition allowed her to go through many periods of “reinvention” and grow into a flexible and adaptable adult.
 
-![](https://madamambition.com/wp-content/uploads/2023/01/claire-harding-playing.png "claire-harding-playing")
+![](/articles/images/claire-harding-playing.png "claire-harding-playing")
 
 Claire had an active and sports filled childhood
 
@@ -33,7 +33,7 @@ After her excursion making international connections through Up With People, Cla
 
 While at Smith, Claire recorded her first album on a cassette recorder, doing all the dubs herself. Without social media, all of Claire’s self-promotion was mostly word of mouth. She would sell this ten-song tape at her shows, and during her senior year at Smith, she was able to find a studio and had her first experience with recording equipment to make her second album. So while she was studying music in a more official capacity, Claire was already beginning to follow her passion and launch her music career in a more underground way.
 
-![](https://madamambition.com/wp-content/uploads/2023/01/Claire-Smith-Graduate.png "Claire - Smith Graduate")
+![](/articles/images/Claire-Smith-Graduate.png "Claire - Smith Graduate")
 
 Claire – Smith Graduate
 

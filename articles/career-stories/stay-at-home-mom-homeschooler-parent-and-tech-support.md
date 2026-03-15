@@ -1,7 +1,7 @@
 [//]: # "title: Tamara Bard –"
 [//]: # "url: https://madamambition.com/stay-at-home-mom-homeschooler-parent-and-tech-support/"
 [//]: # "filename: stay-at-home-mom-homeschooler-parent-and-tech-support.md"
-[//]: # "main_image: https://madamambition.com/wp-content/uploads/2023/01/Tamara-Bard-image-01-portrait-scaled-1.jpg"
+[//]: # "main_image: /articles/images/Tamara-Bard-image-01-portrait-scaled-1.jpg"
 
 [Career Stories](https://madamambition.com/category/career-stories/)
 
@@ -11,7 +11,7 @@
 
 January 31, 2021
 
-![](https://madamambition.com/wp-content/uploads/2023/01/Tamara-Bard-image-01-portrait-scaled-1.jpg "Tamara Bard - image 01 portrait-scaled")
+![](/articles/images/Tamara-Bard-image-01-portrait-scaled-1.jpg "Tamara Bard - image 01 portrait-scaled")
 
 “I see my education as for my children. Because I am more knowledgeable, more interesting, more understanding of the world around me, I am a better mother.”
 
