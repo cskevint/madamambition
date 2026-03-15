@@ -147,6 +147,18 @@ EXCLUDE_URLS = [
     "https://madamambition.com/career-stories/page/2/",
 ]
 
+INSIGHTS = [
+    "https://madamambition.com/what-are-the-kpi-for-executive-coaching/",
+    "https://madamambition.com/working-mom-hacks/",
+    "https://madamambition.com/purpose-of-executive-coaching-women/",
+    "https://madamambition.com/executive-level-interview-questions/",
+    "https://madamambition.com/what-is-a-leadership-mindset-how-to-create-resilient-space-for-you-and-your-team/",
+    "https://madamambition.com/how-to-choose-an-executive-coach/",
+    "https://madamambition.com/growth-mindset-in-leadership/",
+    "https://madamambition.com/difference-between-executive-and-leadership-coaching/",
+    "https://madamambition.com/getting-more-girls-into-stem-careers-thoughts/",
+]
+
 
 def crawl_all_links(start_url):
     visited = set()

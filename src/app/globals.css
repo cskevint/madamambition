@@ -15,7 +15,7 @@
   --color-brand-accent: #7ebec5;
   --color-white: #ffffff;
   --color-black: #000000;
-  
+
   --font-serif: var(--font-serif);
   --font-sans: var(--font-sans);
 }
@@ -26,7 +26,12 @@ body {
 }
 
 /* Typography Overrides */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-serif);
 }
 
@@ -50,4 +55,3 @@ h1 {
   font-weight: 700;
   color: black;
 }
-
