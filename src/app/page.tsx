@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { getAllArticles } from "../../lib/markdown";
 
 export default function Home() {
@@ -36,14 +37,14 @@ export default function Home() {
           </div>
           {/* Right Column (Image placeholder) */}
           <div className="md:w-1/2 w-full flex justify-center md:justify-end">
-            <div className="w-full max-w-[600px] aspect-4/3 bg-gray-200 border border-gray-300 flex items-center justify-center p-8 text-center shadow-inner relative group">
-               <div className="text-gray-400 font-serif italic text-lg line-clamp-3">
-                 [IMAGE REPLACEMENT NEEDED]<br/>
-                 <span className="text-xs font-sans not-italic uppercase tracking-widest mt-2 block opacity-60">
-                   SelenaTrotter-MadamAmbition-Executive-Coaching-1.jpg<br/>
-                   (600px x 450px)
-                 </span>
-               </div>
+            <div className="w-full max-w-[600px] aspect-4/3 relative overflow-hidden shadow-2xl border-8 border-white">
+              <Image 
+                src="/articles/images/SelenaTrotter-MadamAmbition-Executive-Coaching-1.jpg" 
+                alt="Selena Trotter - Madam Ambition Executive Coaching" 
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
         </div>
@@ -54,14 +55,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-20">
           {/* Left Column (Image Placeholder) */}
           <div className="md:w-1/2 w-full flex justify-center md:justify-start">
-             <div className="w-full max-w-[500px] aspect-5/6 bg-gray-100 border border-gray-200 flex items-center justify-center text-center p-10 relative shadow-sm">
-                <div className="text-gray-400 font-serif italic">
-                  [IMAGE REPLACEMENT NEEDED]<br/>
-                  <span className="text-xs font-sans not-italic uppercase tracking-widest mt-2 block opacity-60">
-                    SelenaTrotter-MadamAmbition-97.jpg<br/>
-                    (500px x 600px)
-                  </span>
-                </div>
+             <div className="w-full max-w-[500px] aspect-5/6 relative bg-white shadow-xl border-8 border-brand-beige">
+                <Image 
+                  src="/articles/images/SelenaTrotter-MadamAmbition-97.jpg" 
+                  alt="Selena Trotter" 
+                  fill
+                  className="object-cover"
+                />
              </div>
           </div>
           {/* Right Column */}
@@ -126,12 +126,15 @@ export default function Home() {
           <h2 className="text-4xl font-serif font-extrabold text-brand-brown mb-20 text-center tracking-tight uppercase">Women&apos;s Career Stories</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16 w-full mb-20">
-            {stories.map((article, index) => (
+            {stories.map((article) => (
               <div key={article.slug} className="flex flex-col items-center text-center group">
                 <div className="w-56 h-56 rounded-full overflow-hidden relative bg-gray-100 shadow-md border-[6px] border-white group-hover:scale-105 transition-transform duration-500 mb-8">
-                  <div className="absolute inset-0 flex items-center justify-center text-gray-400 text-[10px] uppercase tracking-tighter px-6 leading-tight">
-                    [PORTRAIT {index + 1}]<br/>{article.title}
-                  </div>
+                  <Image 
+                    src={article.mainImage || "/articles/images/placeholder.jpg"} 
+                    alt={article.title}
+                    fill
+                    className="object-cover transition-opacity duration-300 group-hover:opacity-90"
+                  />
                 </div>
                 <h4 className="font-serif font-bold text-brand-copper text-xl mb-4 leading-tight group-hover:text-brand-brown transition-colors">{article.title}</h4>
                 <div className="w-10 h-px bg-brand-beige mb-6 group-hover:w-24 transition-all duration-500"></div>
@@ -156,7 +159,7 @@ export default function Home() {
 
       {/* 5. Join Facebook Section */}
       <section className="bg-brand-beige py-32 px-6 text-center border-b border-brand-darkbeige overflow-hidden relative">
-        <div className="absolute top-0 left-0 w-full h-[1px] bg-white opacity-40"></div>
+        <div className="absolute top-0 left-0 w-full h-px bg-white opacity-40"></div>
         <div className="max-w-2xl mx-auto relative z-10">
           <h3 className="text-3xl font-serif font-extrabold text-brand-brown mb-6 tracking-wide">Join me on Facebook</h3>
           <p className="text-gray-700 font-light mb-10 text-lg leading-relaxed italic">
@@ -173,14 +176,15 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-24">
            {/* Image Frame */}
            <div className="md:w-1/2 w-full flex justify-center">
-              <div className="w-full max-w-[500px] aspect-4/3 bg-gray-200 border border-gray-300 relative">
+              <div className="w-full max-w-[500px] aspect-4/3 relative">
                 <div className="absolute -top-6 -left-6 w-full h-full border-2 border-brand-beige z-0"></div>
-                <div className="absolute inset-0 flex items-center justify-center text-gray-400 font-serif italic p-12 text-center bg-gray-200 z-10">
-                  [IMAGE REPLACEMENT NEEDED]<br/>
-                  <span className="text-xs font-sans not-italic uppercase tracking-widest mt-2 block opacity-60">
-                    SelenaTrotter-MadamAmbition-45.jpg<br/>
-                    (600px x 450px)
-                  </span>
+                <div className="relative z-10 w-full h-full border-8 border-white shadow-2xl overflow-hidden">
+                  <Image 
+                    src="/articles/images/SelenaTrotter-MadamAmbition-45.jpg" 
+                    alt="Contact Selena Trotter" 
+                    fill
+                    className="object-cover"
+                  />
                 </div>
               </div>
            </div>
@@ -198,12 +202,17 @@ export default function Home() {
       </section>
 
       {/* 7. Image Quote Section */}
-      <section className="relative h-[600px] w-full bg-slate-900 flex items-center justify-center px-10 overflow-hidden">
-        {/* Background Image Placeholder */}
-        <div className="absolute inset-0 bg-gray-500 opacity-20 flex items-center justify-center text-white/10 text-9xl font-serif select-none">
-          Madam Ambition
+       <section className="relative h-[600px] w-full bg-slate-900 flex items-center justify-center px-10 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image 
+            src="/articles/images/SelenaTrotter-MadamAmbition-58.jpg" 
+            alt="Background Quote" 
+            fill
+            className="object-cover opacity-30 grayscale"
+          />
         </div>
-        <div className="absolute inset-0 bg-linear-to-b from-transparent to-black/60"></div>
+        <div className="absolute inset-0 bg-linear-to-b from-transparent to-black/60 z-5"></div>
         
         <div className="relative z-10 max-w-4xl text-center">
           <p className="font-serif text-4xl md:text-5xl lg:text-6xl italic text-white leading-tight font-extrabold mb-10 drop-shadow-2xl">
