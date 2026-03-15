@@ -29,7 +29,7 @@ export default function Home() {
               </p>
             </div>
             <Link 
-              href="/#contact"
+              href="/contact"
               className="mt-8 inline-block bg-black text-white px-10 py-4 uppercase text-xs tracking-[0.2em] font-bold hover:bg-brand-nav transition-all duration-300 shadow-sm"
             >
               Work with me
@@ -79,7 +79,7 @@ export default function Home() {
               </p>
             </div>
             <Link 
-              href="/#about"
+              href="/about"
               className="inline-block bg-black text-white px-10 py-4 uppercase text-xs tracking-[0.2em] font-bold hover:bg-brand-nav transition-all"
             >
               About Madam Ambition
@@ -111,7 +111,7 @@ export default function Home() {
               <li className="flex gap-4 items-start"><span className="text-brand-beige text-xl mt-[-4px]">/</span> <span>We offer group support to build communities of support from different perspectives to help others develop together</span></li>
             </ul>
             <Link 
-              href="/#executive-coaching"
+              href="/contact"
               className="self-start bg-brand-beige text-brand-brown px-12 py-5 uppercase text-xs tracking-[0.2em] font-bold hover:bg-white transition-all shadow-md"
             >
               Register for Coaching
@@ -165,9 +165,12 @@ export default function Home() {
           <p className="text-gray-700 font-light mb-10 text-lg leading-relaxed italic">
             &ldquo;to learn about mentorship opportunities and hear from the leaders.&rdquo;
           </p>
-          <button className="bg-black text-white px-12 py-5 uppercase text-xs tracking-[0.3em] font-bold hover:bg-brand-nav transition-all shadow-md">
+          <Link 
+            href="/contact"
+            className="bg-black text-white px-12 py-5 uppercase text-xs tracking-[0.3em] font-bold hover:bg-brand-nav transition-all shadow-md inline-block"
+          >
             Follow Madam Ambition
-          </button>
+          </Link>
         </div>
       </section>
       
@@ -194,9 +197,12 @@ export default function Home() {
              <p className="text-lg text-gray-600 font-light leading-relaxed max-w-lg">
                Book a complimentary call to explore if Executive Coaching is right for you. We create community for women trail blazers, help leaders feel greater peace, ease and joy through our executive coaching programs.
              </p>
-             <button className="bg-black text-white self-start px-10 py-4 uppercase text-xs tracking-[0.2em] font-bold hover:bg-brand-nav transition-all shadow-lg">
+             <Link 
+               href="/contact"
+               className="bg-black text-white self-start px-10 py-4 uppercase text-xs tracking-[0.2em] font-bold hover:bg-brand-nav transition-all shadow-lg"
+             >
                Get in touch
-             </button>
+             </Link>
            </div>
         </div>
       </section>
@@ -244,10 +250,10 @@ export default function Home() {
              <div className="flex-1">
                 <h4 className="font-bold tracking-[0.2em] mb-10 text-xs uppercase text-black border-b border-brand-brown/10 pb-4">Explore</h4>
                 <ul className="space-y-6 text-sm font-bold uppercase tracking-widest">
-                  <li><Link href="/#about" className="hover:text-brand-copper transition-all inline-block hover:translate-x-2 duration-300">About Madam Ambition</Link></li>
-                  <li><Link href="/#executive-coaching" className="hover:text-brand-copper transition-all inline-block hover:translate-x-2 duration-300">Executive Coaching</Link></li>
+                  <li><Link href="/about" className="hover:text-brand-copper transition-all inline-block hover:translate-x-2 duration-300">About Madam Ambition</Link></li>
+                  <li><Link href="/executive-coaching" className="hover:text-brand-copper transition-all inline-block hover:translate-x-2 duration-300">Executive Coaching</Link></li>
                   <li><Link href="/articles" className="hover:text-brand-copper transition-all inline-block hover:translate-x-2 duration-300">Career Stories</Link></li>
-                  <li><Link href="/#contact" className="hover:text-brand-copper transition-all inline-block hover:translate-x-2 duration-300">Contact</Link></li>
+                  <li><Link href="/contact" className="hover:text-brand-copper transition-all inline-block hover:translate-x-2 duration-300">Contact</Link></li>
                 </ul>
              </div>
              <div className="flex-1">

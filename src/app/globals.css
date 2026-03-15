@@ -30,6 +30,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
 }
 
+h1 {
+  font-size: 30px;
+}
+
 /* Markdown Content Styling */
 .markdown-content p {
   margin-bottom: 2rem;
