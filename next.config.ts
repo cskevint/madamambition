@@ -1,16 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  /* No remote patterns allowed for madamambition.com */
   images: {
     remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "madamambition.com",
-      },
-      {
-        protocol: "https",
-        hostname: "www.madamambition.com",
-      },
       {
         protocol: "https",
         hostname: "secure.gravatar.com",
