@@ -23,6 +23,8 @@ export const metadata: Metadata = {
     "Selena Trotter, Executive Coach for Women in Finance and Tech. Building Women's Careers without Losing Women.",
 };
 
+import Footer from "@/components/Footer";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -118,6 +120,7 @@ export default function RootLayout({
           </nav>
         </header>
         {children}
+        <Footer />
       </body>
     </html>
   );

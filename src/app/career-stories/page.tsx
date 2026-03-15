@@ -54,7 +54,7 @@ export default function CareerStoriesPage() {
                   </h2>
                   <div className="w-12 h-px bg-brand-beige mb-6 group-hover:w-20 transition-all duration-500"></div>
                   <p className="text-gray-500 font-light text-sm leading-relaxed line-clamp-3 mb-8">
-                    {article.content.replace(/[#*_\[\]]/g, "").substring(0, 180)}...
+                    {article.excerpt}
                   </p>
                   <div className="mt-auto">
                     <Link

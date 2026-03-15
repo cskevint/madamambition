@@ -3,6 +3,7 @@ import ReactMarkdown from "react-markdown";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -42,105 +43,84 @@ export default async function ArticlePage({ params }: Props) {
     notFound();
   }
 
+  const categoryLabel = article.category
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+
   return (
-    <main className="bg-white min-h-screen font-sans antialiased">
-      {/* Article Header */}
-      <header className="bg-brand-beige py-24 px-6 md:px-12 lg:px-24 border-b border-brand-darkbeige">
-        <div className="max-w-4xl mx-auto flex flex-col items-center text-center space-y-6">
-          <div className="flex gap-4 items-center">
-            <span className="text-[10px] font-bold text-brand-copper uppercase tracking-[0.4em]">
-              Journal Entry
-            </span>
-            <div className="w-12 h-[1px] bg-brand-brown/20"></div>
-          </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-brand-brown font-extrabold tracking-tight leading-tight">
-            {article.title}
-          </h1>
-          <div className="pt-4">
-            <Link
-              href={`/${article.category}`}
-              className="text-[10px] uppercase tracking-[0.2em] font-normal text-gray-500 hover:text-brand-copper transition-colors"
-            >
-              ← Back to {article.category === "career-stories" ? "Stories" : "Insights"}
-            </Link>
-          </div>
-        </div>
-      </header>
+    <main className="bg-white min-h-screen font-sans antialiased text-black">
+      {/* Hero Section - Following the Divi-like format */}
+      <section
+        className="relative overflow-hidden pt-8 pb-12 lg:pt-12 lg:pb-16"
+        style={{
+          backgroundImage: "linear-gradient(270deg, #e2cec0 43%, #f5e5d6 43%)",
+        }}
+      >
+        <div className="max-w-[1200px] mx-auto px-6 text-left">
+          <div className="flex flex-col lg:flex-row items-center lg:items-center gap-12 lg:gap-0">
+            {/* Left Column (2/5 in Divi) */}
+            <div className="lg:w-[40%] flex flex-col space-y-6">
+              <div className="flex items-center text-[13px] tracking-wide text-brand-copper/90 font-medium">
+                <Link href={`/${article.category}`} className="hover:underline">
+                  {categoryLabel}
+                </Link>
+                <span className="mx-2 text-gray-400">|</span>
+                <span className="text-gray-500">Madam Ambition Journal</span>
+              </div>
 
-      {/* Main Content Area */}
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row py-24 px-6 md:px-12 lg:px-24 gap-20">
-        {/* Left: Article Body */}
-        <article className="lg:w-2/3">
-          {/* Main Image Placeholder */}
-          <div className="w-full aspect-video bg-gray-100 border border-gray-200 mb-16 flex items-center justify-center text-center relative shadow-sm">
-            <div className="text-gray-400 font-serif italic text-lg opacity-60">
-              [PRINCIPAL ARTICLE IMAGE]
-              <br />
-              <span className="text-[10px] font-sans not-italic uppercase tracking-widest mt-2 block">
-                {article.mainImage || "Default Article Image"}
-              </span>
+              <h1 className="text-4xl md:text-5xl font-serif text-brand-brown font-normal leading-[1.1em] tracking-tight">
+                {article.title}
+              </h1>
+
+              {article.date && <div className="text-base text-gray-700 italic">{article.date}</div>}
+            </div>
+
+            {/* Right Column (3/5 in Divi) */}
+            <div className="lg:w-[60%] w-full flex justify-end">
+              <div className="relative w-full aspect-1024/724 border border-brand-darkbeige shadow-sm overflow-hidden rounded-sm">
+                {article.mainImage ? (
+                  <Image
+                    src={article.mainImage}
+                    alt={article.title}
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                ) : (
+                  <div className="w-full h-full bg-brand-beige flex items-center justify-center text-brand-brown/30 font-serif italic">
+                    [Article Featured Image]
+                  </div>
+                )}
+              </div>
             </div>
           </div>
-
-          <div
-            className="prose prose-stone lg:prose-xl max-w-none text-gray-800 font-light leading-relaxed markdown-content 
-            prose-headings:font-serif prose-headings:text-brand-brown prose-headings:font-extrabold 
-            prose-p:mb-8 prose-strong:font-bold prose-strong:text-black prose-blockquote:border-l-brand-beige prose-blockquote:italic"
-          >
-            <ReactMarkdown>{article.content}</ReactMarkdown>
-          </div>
-        </article>
-
-        {/* Right: Sidebar / Related Info */}
-        <aside className="lg:w-1/3 space-y-16">
-          <div className="bg-brand-beige/30 p-10 border border-brand-beige">
-            <h4 className="font-serif text-xl font-bold text-brand-brown mb-6">About the Author</h4>
-            <div className="w-24 h-24 rounded-full bg-gray-200 mb-6 border-4 border-white shadow-sm flex items-center justify-center text-[10px] text-gray-400 uppercase tracking-tighter text-center px-4 leading-tight">
-              [Selena Portrait]
-            </div>
-            <p className="text-sm text-gray-600 font-light leading-relaxed mb-8">
-              Selena Trotter is an Executive Coach for women in Finance and Tech, helping them build
-              careers they love without losing themselves.
-            </p>
-            <Link
-              href="/#about"
-              className="text-[10px] font-bold uppercase tracking-widest text-brand-copper border-b border-brand-copper pb-1"
-            >
-              Learn More
-            </Link>
-          </div>
-
-          <div>
-            <h4 className="font-serif text-xl font-bold text-brand-brown mb-8">
-              Executive Coaching
-            </h4>
-            <div className="bg-brand-nav p-8 text-white">
-              <p className="text-sm font-light leading-relaxed mb-6 opacity-80">
-                Ready to take the next step towards a revitalized career?
-              </p>
-              <Link
-                href="/#contact"
-                className="block text-center bg-brand-copper text-white py-4 uppercase text-[10px] tracking-widest font-bold hover:bg-white hover:text-brand-brown transition-all"
-              >
-                Let&apos;s Chat
-              </Link>
-            </div>
-          </div>
-        </aside>
-      </div>
-
-      {/* Navigation Footer */}
-      <section className="bg-brand-beige py-16 px-6 md:px-12 lg:px-24">
-        <div className="max-w-4xl mx-auto flex justify-between items-center text-[10px] uppercase tracking-widest font-bold">
-          <Link href={`/${article.category}`} className="text-gray-400 hover:text-brand-copper">
-            ← {article.category === "career-stories" ? "Career Stories" : "Insights"}
-          </Link>
-          <div className="text-brand-brown opacity-20 hidden md:block">Madam Ambition Journal</div>
-          <Link href="/#contact" className="text-brand-copper hover:text-brand-brown">
-            Coaching →
-          </Link>
         </div>
       </section>
+
+      {/* Main Content Area - Refined Single Column */}
+      <section className="max-w-[800px] mx-auto py-16 px-6 md:py-24">
+        <div
+          className="prose prose-stone prose-lg md:prose-xl max-w-none text-black font-normal leading-relaxed markdown-content 
+          prose-headings:font-serif prose-headings:text-brand-brown prose-headings:font-normal prose-headings:mt-12 prose-headings:mb-6
+          prose-h2:text-3xl prose-p:mb-8 prose-strong:font-bold prose-strong:text-black 
+          prose-blockquote:border-l-[5px] prose-blockquote:border-brand-brown prose-blockquote:bg-transparent prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:my-10"
+        >
+          <ReactMarkdown>{article.content}</ReactMarkdown>
+        </div>
+      </section>
+
+      {/* Post-Article Navigation */}
+      <footer className="border-t border-brand-beige mt-12 py-12 px-6">
+        <div className="max-w-[800px] mx-auto flex justify-between items-center text-[11px] uppercase tracking-[0.2em] font-bold text-gray-400">
+          <Link href={`/${article.category}`} className="hover:text-brand-copper transition-colors">
+            ← More Projects
+          </Link>
+          <Link href="/contact" className="hover:text-brand-copper transition-colors">
+            Get in Touch →
+          </Link>
+        </div>
+      </footer>
     </main>
   );
 }

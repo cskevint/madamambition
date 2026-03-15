@@ -10,6 +10,8 @@ export interface Article {
   mainImage: string;
   content: string;
   category: string;
+  date?: string;
+  excerpt: string;
 }
 
 const articlesDirectory = path.join(process.cwd(), "articles");
@@ -62,10 +64,12 @@ export function getArticleBySlug(slug: string): Article | null {
   let url = "";
   let filename = "";
   let mainImage = "";
+  let date = "";
 
   const contentLines: string[] = [];
 
-  const commentRegex = /^\[\/\/\]: # \((.*?):\s*(.*)\)$/;
+  // Matches either [//]: # "key: value" or [//]: # (key: value)
+  const commentRegex = /^\[\/\/\]: # ["\(]?(.*?):\s*(.*?)["]\)?$/;
 
   for (const line of lines) {
     const match = line.match(commentRegex);
@@ -81,7 +85,47 @@ export function getArticleBySlug(slug: string): Article | null {
     }
   }
 
+  // Extract date from the first few lines of content if it looks like a date (e.g. Month Day, Year)
+  const dateRegex =
+    /^(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+\d{4}$/;
+
+  // Look at lines 5-15 of the original file (which are now at the start of contentLines after stripping comments)
+  for (let i = 0; i < Math.min(15, contentLines.length); i++) {
+    const trimmedLine = contentLines[i].trim();
+    if (dateRegex.test(trimmedLine)) {
+      date = trimmedLine;
+      // Optionally remove the date line from content to avoid duplication
+      contentLines.splice(i, 1);
+      break;
+    }
+  }
+
+  // Also remove category links, h1 titles, and top-level images from the top of the content
+  while (contentLines.length > 0) {
+    const line = contentLines[0].trim();
+    if (
+      line === "" ||
+      line.startsWith("# ") ||
+      (line.startsWith("[") && line.includes("madamambition.com/category/")) ||
+      line.startsWith("![") ||
+      line.startsWith("![]")
+    ) {
+      contentLines.shift();
+      continue;
+    }
+    break;
+  }
+
   const content = contentLines.join("\n").trim();
+
+  // Generate a clean excerpt for previews
+  const excerpt = content
+    .replace(/!\[.*?\]\(.*?\)/g, "") // Remove images
+    .replace(/\[(.*?)\]\(.*?\)/g, "$1") // Remove links but keep text
+    .replace(/[#*`_~]/g, "") // Remove common markdown symbols
+    .replace(/\s+/g, " ") // Collapse whitespace
+    .trim()
+    .substring(0, 200);
 
   return {
     slug: path.basename(fullPath, ".md"),
@@ -92,6 +136,8 @@ export function getArticleBySlug(slug: string): Article | null {
     mainImage,
     content,
     category,
+    date,
+    excerpt: excerpt + (excerpt.length >= 200 ? "..." : ""),
   };
 }
 

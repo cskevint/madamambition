@@ -53,7 +53,7 @@ export default function InsightsPage() {
                       <Link href={`/${article.slug}`}>{article.title}</Link>
                     </h2>
                     <p className="text-gray-500 font-light text-sm leading-relaxed line-clamp-3 mb-8">
-                      {article.content.replace(/[#*_\[\]]/g, "").substring(0, 180)}...
+                      {article.excerpt}
                     </p>
                     <div className="mt-auto pt-6 border-t border-gray-100">
                       <Link
