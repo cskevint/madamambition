@@ -128,26 +128,15 @@ EXCLUDE_URLS = [
     "https://madamambition.com/internal-medicine-physician/",
     "https://madamambition.com/anna-roussanova-senior-technical-architect-at-zendesk/",
     "https://madamambition.com/dental-hygentist/",
-    # New
+    # Static pages
     "https://madamambition.com/about/",
     "https://madamambition.com/executive-coaching/",
     "https://madamambition.com/career-stories/",
     "https://madamambition.com/insights/",
     "https://madamambition.com/journal/",
     "https://madamambition.com/contact/",
-    "https://madamambition.com/what-are-the-kpi-for-executive-coaching/",
-    "https://madamambition.com/executive-level-interview-questions/",
-    "https://madamambition.com/growth-mindset-in-leadership/",
-    "https://madamambition.com/working-mom-hacks/",
-    "https://madamambition.com/what-is-a-leadership-mindset-how-to-create-resilient-space-for-you-and-your-team/",
-    "https://madamambition.com/difference-between-executive-and-leadership-coaching/",
-    "https://madamambition.com/purpose-of-executive-coaching-women/",
-    "https://madamambition.com/how-to-choose-an-executive-coach/",
-    "https://madamambition.com/getting-more-girls-into-stem-careers-thoughts/",
     "https://madamambition.com/career-stories/page/2/",
-]
-
-INSIGHTS = [
+    # Insights
     "https://madamambition.com/what-are-the-kpi-for-executive-coaching/",
     "https://madamambition.com/working-mom-hacks/",
     "https://madamambition.com/purpose-of-executive-coaching-women/",
@@ -198,8 +187,9 @@ def crawl_all_links(start_url):
     return sorted(found_links)
 
 
-
-IMAGE_DIR = os.path.join(os.path.dirname(__file__), "..", "public", "articles", "images")
+IMAGE_DIR = os.path.join(
+    os.path.dirname(__file__), "..", "public", "articles", "images"
+)
 
 
 def download_images_from_excluded_urls():
@@ -210,7 +200,7 @@ def download_images_from_excluded_urls():
     for url in EXCLUDE_URLS:
         if "/feed/" in url or url.endswith(".xml") or "/comments/feed/" in url:
             continue
-            
+
         print(f"Checking images on: {url}")
         try:
             response = requests.get(url, timeout=15)
@@ -221,27 +211,29 @@ def download_images_from_excluded_urls():
                 src = img.get("src")
                 if not src:
                     continue
-                
+
                 # Resolve full image URL
                 img_url = urljoin(url, src)
                 # Clean URL (remove query params)
                 clean_img_url = img_url.split("?")[0]
                 img_name = os.path.basename(urlparse(clean_img_url).path)
-                
+
                 if not img_name or "." not in img_name:
                     continue
-                
+
                 target_path = os.path.join(IMAGE_DIR, img_name)
                 if os.path.exists(target_path):
                     continue
-                
+
                 print(f"Downloading {img_name} from {url}...")
                 img_response = requests.get(img_url, timeout=15)
                 if img_response.status_code == 200:
                     with open(target_path, "wb") as f:
                         f.write(img_response.content)
                 else:
-                    print(f"  Failed to download {img_name}: {img_response.status_code}")
+                    print(
+                        f"  Failed to download {img_name}: {img_response.status_code}"
+                    )
         except Exception as e:
             print(f"Error processing {url}: {e}")
 

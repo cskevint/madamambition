@@ -192,7 +192,7 @@ export default function Home() {
                   {article.excerpt}
                 </p>
                 <Link
-                  href={`/${article.slug}`}
+                  href={`/${article.slug}/`}
                   className="mt-6 text-[10px] uppercase tracking-[0.3em] font-bold text-brand-copper border-b border-transparent hover:border-brand-copper transition-all pb-1"
                 >
                   Read More
@@ -202,7 +202,7 @@ export default function Home() {
           </div>
 
           <Link
-            href="/career-stories"
+            href="/career-stories/"
             className="bg-black text-white px-10 py-4 uppercase text-xs tracking-[0.2em] font-bold hover:bg-brand-nav transition-all"
           >
             All Career Stories

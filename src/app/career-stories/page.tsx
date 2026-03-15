@@ -35,7 +35,7 @@ export default function CareerStoriesPage() {
               <article key={article.slug} className="flex flex-col group h-full">
                 {/* Image Container */}
                 <Link
-                  href={`/${article.slug}`}
+                  href={`/${article.slug}/`}
                   className="block aspect-video relative overflow-hidden bg-gray-100 mb-8 shadow-sm group-hover:shadow-md transition-shadow duration-300"
                 >
                   <Image
@@ -48,9 +48,9 @@ export default function CareerStoriesPage() {
                 </Link>
 
                 {/* Content */}
-                <div className="flex flex-col flex-grow">
+                <div className="flex flex-col grow">
                   <h2 className="font-serif text-2xl font-bold text-brand-brown mb-4 leading-tight group-hover:text-brand-copper transition-colors">
-                    <Link href={`/${article.slug}`}>{article.title}</Link>
+                    <Link href={`/${article.slug}/`}>{article.title}</Link>
                   </h2>
                   <div className="w-12 h-px bg-brand-beige mb-6 group-hover:w-20 transition-all duration-500"></div>
                   <p className="text-gray-500 font-light text-sm leading-relaxed line-clamp-3 mb-8">
@@ -58,7 +58,7 @@ export default function CareerStoriesPage() {
                   </p>
                   <div className="mt-auto">
                     <Link
-                      href={`/${article.slug}`}
+                      href={`/${article.slug}/`}
                       className="text-[10px] font-bold uppercase tracking-[0.3em] text-brand-copper hover:text-brand-brown transition-colors inline-flex items-center gap-2"
                     >
                       Read Story <span className="text-lg leading-none">→</span>

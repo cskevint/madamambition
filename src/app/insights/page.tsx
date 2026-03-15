@@ -36,7 +36,7 @@ export default function InsightsPage() {
                 <article key={article.slug} className="flex flex-col group h-full">
                   {/* Image Container */}
                   <Link
-                    href={`/${article.slug}`}
+                    href={`/${article.slug}/`}
                     className="block aspect-video relative overflow-hidden bg-gray-100 mb-8 border border-gray-100 group-hover:border-brand-copper/30 transition-colors duration-300"
                   >
                     <Image
@@ -50,14 +50,14 @@ export default function InsightsPage() {
                   {/* Content */}
                   <div className="flex flex-col flex-grow">
                     <h2 className="font-serif text-2xl font-bold text-brand-brown mb-4 leading-tight group-hover:text-brand-copper transition-colors">
-                      <Link href={`/${article.slug}`}>{article.title}</Link>
+                      <Link href={`/${article.slug}/`}>{article.title}</Link>
                     </h2>
                     <p className="text-gray-500 font-light text-sm leading-relaxed line-clamp-3 mb-8">
                       {article.excerpt}
                     </p>
                     <div className="mt-auto pt-6 border-t border-gray-100">
                       <Link
-                        href={`/${article.slug}`}
+                        href={`/${article.slug}/`}
                         className="text-[10px] font-bold uppercase tracking-[0.3em] text-brand-brown hover:text-brand-copper transition-colors"
                       >
                         Read Article

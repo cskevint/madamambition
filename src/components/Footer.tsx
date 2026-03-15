@@ -30,7 +30,7 @@ export default function Footer() {
             <ul className="space-y-6 text-sm font-bold uppercase tracking-widest">
               <li>
                 <Link
-                  href="/about"
+                  href="/about/"
                   className="hover:text-brand-copper transition-all inline-block hover:translate-x-2 duration-300"
                 >
                   About Madam Ambition
@@ -38,7 +38,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/executive-coaching"
+                  href="/executive-coaching/"
                   className="hover:text-brand-copper transition-all inline-block hover:translate-x-2 duration-300"
                 >
                   Executive Coaching
@@ -46,7 +46,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/career-stories"
+                  href="/career-stories/"
                   className="hover:text-brand-copper transition-all inline-block hover:translate-x-2 duration-300"
                 >
                   Career Stories
@@ -54,7 +54,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  href="/contact/"
                   className="hover:text-brand-copper transition-all inline-block hover:translate-x-2 duration-300"
                 >
                   Contact

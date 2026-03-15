@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: article.content.substring(0, 160).replace(/[#*_\[\]]/g, ""),
     openGraph: {
       images: [article.mainImage || "/default-image.jpg"],
-      url: `https://madamambition.com/${slug}`,
+      url: `https://madamambition.com/${slug}/`,
       type: "article",
     },
   };
@@ -62,7 +62,7 @@ export default async function ArticlePage({ params }: Props) {
             {/* Left Column (2/5 in Divi) */}
             <div className="lg:w-[40%] flex flex-col space-y-6">
               <div className="flex items-center text-[13px] tracking-wide text-brand-copper/90 font-medium">
-                <Link href={`/${article.category}`} className="hover:underline">
+                <Link href={`/${article.category}/`} className="hover:underline">
                   {categoryLabel}
                 </Link>
                 <span className="mx-2 text-gray-400">|</span>
@@ -113,7 +113,10 @@ export default async function ArticlePage({ params }: Props) {
       {/* Post-Article Navigation */}
       <footer className="border-t border-brand-beige mt-12 py-12 px-6">
         <div className="max-w-[800px] mx-auto flex justify-between items-center text-[11px] uppercase tracking-[0.2em] font-bold text-gray-400">
-          <Link href={`/${article.category}`} className="hover:text-brand-copper transition-colors">
+          <Link
+            href={`/${article.category}/`}
+            className="hover:text-brand-copper transition-colors"
+          >
             ← More Projects
           </Link>
           <Link href="/contact" className="hover:text-brand-copper transition-colors">

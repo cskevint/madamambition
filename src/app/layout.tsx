@@ -60,37 +60,37 @@ export default function RootLayout({
                   Home
                 </Link>
                 <Link
-                  href="/about"
+                  href="/about/"
                   className="text-brand-beige/85 hover:text-brand-beige transition-colors"
                 >
                   About
                 </Link>
                 <Link
-                  href="/executive-coaching"
+                  href="/executive-coaching/"
                   className="text-brand-beige/85 hover:text-brand-beige transition-colors"
                 >
                   Executive Coaching
                 </Link>
                 <Link
-                  href="/career-stories"
+                  href="/career-stories/"
                   className="text-brand-beige/85 hover:text-brand-beige transition-colors"
                 >
                   Career Stories
                 </Link>
                 <Link
-                  href="/insights"
+                  href="/insights/"
                   className="text-brand-beige/85 hover:text-brand-beige transition-colors"
                 >
                   Insights
                 </Link>
                 <Link
-                  href="/journal"
+                  href="/journal/"
                   className="text-brand-beige/85 hover:text-brand-beige transition-colors"
                 >
                   Journal
                 </Link>
                 <Link
-                  href="/contact"
+                  href="/contact/"
                   className="text-brand-beige/85 hover:text-brand-beige transition-colors"
                 >
                   Contact
