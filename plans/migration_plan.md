@@ -3,10 +3,11 @@
 **Target:** the live WordPress/Divi site at `https://www.madamambition.com`.
 **Measured:** 2026-07-25, Chrome at a 1440px viewport. All px values are from that width.
 
-**Progress:** 10 of 11 steps done. Every route is ported and verified; all 12 redirect
-families resolve. 🔴 Remaining: step 11 (header shrink-on-scroll and entrance animations,
-both cosmetic) and two flagged items needing your input — D2 (journal PDFs) and D1
-(`/chrysta-wilson/` canonical slug). See §3 for routes and §9 for the log.
+**Progress:** 10 of 11 steps done. Every route is ported and verified; all 14 redirect
+families resolve; the site no longer depends on the WordPress install for any asset.
+🔴 Remaining: step 11 (header shrink-on-scroll and entrance animations, both cosmetic) and
+one flagged item needing your input — D1 (`/chrysta-wilson/` canonical slug).
+See §3 for routes and §9 for the log.
 
 Throughout this document: **✅ = done and verified** · **🔴 = still to do**.
 
@@ -146,13 +147,16 @@ How the judgement calls were resolved:
 - **Pagination** collapses onto page 1. Acceptable for SEO, and since both listings render in
   full on one page, deep-paged inbound links still land on the content they pointed at.
 
-Implemented in `next.config.ts` as 12 `permanent: true` rules. All 12 verified returning 308
+Implemented in `next.config.ts` as 14 `permanent: true` rules (12 URL families plus the two
+relocated journal PDFs). All verified returning 308
 to the right target, with article, page and listing URLs confirmed *not* caught by the
 patterns (notably that `/:year(\\d{4})/:month(\\d{2})/` does not swallow article slugs).
 
-`results.json` itself is **not committed** — it is regenerable crawler output pinned to one
-deployment URL (now gitignored). Its findings are captured above, which is the durable form.
-Re-run `scripts/web_crawler.py` to refresh, and re-check after the redirects land.
+`scripts/results.json` is **committed** as the evidence behind this table — it is the only
+record of the paginated URLs, which no sitemap lists. Note it is a point-in-time crawl pinned
+to `madamambition.vercel.app`, so its 404s are now stale: every family above has since been
+redirected. Re-run `scripts/web_crawler.py` after deploying to confirm the list comes back
+clean.
 
 ### 4.3 Local URLs not on live
 
@@ -316,7 +320,7 @@ subtitle paragraph · image 666×443 with `IMG_SHADOW`.
 | ID | Divergence | Disposition |
 |---|---|---|
 | D1 | Live serves a career story at `/chrysta-wilson/`; ours is `/chrysta-wilson-founder-dei-coach-and-consultant/` (matches its `url:` metadata and its 54 siblings) | Keeping our slug + 301 from the short one. **Confirm which should be canonical.** |
-| D2 | `/journal-download/` exists on live; no local content for it | ✅ Page built from the live content, exact match. **Open:** its two PDFs (`Mindset-Journal_Col-1.pdf` 4.8 MB, `Mindset-Journal_BLW.pdf` 5.2 MB) still load from the WordPress uploads directory — the last hard dependency on the old site. Needs sign-off to copy them into `public/`. |
+| D2 | `/journal-download/` exists on live; no local content for it | ✅ **Closed.** Page built from the live content, exact match `[503,852]`. Both PDFs copied byte-for-byte into `public/journal/` (21 pages each; 4,795,275 and 5,247,557 bytes, verified against the source `Content-Length`). The original `wp-content` upload URLs 301 to the local copies, so links already in the wild keep working. **No remaining dependency on the WordPress install.** |
 | D3 | 4 `/category/*` + 19 `/tag/*` archives exist on live; tags aren't in the markdown | 301 to the nearest listing. Reproducing archives exactly needs new taxonomy data. |
 | D4 | `/about/` narrative — **corrected**: the narrative *is* on live, inside section 1's right column (5 plain 16px paragraphs beside the portrait, no blockquote). Live wording differs from ours, and live has a paragraph we lacked ("In the wake of the global pandemic…"). Two of our paragraphs ("When we look at the potential of women…", "We are dedicated to helping women…") appear nowhere on live | Live copy adopted; our 2 extra paragraphs **retained** per §0.1, which is the entire +196px difference in that section |
 | D5 | `/insights/` "Accelerate your growth" CTA — not on live | Kept, restyled |

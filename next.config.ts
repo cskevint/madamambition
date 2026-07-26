@@ -59,6 +59,20 @@ const redirects = async () => [
 
   // The old WordPress login surface has no equivalent.
   { source: "/sign-in", destination: "/", permanent: true },
+
+  // The Mindset Journal PDFs now live in public/journal/. Keep the original WordPress
+  // upload URLs working, since links to them are already out in the wild (ConvertKit emails
+  // among them). trailingSlash normalisation does not apply to paths with a file extension.
+  {
+    source: "/wp-content/uploads/2023/08/Mindset-Journal_Col-1.pdf",
+    destination: "/journal/Mindset-Journal_Col-1.pdf",
+    permanent: true,
+  },
+  {
+    source: "/wp-content/uploads/2023/08/Mindset-Journal_BLW.pdf",
+    destination: "/journal/Mindset-Journal_BLW.pdf",
+    permanent: true,
+  },
 ];
 
 const nextConfig: NextConfig = {

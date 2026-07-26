@@ -10,13 +10,8 @@ import { Resend } from "resend";
  * whenever RESEND_API_KEY is absent. Built here, a missing key degrades to a clear message
  * and the rest of the site is unaffected.
  *
- * Env (see .env.example):
- *   RESEND_API_KEY    required to actually send
- *   CONTACT_TO_EMAIL  recipient; defaults to hello@madamambition.com
- *   CONTACT_FROM_EMAIL sender; must be on a domain verified in Resend. Defaults to
- *                     onboarding@resend.dev, Resend's sandbox address, which can only
- *                     deliver to the Resend account owner — fine for testing, not for
- *                     production.
+ * Environment variables are documented in README.md ("Environment variables"):
+ * RESEND_API_KEY, CONTACT_TO_EMAIL, CONTACT_FROM_EMAIL.
  */
 
 const DEFAULT_TO = "hello@madamambition.com";

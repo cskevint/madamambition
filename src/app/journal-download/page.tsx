@@ -12,20 +12,19 @@ export const metadata: Metadata = {
  * The post-signup thank-you page for the Mindset Journal, mirroring the live
  * /journal-download/.
  *
- * NOTE: the two PDFs still point at the WordPress uploads directory on madamambition.com
- * (Mindset-Journal_Col-1.pdf, 4.8 MB and Mindset-Journal_BLW.pdf, 5.2 MB). They work today,
- * but they are the last hard dependency on the old site staying online — they should be
- * copied into `public/` and these hrefs made relative before the WordPress install is
- * retired. See plans/migration_plan.md §7, D2.
+ * Both PDFs are served from this repo (public/journal/), copied byte-for-byte from the
+ * WordPress uploads directory. The original wp-content URLs 301 to these, so links already
+ * in the wild — including any sent by ConvertKit — keep working. Nothing here depends on the
+ * old WordPress install any more.
  */
 const PDFS = [
   {
     label: "Download Colored Version",
-    href: "https://madamambition.com/wp-content/uploads/2023/08/Mindset-Journal_Col-1.pdf",
+    href: "/journal/Mindset-Journal_Col-1.pdf",
   },
   {
     label: "Download Black & White Version",
-    href: "https://madamambition.com/wp-content/uploads/2023/08/Mindset-Journal_BLW.pdf",
+    href: "/journal/Mindset-Journal_BLW.pdf",
   },
 ];
 

@@ -41,6 +41,3 @@ next-env.d.ts
 
 # scripts
 scripts/vendor
-# Crawler output — regenerable via scripts/web_crawler.py and pinned to one deployment URL.
-# Findings belong in plans/migration_plan.md §4.2b, not in the repo as an artifact.
-scripts/results.json
