@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { BTN } from "@/components/divi";
+import { BTN } from "@/components/primitives";
 import { sendEmail } from "./actions";
 
 /**

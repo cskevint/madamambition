@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { BTN, InteriorHero, JournalDetail } from "@/components/divi";
+import { BTN, InteriorHero, JournalDetail } from "@/components/primitives";
 
 export const metadata: Metadata = {
   title: "journal-download - Madam Ambition",
@@ -30,7 +30,7 @@ const PDFS = [
 
 export default function JournalDownload() {
   return (
-    <main className="divi-type font-sans antialiased bg-white text-black">
+    <main className="site-type font-sans antialiased bg-white text-black">
       <InteriorHero
         title={
           <>

@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 
-/* Divi image modules all carry the same drop shadow. */
+/* Every image carries the same drop shadow. */
 const IMG_SHADOW = "shadow-[0_2px_18px_0_rgba(0,0,0,0.3)]";
 
-/* Divi buttons: Marcellus 15px, 1px tracking, square corners. */
+/* Buttons: Marcellus 15px, 1px tracking, square corners. */
 const BTN = "inline-block font-sans text-[15px] leading-[25.5px] tracking-[1px] uppercase";
 
 /* The original copy indents its attributions with runs of "&nbsp; " rather than CSS. */
@@ -20,7 +20,7 @@ const COACHING_POINTS = [
 
 export default function Home() {
   return (
-    <main className="divi-type font-sans antialiased bg-white text-black">
+    <main className="site-type font-sans antialiased bg-white text-black">
       {/* 1. Hero Section */}
       <section className="bg-[linear-gradient(270deg,#e2cec0_43%,#f5e5d6_43%)] py-[5%]">
         <div className="w-[90%] max-w-[1296px] mx-auto flex flex-col min-[981px]:flex-row items-start min-[981px]:gap-[5.5%]">

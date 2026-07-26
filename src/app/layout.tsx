@@ -16,7 +16,7 @@ const abril = Abril_Fatface({
   variable: "--font-serif",
 });
 
-// Divi renders the pull-quote in Lora italic rather than the heading face.
+// The pull-quote is set in Lora italic rather than the heading face.
 const lora = Lora({
   weight: "400",
   style: "italic",
@@ -57,7 +57,7 @@ export default function RootLayout({
         className={`${marcellus.variable} ${abril.variable} ${lora.variable} font-sans antialiased text-black bg-white`}
       >
         <header className="sticky top-0 z-50 w-full bg-brand-nav shadow-[0_0_7px_0_rgba(0,0,0,0.1)]">
-          {/* Divi swaps to its mobile header at 980px, so the desktop breakpoint is 981px
+          {/* The live site swaps to its mobile header at 980px, so the desktop breakpoint is 981px
               rather than Tailwind's lg (1024px). */}
           <nav className="w-[80%] max-w-[1152px] mx-auto h-[80px] min-[981px]:h-[114px] flex items-center justify-between">
             {/* Logo area - Image only as per original */}
@@ -78,7 +78,7 @@ export default function RootLayout({
             </Link>
 
             {/* Desktop Navigation - Exact menu items and styling. The 26.6px item gap is
-                Divi's 22px li padding plus the ~4.6px inline-block whitespace gap the
+                the original 22px li padding plus the ~4.6px inline-block whitespace gap the
                 original markup produces between menu items. */}
             <ul className="hidden min-[981px]:flex items-center text-[14px] font-semibold">
               {NAV_ITEMS.map(({ href, label }, i) => (

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SOCIAL_LINKS } from "@/components/divi";
+import { SOCIAL_LINKS } from "@/components/primitives";
 
 const EXPLORE_LINKS = [
   { href: "/about/", label: "About Madam Ambition" },
@@ -10,7 +10,7 @@ const EXPLORE_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="divi-type w-full font-sans">
+    <footer className="site-type w-full font-sans">
       <div className="flex flex-col min-[981px]:flex-row bg-brand-beige">
         {/* About column */}
         <div className="min-[981px]:w-1/3 bg-brand-greyblue text-white px-[7%] py-[6%]">
@@ -63,15 +63,9 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="bg-brand-brown pt-[17px] pb-[30px] text-white">
-        <div className="w-[80%] max-w-[1152px] mx-auto pt-[15px] flex flex-col min-[981px]:flex-row min-[981px]:gap-[5.47%] gap-2">
-          <p className="min-[981px]:w-[64.8%] text-[16px] text-center min-[981px]:text-left">
+        <div className="w-[80%] max-w-[1152px] mx-auto pt-[15px]">
+          <p className="text-[16px] text-center min-[981px]:text-left">
             © 2026 Madam Ambition&nbsp; |&nbsp; All rights reserved
-          </p>
-          <p className="min-[981px]:w-[29.7%] text-[16px] text-center min-[981px]:text-right">
-            Website Designed and Cared for by{" "}
-            <a href="https://wearecreativa.com/" className="hover:underline">
-              CREATIVA
-            </a>
           </p>
         </div>
       </div>

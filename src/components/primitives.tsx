@@ -2,20 +2,20 @@ import Link from "next/link";
 import Image from "next/image";
 
 /**
- * Primitives shared by every page, matching the production Divi theme.
+ * Primitives shared by every page, matching the production site's design.
  * Measured from madamambition.com at a 1440px viewport — see plans/migration_plan.md §2.
  */
 
-/** Divi image modules all carry the same drop shadow and no border. */
+/** Every image on the live site carries the same drop shadow and no border. */
 export const IMG_SHADOW = "shadow-[0_2px_18px_0_rgba(0,0,0,0.3)]";
 
-/** Divi buttons: Marcellus 15px, 1px tracking, uppercase, square corners. */
+/** Buttons: Marcellus 15px, 1px tracking, uppercase, square corners. */
 export const BTN = "inline-block font-sans text-[15px] leading-[25.5px] tracking-[1px] uppercase";
 
 /** The default black button; `px`/`py` vary per placement so they stay caller-supplied. */
 export const BTN_DARK = `${BTN} bg-black text-white hover:bg-brand-nav transition-colors`;
 
-/** The Divi row container. Section padding is applied by the section, not here. */
+/** The standard row container. Section padding is applied by the section, not here. */
 export const ROW = "w-[80%] max-w-[1152px] mx-auto";
 
 /** The 270deg split background used by every interior hero. */
@@ -42,7 +42,7 @@ export function InteriorHero({
   imageWidth?: number;
   imageHeight?: number;
   narrow?: boolean;
-  /** Divi pads the text column down so the heading sits low beside the image. */
+  /** The text column is padded down so the heading sits low beside the image. */
   titleOffset?: number;
 }) {
   if (narrow) {
@@ -152,7 +152,7 @@ export const SOCIAL_LINKS = [
 ];
 
 /**
- * The Divi blog grid used by /insights/ and /career-stories/: three columns, 35px gutters,
+ * The article grid used by /insights/ and /career-stories/: three columns, 35px gutters,
  * and a white card of full-bleed thumbnail + 23px title + date. The live cards carry no
  * excerpt or read-more link (see plan §7, D6).
  *
@@ -191,7 +191,7 @@ export function ArticleGrid({
   );
 }
 
-/** Divi renders listing dates as "Jul 24, 2023"; the markdown stores "July 24, 2023". */
+/** Listings render dates as "Jul 24, 2023"; the markdown stores "July 24, 2023". */
 export function formatListingDate(date?: string): string | undefined {
   if (!date) return undefined;
   const parsed = new Date(date);

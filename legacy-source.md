@@ -1,6 +1,16 @@
-# Developer Documentation: Madam Ambition Technical & Brand Profile
+# Legacy source reference: the WordPress madamambition.com
 
-This document details the architectural structure, brand assets, and styling configurations for the "Madam Ambition" website. It is intended for AI coding agents and developers to ensure style consistency and technical compatibility.
+> **Scope.** This file documents the **old WordPress site** that this Next.js app replaced,
+> kept for provenance and as the origin of the brand values below. The theme and plugin names
+> here are the legacy stack's — they are not used anywhere in this repo's code. For how the
+> design is expressed in this app, see [`README.md`](README.md) and
+> [`plans/migration_plan.md`](plans/migration_plan.md); the primitives live in
+> `src/components/primitives.tsx`.
+>
+> The colour palette and type choices below are still authoritative and are mirrored in
+> `src/app/globals.css` under `@theme`.
+
+It details the architectural structure, brand assets, and styling configuration of the source site.
 
 ## 1. Technical Stack Overview
 

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { IMG_SHADOW, InteriorHero, ROW, SOCIAL_LINKS } from "@/components/divi";
+import { IMG_SHADOW, InteriorHero, ROW, SOCIAL_LINKS } from "@/components/primitives";
 import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function Contact() {
   return (
-    <main className="divi-type font-sans antialiased bg-white text-black">
+    <main className="site-type font-sans antialiased bg-white text-black">
       {/* 1. Hero — the narrow centred variant: 30px heading, no image */}
       <InteriorHero narrow title="Contact Madam Ambition" subtitle="We’d love to hear from you!" />
 

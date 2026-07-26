@@ -1,11 +1,11 @@
 # Madam Ambition
 
-Next.js 16 (App Router) rebuild of [madamambition.com](https://www.madamambition.com), which
-runs on WordPress with the Divi theme. Content lives as markdown in `articles/`; pages are
-statically generated.
+Next.js 16 (App Router) rebuild of [madamambition.com](https://www.madamambition.com).
+Content lives as markdown in `articles/`; pages are statically generated.
 
 - **Migration status and design system:** [`plans/migration_plan.md`](plans/migration_plan.md)
-- **Brand and Divi reference:** [`migration.md`](migration.md)
+- **Legacy source reference:** [`legacy-source.md`](legacy-source.md) — describes the WordPress site
+  this replaced, kept for provenance. Its vocabulary is the old stack's, not this app's.
 
 ## Getting started
 
@@ -58,16 +58,17 @@ public/articles/     Images
 public/journal/      Mindset Journal PDFs
 scripts/             Python crawler + archived copies of the old site
 src/app/             Routes; [slug] renders any article
-src/components/divi.tsx  Shared Divi primitives — read this before styling a new page
+src/components/primitives.tsx  Shared design primitives — read before styling a new page
 ```
 
 ## Conventions
 
 - `trailingSlash: true`. Internal links must include the trailing slash or they take a
   redirect hop.
-- Every page's `<main>` needs `className="divi-type"`, which supplies the Divi heading and
-  body metrics. Without it typography falls back to Tailwind defaults.
-- Divi's mobile breakpoint is **980px**, so use `min-[981px]:` rather than Tailwind's `md:`.
-- Vertical spacing is expressed as percentages of viewport width, matching Divi.
+- Every page's `<main>` needs `className="site-type"`, which supplies the heading and body
+  type metrics. Without it typography falls back to Tailwind defaults.
+- The design's mobile breakpoint is **980px**, so use `min-[981px]:` rather than Tailwind's
+  `md:`.
+- Vertical spacing is expressed as percentages of viewport width, matching the original.
 - Legacy WordPress URLs (categories, tags, date and author archives, pagination) are
   redirected in `next.config.ts`. `/feed/` is a real RSS feed, not a redirect.

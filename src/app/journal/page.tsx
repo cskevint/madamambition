@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { BTN, InteriorHero, JournalDetail, ROW } from "@/components/divi";
+import { BTN, InteriorHero, JournalDetail, ROW } from "@/components/primitives";
 
 export const metadata: Metadata = {
   title: "Journal - Madam Ambition",
@@ -12,7 +12,7 @@ const CONVERTKIT_ACTION = "https://app.convertkit.com/forms/4837251/subscription
 
 export default function Journal() {
   return (
-    <main className="divi-type font-sans antialiased bg-white text-black">
+    <main className="site-type font-sans antialiased bg-white text-black">
       {/* 1. Hero */}
       <InteriorHero
         title="Mindset Journal"
@@ -61,7 +61,7 @@ export default function Journal() {
         </form>
       </JournalDetail>
 
-      {/* 3. Divergence D7: this callout is not on the live page. Retained, restyled to Divi. */}
+      {/* 3. Divergence D7: this callout is not on the live page. Retained, restyled to match the rest of the site. */}
       <section className="bg-brand-copper pt-[4%] pb-[4%] text-white">
         <div className={`${ROW} text-center`}>
           <p className="font-quote italic text-[22px] leading-[33px]! text-brand-beige">

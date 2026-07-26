@@ -42,21 +42,21 @@ h6 {
    ignored. Every page now sets its own measured size (48px home, 35px interior, 30px
    contact, 26px articles), so the override is gone. Do not reintroduce it. */
 
-/* Divi parity for the `.divi-type` subtree (the home page and the footer):
+/* Typography parity for the `.site-type` subtree (the home page and the footer):
    headings sit on a 1.1 line-height with a 10px gap below, and body copy of
    every size inherits the same fixed 27.2px leading (so 20px lead-in text is
    still 27.2px). These are unlayered, matching the rules above, so any Tailwind
    utility that needs to win over them is marked `!`. */
-.divi-type :is(h1, h2, h3, h4, h5, h6) {
+.site-type :is(h1, h2, h3, h4, h5, h6) {
   line-height: 1.1;
   padding-bottom: 10px;
 }
 
-.divi-type :is(p, li) {
+.site-type :is(p, li) {
   line-height: 27.2px;
 }
 
-/* Divi pads the interior hero's text column down so the heading sits low beside the
+/* The interior hero's text column is padded down so the heading sits low beside the
    image. Desktop only — on mobile the columns stack and the offset would be dead space. */
 @media (min-width: 981px) {
   .hero-title-offset {
@@ -66,4 +66,4 @@ h6 {
 
 /* The former `.markdown-content` rules (paragraph spacing, blockquote, strong) lived here
    and were unlayered, so they silently beat every Tailwind utility. They are now handled by
-   @tailwindcss/typography on the article template, tuned to the Divi metrics. */
+   @tailwindcss/typography on the article template, tuned to the site type metrics. */

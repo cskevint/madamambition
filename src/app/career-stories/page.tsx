@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getAllArticles } from "../../../lib/markdown";
-import { ArticleGrid, InteriorHero, ROW, formatListingDate } from "@/components/divi";
+import { ArticleGrid, InteriorHero, ROW, formatListingDate } from "@/components/primitives";
 
 export const metadata: Metadata = {
   title: "Career Stories - Madam Ambition",
@@ -17,7 +17,7 @@ export default function CareerStoriesPage() {
   }));
 
   return (
-    <main className="divi-type font-sans antialiased bg-white text-black">
+    <main className="site-type font-sans antialiased bg-white text-black">
       {/* Heading matches the live page, which splits the title across two h1 lines. Where
           live renders "No Results Found" (its posts were unpublished), we list all 55. */}
       <InteriorHero

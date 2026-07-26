@@ -6,7 +6,7 @@ import {
   LetsChatSection,
   MissionValuesSection,
   ROW,
-} from "@/components/divi";
+} from "@/components/primitives";
 
 export const metadata: Metadata = {
   title: "About - Madam Ambition",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <main className="divi-type font-sans antialiased bg-white text-black">
+    <main className="site-type font-sans antialiased bg-white text-black">
       {/* 1. Hero */}
       <InteriorHero
         title="About Madam Ambition"

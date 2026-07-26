@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { HERO_GRADIENT, IMG_SHADOW, ROW } from "@/components/divi";
+import { HERO_GRADIENT, IMG_SHADOW, ROW } from "@/components/primitives";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -50,7 +50,7 @@ export default async function ArticlePage({ params }: Props) {
     .join(" ");
 
   return (
-    <main className="divi-type font-sans antialiased bg-white text-black">
+    <main className="site-type font-sans antialiased bg-white text-black">
       {/* 1. Hero — gradient split, 423 + 666 columns, 26px heading beside the featured image */}
       <section className={`${HERO_GRADIENT} py-[calc(4%_+_1.44px)]`}>
         <div
@@ -86,8 +86,8 @@ export default async function ArticlePage({ params }: Props) {
       </section>
 
       {/* 2. Body — a single full-width 1152px column, 16px/27.2px, paragraphs 16px apart.
-          `prose` supplies the list/table/heading rhythm markdown needs; the Divi metrics
-          below override its defaults, and .divi-type fixes the line-heights. */}
+          `prose` supplies the list/table/heading rhythm markdown needs; the metrics
+          below override its defaults, and .site-type fixes the line-heights. */}
       <section className="bg-white pt-[6%] pb-[6%]">
         <div className={ROW}>
           <div

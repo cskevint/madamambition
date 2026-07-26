@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getAllArticles } from "../../../lib/markdown";
-import { ArticleGrid, InteriorHero, ROW, formatListingDate } from "@/components/divi";
+import { ArticleGrid, InteriorHero, ROW, formatListingDate } from "@/components/primitives";
 
 export const metadata: Metadata = {
   title: "Insights - Madam Ambition",
@@ -17,7 +17,7 @@ export default function InsightsPage() {
   }));
 
   return (
-    <main className="divi-type font-sans antialiased bg-white text-black">
+    <main className="site-type font-sans antialiased bg-white text-black">
       <InteriorHero
         title="Insights"
         image="/articles/images/SelenaTrotter-MadamAmbition-40.jpg"

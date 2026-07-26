@@ -1,6 +1,10 @@
 # Migration Plan: Next.js app → madamambition.com parity
 
-**Target:** the live WordPress/Divi site at `https://www.madamambition.com`.
+**Target:** the live WordPress site at `https://www.madamambition.com`.
+
+Terminology: this repo does not use the old theme's vocabulary. Its page-builder markup
+(`.et_pb_*`) still appears in the measurement snippets below, because that is what the live
+DOM emits and those selectors are how you read it.
 **Measured:** 2026-07-25, Chrome at a 1440px viewport. All px values are from that width.
 
 **Progress:** 10 of 11 steps done. Every route is ported and verified; all 14 redirect
@@ -25,14 +29,14 @@ These override the "strict parity" reading of the original audit:
    and isn't covered above goes in the divergence register (§7) for a human decision.
 
 Consequence: several sections that appear only in the local app are **kept and restyled** to
-the Divi design system so they read as native, rather than removed. They are all logged in §7.
+the site's design system so they read as native, rather than removed. All logged in §7.
 
 ---
 
 ## 1. How the target was measured (repeat this per page)
 
 Screenshot diffing alone proved unreliable — it missed a 20px header shrink and mis-read a
-section background because of Divi's fade-in animations. Read the live DOM instead:
+section background because of the live site's fade-in animations. Read the live DOM instead:
 
 ```js
 // Section skeleton: order, height, background, column split
@@ -48,7 +52,7 @@ section background because of Divi's fade-in animations. Read the live DOM inste
 
 Two gotchas that will recur:
 
-- **Divi shrinks its fixed header on scroll** (114px → 94px, logo 96×91 → 79×75) and reduces
+- **The live site shrinks its fixed header on scroll** (114px → 94px, logo 96×91 → 79×75) and reduces
   `#page-container` padding to match, moving content up ~20px. Measure at `scrollY === 0` or
   you will encode the shrunken values.
 - **The live site's `<body>` sits at `-21px`**, so absolute page coords are offset. Measure
@@ -59,22 +63,22 @@ section 0, plus total document height.
 
 ---
 
-## 2. The Divi design system (already encoded — reuse it)
+## 2. The design system (already encoded — reuse it)
 
 Tokens in `src/app/globals.css` `@theme`; primitives in `src/app/page.tsx`.
 
 | Concept | Value | Where |
 |---|---|---|
 | Container | `w-[80%] max-w-[1152px] mx-auto` (hero rows: `w-[90%] max-w-[1296px]`) | every section |
-| Heading font | Abril Fatface (`font-serif`), line-height 1.1, `padding-bottom: 10px` | `.divi-type` |
-| Body font | Marcellus (`font-sans`), **fixed 27.2px leading at every size** | `.divi-type` |
+| Heading font | Abril Fatface (`font-serif`), line-height 1.1, `padding-bottom: 10px` | `.site-type` |
+| Body font | Marcellus (`font-sans`), **fixed 27.2px leading at every size** | `.site-type` |
 | Pull-quote font | Lora italic (`font-quote`) — *not* the heading face | `layout.tsx` |
 | Button | Marcellus 15px, `tracking-[1px]`, uppercase, square, `px-[40px] py-[10px]` | `BTN` |
 | Image shadow | `0 2px 18px 0 rgba(0,0,0,0.3)`, no border | `IMG_SHADOW` |
 | Section padding | percentages of **viewport** width (2/4/5/6/8/11%), not px | `page.tsx` |
 | Brand colours | `#0b242f` nav · `#f5e5d6` beige · `#e2cec0` dark beige · `#702315` brown · `#a8623d` copper · `#5b767e` grey-blue | `@theme` |
 
-**Apply `className="divi-type"` to every page's `<main>`.** Without it, headings and
+**Apply `className="site-type"` to every page's `<main>`.** Without it, headings and
 paragraphs fall back to Tailwind defaults and nothing lines up.
 
 ---
@@ -269,7 +273,7 @@ then delete the global rule. Live sizes:
 absent and there is no `@plugin` directive. Verified at runtime: no stylesheet contains a
 `prose` selector, so **every one of those classes emits nothing**.
 
-Per §0.3, install the plugin and retune its values to the Divi metrics (16px / 27.2px,
+Per §0.3, install the plugin and retune its values to the site type metrics (16px / 27.2px,
 `#000`, full 1152px column).
 
 ### 6.3 Markdown parser drops paren-style metadata — **high, functional**
@@ -289,7 +293,7 @@ only the scrolled state differs. Needs a client component with a scroll listener
 
 ### 6.5 No entrance animations — **low**
 
-Divi fades/slides rows in on first view (`et_had_animation`). Cosmetic.
+The live site fades/slides rows in on first view (`et_had_animation`). Cosmetic.
 
 ### 6.6 Smaller items
 
@@ -359,7 +363,7 @@ Steps 4–8 are independent once step 2 lands.
 | `/` home page | ✅ `430f53d` — parity ≤1px, total height 4099px on both |
 | Audit + URL plan | ✅ this document |
 | 1. Deps + parser fix | ✅ `@tailwindcss/typography` installed + `@plugin` directive; `lib/markdown.ts` regex fixed; `/yue-lulu-liu/` title restored; one empty `title:` backfilled |
-| 2. Shared components | ✅ `src/components/divi.tsx` — `InteriorHero`, `MissionValuesSection`, `LetsChatSection` + `IMG_SHADOW`/`BTN`/`ROW`/`HERO_GRADIENT` |
+| 2. Shared components | ✅ `src/components/primitives.tsx` — `InteriorHero`, `MissionValuesSection`, `LetsChatSection` + `IMG_SHADOW`/`BTN`/`ROW`/`HERO_GRADIENT` |
 | 3. `/about/` + `/executive-coaching/` | ✅ `/executive-coaching/` **exact**: sections `[503,925,510,521]` vs live `[503,925,510,521]`, total 3057 vs 3058. `/about/` sections 0/2/3 exact; §1 is +196px from the two retained D4 paragraphs |
 | 4. `/[slug]/` | ✅ Hero 528 exact, image `666x410` exact, body 16px/27.2px in the full 1152px column. Typography plugin needed a dev-server restart to emit; also removed the unlayered `.markdown-content` rules that were beating every utility |
 | 5. `/insights/` + `/career-stories/` | ✅ Shared `ArticleGrid` (3-up, 35px gutters, 19px card, full-bleed 1.6 thumb, 23px title, `Jul 24, 2023` date). `getAllArticles` now sorts newest-first, matching live's ordering |
@@ -396,5 +400,5 @@ Per page, at 1440px, app on `localhost:3000`:
    and a full `next build`, so a broken build cannot be committed.
 5. Check every redirect in §4.2 actually resolves.
 6. Spot-check a narrow viewport. Mobile was **not** verified for the home page — the Chrome
-   extension would not resize below 1440px; use devtools emulation. Divi's mobile breakpoint
+   extension would not resize below 1440px; use devtools emulation. The mobile breakpoint
    is **980px**, not Tailwind's `lg`; `layout.tsx` already uses `min-[981px]:`.
