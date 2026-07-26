@@ -1,8 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import { BTN, JournalDownloadLinks } from "@/components/primitives";
+import { JournalDownloadLinks } from "@/components/primitives";
 import { subscribeToJournal } from "./actions";
+
+/**
+ * The signup form keeps the live site's form styling, which is the embed's own look rather
+ * than the site button style: full-column-width fields with a 4px radius and a thin #e3e3e3
+ * border, 15px lower-case type, 15px gaps, and a copper submit button — no uppercase and no
+ * letter-spacing. Measured from the live /journal/ at 1440px.
+ */
+const FIELD =
+  "w-full h-[47px] px-[12px] bg-white text-[15px] text-black border border-[#e3e3e3] rounded-[4px] outline-none focus:border-brand-copper";
 
 /**
  * Mindset Journal signup. On success the download links are shown immediately as well as
@@ -43,34 +52,34 @@ export default function JournalSignupForm() {
   }
 
   return (
-    <form action={handleSubmit} className="mt-[20px] max-w-[420px]">
+    <form action={handleSubmit} className="mt-[20px] flex flex-col gap-[15px]">
       <label htmlFor="journal-first-name" className="sr-only">
-        First name
+        First Name
       </label>
       <input
         id="journal-first-name"
         name="firstName"
         type="text"
-        placeholder="First name"
+        placeholder="First Name"
         autoComplete="given-name"
-        className="w-full px-[16px] py-[12px] mb-[10px] bg-white border border-brand-darkbeige focus:border-brand-copper outline-none text-[16px]"
+        className={FIELD}
       />
 
       <label htmlFor="journal-email" className="sr-only">
-        Email address
+        Email Address
       </label>
       <input
         id="journal-email"
         name="email"
         type="email"
-        placeholder="Email address"
+        placeholder="Email Address"
         autoComplete="email"
         required
-        className="w-full px-[16px] py-[12px] mb-[10px] bg-white border border-brand-darkbeige focus:border-brand-copper outline-none text-[16px]"
+        className={FIELD}
       />
 
       {error ? (
-        <p className="pb-[1em] text-brand-brown" role="alert">
+        <p className="text-brand-brown" role="alert">
           {error}
         </p>
       ) : null}
@@ -78,9 +87,9 @@ export default function JournalSignupForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className={`${BTN} w-full bg-black text-white px-[40px] py-[10px] hover:bg-brand-nav transition-colors cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed`}
+        className="w-full h-[43px] bg-brand-copper text-white font-sans text-[15px] rounded-[4px] hover:bg-brand-brown transition-colors cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        {isSubmitting ? "Sending…" : "Send me the journal"}
+        {isSubmitting ? "Subscribing…" : "Subscribe"}
       </button>
     </form>
   );
