@@ -18,6 +18,7 @@
 
   --font-serif: var(--font-serif);
   --font-sans: var(--font-sans);
+  --font-quote: var(--font-quote);
 }
 
 body {
@@ -37,6 +38,20 @@ h6 {
 
 h1 {
   font-size: 30px;
+}
+
+/* Divi parity for the `.divi-type` subtree (the home page and the footer):
+   headings sit on a 1.1 line-height with a 10px gap below, and body copy of
+   every size inherits the same fixed 27.2px leading (so 20px lead-in text is
+   still 27.2px). These are unlayered, matching the rules above, so any Tailwind
+   utility that needs to win over them is marked `!`. */
+.divi-type :is(h1, h2, h3, h4, h5, h6) {
+  line-height: 1.1;
+  padding-bottom: 10px;
+}
+
+.divi-type :is(p, li) {
+  line-height: 27.2px;
 }
 
 /* Markdown Content Styling */

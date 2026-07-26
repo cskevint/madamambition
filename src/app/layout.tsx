@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Abril_Fatface, Marcellus } from "next/font/google";
+import { Abril_Fatface, Lora, Marcellus } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
 import "./globals.css";
@@ -16,6 +16,14 @@ const abril = Abril_Fatface({
   variable: "--font-serif",
 });
 
+// Divi renders the pull-quote in Lora italic rather than the heading face.
+const lora = Lora({
+  weight: "400",
+  style: "italic",
+  subsets: ["latin"],
+  variable: "--font-quote",
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://madamambition.com"),
   title: "Madam Ambition - Executive Coach for Women in Finance and Tech",
@@ -25,6 +33,15 @@ export const metadata: Metadata = {
 
 import Footer from "@/components/Footer";
 
+const NAV_ITEMS = [
+  { href: "/", label: "Home" },
+  { href: "/about/", label: "About" },
+  { href: "/executive-coaching/", label: "Executive Coaching" },
+  { href: "/insights/", label: "Insights" },
+  { href: "/journal/", label: "Journal" },
+  { href: "/contact/", label: "Contact" },
+];
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -33,74 +50,52 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${marcellus.variable} ${abril.variable} font-sans antialiased text-black bg-white`}
+        className={`${marcellus.variable} ${abril.variable} ${lora.variable} font-sans antialiased text-black bg-white`}
       >
-        <header className="sticky top-0 z-50 w-full bg-brand-nav border-b border-brand-greyblue/30 shadow-sm">
-          <nav className="max-w-7xl mx-auto px-6 h-[114px] flex items-center justify-between">
+        <header className="sticky top-0 z-50 w-full bg-brand-nav shadow-[0_0_7px_0_rgba(0,0,0,0.1)]">
+          {/* Divi swaps to its mobile header at 980px, so the desktop breakpoint is 981px
+              rather than Tailwind's lg (1024px). */}
+          <nav className="w-[80%] max-w-[1152px] mx-auto h-[80px] min-[981px]:h-[114px] flex items-center justify-between">
             {/* Logo area - Image only as per original */}
-            <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
-              <div className="relative h-[91px] w-[91px]">
-                <Image
-                  src="/articles/images/Madam-Ambition-Logo-New-Colors-1.png"
-                  alt="Madam Ambition"
-                  fill
-                  className="object-contain"
-                  priority
-                />
-              </div>
+            <Link
+              href="/"
+              className="flex items-center ml-[5px] hover:opacity-80 transition-opacity"
+            >
+              <Image
+                src="/articles/images/Madam-Ambition-Logo-New-Colors-1.png"
+                alt="Madam Ambition"
+                // Declared at 2x the 96x91 display box so Next serves a
+                // retina-sharp variant; the original is scaled by the browser.
+                width={192}
+                height={182}
+                className="w-[46px] h-[43px] min-[981px]:w-[96px] min-[981px]:h-[91px] object-contain"
+                priority
+              />
             </Link>
 
-            {/* Desktop Navigation - Exact menu items and styling */}
-            <div className="hidden lg:flex items-center">
-              <div className="flex space-x-6 text-[14px] font-semibold tracking-wide">
-                <Link
-                  href="/"
-                  className="text-brand-beige/85 hover:text-brand-beige transition-colors"
-                >
-                  Home
-                </Link>
-                <Link
-                  href="/about/"
-                  className="text-brand-beige/85 hover:text-brand-beige transition-colors"
-                >
-                  About
-                </Link>
-                <Link
-                  href="/executive-coaching/"
-                  className="text-brand-beige/85 hover:text-brand-beige transition-colors"
-                >
-                  Executive Coaching
-                </Link>
-                <Link
-                  href="/career-stories/"
-                  className="text-brand-beige/85 hover:text-brand-beige transition-colors"
-                >
-                  Career Stories
-                </Link>
-                <Link
-                  href="/insights/"
-                  className="text-brand-beige/85 hover:text-brand-beige transition-colors"
-                >
-                  Insights
-                </Link>
-                <Link
-                  href="/journal/"
-                  className="text-brand-beige/85 hover:text-brand-beige transition-colors"
-                >
-                  Journal
-                </Link>
-                <Link
-                  href="/contact/"
-                  className="text-brand-beige/85 hover:text-brand-beige transition-colors"
-                >
-                  Contact
-                </Link>
-              </div>
-            </div>
+            {/* Desktop Navigation - Exact menu items and styling. The 26.6px item gap is
+                Divi's 22px li padding plus the ~4.6px inline-block whitespace gap the
+                original markup produces between menu items. */}
+            <ul className="hidden min-[981px]:flex items-center text-[14px] font-semibold">
+              {NAV_ITEMS.map(({ href, label }, i) => (
+                <li key={href} className={i === NAV_ITEMS.length - 1 ? "" : "pr-[26.6px]"}>
+                  <Link
+                    href={href}
+                    className={
+                      href === "/"
+                        ? "text-brand-beige"
+                        : "text-[rgba(245,229,214,0.84)] hover:text-brand-beige transition-colors"
+                    }
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
 
             {/* Mobile Menu Button */}
-            <div className="lg:hidden flex items-center">
-              <button className="text-brand-beige p-2">
+            <div className="min-[981px]:hidden flex items-center">
+              <button className="text-brand-beige" aria-label="Menu">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-8 w-8"
