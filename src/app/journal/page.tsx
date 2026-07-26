@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
-import { BTN, InteriorHero, JournalDetail, ROW } from "@/components/primitives";
+import { InteriorHero, JournalDetail, ROW } from "@/components/primitives";
+import JournalSignupForm from "./JournalSignupForm";
 
 export const metadata: Metadata = {
   title: "Journal - Madam Ambition",
   description:
     "Download the Mindset Journal to help you reflect, plan and act in a meditative space so you build in yourself the capacity for true growth.",
 };
-
-/** The live page posts to Selena's ConvertKit form; keep the same destination. */
-const CONVERTKIT_ACTION = "https://app.convertkit.com/forms/4837251/subscriptions";
 
 export default function Journal() {
   return (
@@ -25,40 +23,7 @@ export default function Journal() {
 
       {/* 2. Journal detail + subscribe form */}
       <JournalDetail>
-        {/* A real ConvertKit subscription, replacing the previous placeholder whose onSubmit
-            called preventDefault and did nothing. Plain form post, so this page stays a
-            server component and can export metadata. */}
-        <form action={CONVERTKIT_ACTION} method="post" className="mt-[20px] max-w-[420px]">
-          <label htmlFor="ck-first-name" className="sr-only">
-            First name
-          </label>
-          <input
-            id="ck-first-name"
-            type="text"
-            name="fields[first_name]"
-            placeholder="First name"
-            autoComplete="given-name"
-            className="w-full px-[16px] py-[12px] mb-[10px] bg-white border border-brand-darkbeige focus:border-brand-copper outline-none text-[16px]"
-          />
-          <label htmlFor="ck-email" className="sr-only">
-            Email address
-          </label>
-          <input
-            id="ck-email"
-            type="email"
-            name="email_address"
-            placeholder="Email address"
-            autoComplete="email"
-            required
-            className="w-full px-[16px] py-[12px] mb-[10px] bg-white border border-brand-darkbeige focus:border-brand-copper outline-none text-[16px]"
-          />
-          <button
-            type="submit"
-            className={`${BTN} w-full bg-black text-white px-[40px] py-[10px] hover:bg-brand-nav transition-colors cursor-pointer`}
-          >
-            Subscribe
-          </button>
-        </form>
+        <JournalSignupForm />
       </JournalDetail>
 
       {/* 3. Divergence D7: this callout is not on the live page. Retained, restyled to match the rest of the site. */}

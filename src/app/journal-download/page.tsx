@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { BTN, InteriorHero, JournalDetail } from "@/components/primitives";
+import { InteriorHero, JournalDetail, JournalDownloadLinks } from "@/components/primitives";
 
 export const metadata: Metadata = {
   title: "journal-download - Madam Ambition",
@@ -13,21 +13,11 @@ export const metadata: Metadata = {
  * /journal-download/.
  *
  * Both PDFs are served from this repo (public/journal/), copied byte-for-byte from the
- * WordPress uploads directory. The original wp-content URLs 301 to these, so links already
- * in the wild — including any sent by ConvertKit — keep working. Nothing here depends on the
- * old WordPress install any more.
+ * WordPress uploads directory. The original wp-content URLs 301 to these, so links already in
+ * the wild keep working. Nothing here depends on the old WordPress install.
+ *
+ * Reachable directly, and linked from the signup email sent by /journal/.
  */
-const PDFS = [
-  {
-    label: "Download Colored Version",
-    href: "/journal/Mindset-Journal_Col-1.pdf",
-  },
-  {
-    label: "Download Black & White Version",
-    href: "/journal/Mindset-Journal_BLW.pdf",
-  },
-];
-
 export default function JournalDownload() {
   return (
     <main className="site-type font-sans antialiased bg-white text-black">
@@ -47,17 +37,7 @@ export default function JournalDownload() {
       />
 
       <JournalDetail>
-        <div className="flex flex-col items-start gap-[10px] mt-[20px]">
-          {PDFS.map(({ label, href }) => (
-            <a
-              key={href}
-              href={href}
-              className={`${BTN} bg-black text-white px-[40px] py-[10px] hover:bg-brand-nav transition-colors`}
-            >
-              {label}
-            </a>
-          ))}
-        </div>
+        <JournalDownloadLinks />
       </JournalDetail>
     </main>
   );

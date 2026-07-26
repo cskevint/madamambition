@@ -90,6 +90,42 @@ export function InteriorHero({
 }
 
 /**
+ * The Mindset Journal PDFs, served from public/journal/. Shared by /journal-download/ and the
+ * journal signup email, so the paths cannot drift apart.
+ */
+export const JOURNAL_PDFS = [
+  {
+    label: "Download Colored Version",
+    path: "/journal/Mindset-Journal_Col-1.pdf",
+    // Each button carries its own colour on the live site rather than the usual black:
+    // copper for the colour edition, muted grey-blue for the black & white one.
+    className: "bg-brand-copper",
+  },
+  {
+    label: "Download Black & White Version",
+    path: "/journal/Mindset-Journal_BLW.pdf",
+    className: "bg-brand-greyblue",
+  },
+];
+
+/** The two download buttons, stacked. Wider padding (50px) than the standard button. */
+export function JournalDownloadLinks() {
+  return (
+    <div className="flex flex-col items-start gap-[10px] mt-[20px]">
+      {JOURNAL_PDFS.map(({ label, path, className }) => (
+        <a
+          key={path}
+          href={path}
+          className={`${BTN} ${className} text-white px-[50px] py-[10px] hover:bg-brand-nav transition-colors`}
+        >
+          {label}
+        </a>
+      ))}
+    </div>
+  );
+}
+
+/**
  * The journal detail section — mockup image beside the description. Shared by /journal/
  * (which follows it with the ConvertKit signup) and /journal-download/ (the post-signup
  * thank-you page, which follows it with the PDF links). `children` is that action slot.

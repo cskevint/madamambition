@@ -97,9 +97,9 @@ paragraphs fall back to Tailwind defaults and nothing lines up.
 | `/executive-coaching/` | ✅ | yes | **Exact** `[503,925,510,521]`; total 3057 vs 3058 |
 | `/insights/` | ✅ | yes, 9 posts | Hero exact (503); grid 3-up, newest-first, matches live's first card |
 | `/career-stories/` | ✅ | **no** — "No Results Found" | Built, then **disabled** by default (§0.5). Returns 404; `CAREER_STORIES_ENABLED=true` restores it |
-| `/journal/` | ✅ | yes | **Exact** `[503,852]`; real ConvertKit form replaces the dead placeholder |
+| `/journal/` | ✅ | yes | **Exact** `[503,852]`. Signup now sends the journal via Resend instead of posting to ConvertKit (owner decision, 2026-07-26) — no third-party dependency |
 | `/contact/` | ✅ | yes | **Exact** `[272,925]`; Resend hardened; form split out so the page exports `metadata` |
-| `/journal-download/` | ✅ | yes | **Exact** `[503,852]`. PDFs still remote — see D2 |
+| `/journal-download/` | ✅ | yes | **Exact** `[503,852]`. PDFs self-hosted; buttons carry the live per-file colours (copper / grey-blue) |
 | `/[slug]/` posts | ✅ | yes | Hero exact (528), image exact, body 16px/27.2px in the full 1152px column |
 | `/[slug]/` career stories | ✅ | **no** — 404 | Same template; **disabled** by default (§0.5), so all 55 slugs 404. Content kept on disk |
 | `/feed/` | ✅ | yes | Real RSS at the original URL (64 items) rather than a redirect |

@@ -30,6 +30,7 @@ only for the contact form — every other page works without any configuration.
 | `CONTACT_TO_EMAIL` | No | `hello@madamambition.com` | Where contact submissions are delivered. |
 | `CONTACT_FROM_EMAIL` | No | `Madam Ambition <onboarding@resend.dev>` | Sender address. Must be on a domain verified in Resend. |
 | `CAREER_STORIES_ENABLED` | No | unset (**disabled**) | Set to `true` to publish the career stories. See below. |
+| `SITE_URL` | Recommended | Vercel's URL, else `https://madamambition.com` | Public origin used to build the **absolute** journal download links in outbound email. See the warning below. |
 
 ```bash
 # .env.local
@@ -65,7 +66,28 @@ Implementation: [`src/app/contact/actions.ts`](src/app/contact/actions.ts). The 
 is constructed lazily inside the action — `new Resend(undefined)` throws, so building it at
 module scope would take down the route whenever the key is absent.
 
-The journal signup on `/journal/` posts directly to ConvertKit and needs no key.
+### Journal signup
+
+`/journal/` no longer posts to ConvertKit. A server action ([`src/app/journal/actions.ts`](src/app/journal/actions.ts))
+sends two emails through Resend per signup:
+
+1. **To the subscriber** — a short message with absolute links to the PDFs in `public/journal/`.
+2. **To `CONTACT_TO_EMAIL`** — a notification that someone signed up, with reply-to set to them.
+
+The subscriber email is the one the visitor cares about, so its failure fails the request; the
+owner notification is best-effort, so a failure there never shows the visitor an error when
+they have already received their journal. On success the download links are also shown inline,
+so nobody has to wait on mail delivery.
+
+> **`SITE_URL` matters here.** The emailed links must be absolute. The fallback is
+> `https://madamambition.com`, which today resolves to the **old WordPress site** — it keeps
+> the PDFs under `/wp-content/uploads/`, not `/journal/`, so an emailed link would 404. Set
+> `SITE_URL` explicitly until DNS points at this app. On Vercel it is inferred from
+> `VERCEL_PROJECT_PRODUCTION_URL` / `VERCEL_URL`, so previews link to themselves.
+
+> **`CONTACT_FROM_EMAIL` is now load-bearing.** The default sandbox sender can only deliver to
+> the Resend account owner, so the *subscriber* email will not arrive until this is set to a
+> verified domain. The contact form tolerated this; journal signup does not.
 
 ## Project layout
 
