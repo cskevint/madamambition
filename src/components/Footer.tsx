@@ -33,9 +33,9 @@ const SOCIAL_LINKS = [
 export default function Footer() {
   return (
     <footer className="divi-type w-full font-sans">
-      <div className="flex flex-col md:flex-row bg-brand-beige">
+      <div className="flex flex-col min-[981px]:flex-row bg-brand-beige">
         {/* About column */}
-        <div className="md:w-1/3 bg-brand-greyblue text-white px-[7%] py-[6%]">
+        <div className="min-[981px]:w-1/3 bg-brand-greyblue text-white px-[7%] py-[6%]">
           <h3 className="font-serif text-[20px]">About Madam Ambition</h3>
           <p className="text-[15px]">
             Sharing knowledge is powerful. Women tell their stories and career paths to empower you
@@ -44,7 +44,7 @@ export default function Footer() {
           </p>
         </div>
         {/* Explore column */}
-        <div className="md:w-1/3 bg-brand-beige pt-[6%] pb-[6%] md:pb-0 text-center">
+        <div className="min-[981px]:w-1/3 bg-brand-beige pt-[6%] pb-[6%] min-[981px]:pb-0 text-center">
           <h2 className="font-serif text-[19px] text-brand-brown">Explore</h2>
           <p className="text-[17px] text-[#4b4b4b]">
             {EXPLORE_LINKS.map(({ href, label }, i) => (
@@ -58,7 +58,7 @@ export default function Footer() {
           </p>
         </div>
         {/* Social column */}
-        <div className="md:w-1/3 bg-brand-beige pt-[6%] pb-[6%] md:pb-0 text-center">
+        <div className="min-[981px]:w-1/3 bg-brand-beige pt-[6%] pb-[6%] min-[981px]:pb-0 text-center">
           <h3 className="font-serif text-[20px] text-brand-brown">Social Media Follow</h3>
           <ul className="flex justify-center pt-[10px]">
             {SOCIAL_LINKS.map(({ label, href, path }, i) => (
@@ -85,11 +85,11 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="bg-brand-brown pt-[17px] pb-[30px] text-white">
-        <div className="w-[80%] max-w-[1152px] mx-auto pt-[15px] flex flex-col md:flex-row md:gap-[5.47%] gap-2">
-          <p className="md:w-[64.8%] text-[16px] text-center md:text-left">
+        <div className="w-[80%] max-w-[1152px] mx-auto pt-[15px] flex flex-col min-[981px]:flex-row min-[981px]:gap-[5.47%] gap-2">
+          <p className="min-[981px]:w-[64.8%] text-[16px] text-center min-[981px]:text-left">
             © 2026 Madam Ambition&nbsp; |&nbsp; All rights reserved
           </p>
-          <p className="md:w-[29.7%] text-[16px] text-center md:text-right">
+          <p className="min-[981px]:w-[29.7%] text-[16px] text-center min-[981px]:text-right">
             Website Designed and Cared for by{" "}
             <a href="https://wearecreativa.com/" className="hover:underline">
               CREATIVA

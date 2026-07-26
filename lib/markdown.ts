@@ -68,14 +68,20 @@ export function getArticleBySlug(slug: string): Article | null {
 
   const contentLines: string[] = [];
 
-  // Matches either [//]: # "key: value" or [//]: # (key: value)
-  const commentRegex = /^\[\/\/\]: # ["\(]?(.*?):\s*(.*?)["]\)?$/;
+  // Matches either [//]: # "key: value" or [//]: # (key: value). The delimiters must be
+  // matched as a pair — an earlier version required a closing double quote, so paren-style
+  // comments silently fell through to the body and left title/main_image empty.
+  // Both captures are greedy and end-anchored so values may contain quotes or nested parens
+  // (e.g. "title: Yue (Lulu) Liu").
+  const commentRegex = /^\[\/\/\]: # (?:"(.*)"|\((.*)\))\s*$/;
 
   for (const line of lines) {
     const match = line.match(commentRegex);
-    if (match) {
-      const key = match[1].trim();
-      const value = match[2].trim();
+    // Split on the first colon only — values such as `url: https://…` contain their own.
+    const pair = match ? (match[1] ?? match[2]).match(/^(.*?):\s*([\s\S]*)$/) : null;
+    if (pair) {
+      const key = pair[1].trim();
+      const value = pair[2].trim();
       if (key === "title") title = value;
       else if (key === "url") url = value;
       else if (key === "filename") filename = value;

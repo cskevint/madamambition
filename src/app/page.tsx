@@ -23,9 +23,9 @@ export default function Home() {
     <main className="divi-type font-sans antialiased bg-white text-black">
       {/* 1. Hero Section */}
       <section className="bg-[linear-gradient(270deg,#e2cec0_43%,#f5e5d6_43%)] py-[5%]">
-        <div className="w-[90%] max-w-[1296px] mx-auto flex flex-col md:flex-row items-start md:gap-[5.5%]">
+        <div className="w-[90%] max-w-[1296px] mx-auto flex flex-col min-[981px]:flex-row items-start min-[981px]:gap-[5.5%]">
           {/* Left Column (2/5) */}
-          <div className="w-full md:w-[36.73%] md:pt-[142.69px]">
+          <div className="w-full pt-[20%] min-[768px]:pt-[10%] min-[981px]:w-[36.73%] min-[981px]:pt-[11.01%]">
             <h1 className="font-serif text-[48px]! tracking-[2px] uppercase text-brand-brown">
               Madam Ambition
             </h1>
@@ -47,7 +47,7 @@ export default function Home() {
             </div>
           </div>
           {/* Right Column (3/5) */}
-          <div className="w-full md:w-[57.77%] mt-12 md:mt-0">
+          <div className="w-full min-[981px]:w-[57.77%] mt-[30px] min-[981px]:mt-0">
             <Image
               src="/articles/images/SelenaTrotter-MadamAmbition-Executive-Coaching-1.jpg"
               alt="Selena Trotter - Madam Ambition Executive Coaching"
@@ -62,9 +62,9 @@ export default function Home() {
 
       {/* 2. Hi I'm Selena Section */}
       <section id="about" className="bg-white pt-[6%] pb-[calc(61px_+_2%)]">
-        <div className="w-[80%] max-w-[1152px] mx-auto flex flex-col md:flex-row items-start md:gap-[5.56%]">
+        <div className="w-[80%] max-w-[1152px] mx-auto flex flex-col min-[981px]:flex-row items-start min-[981px]:gap-[5.56%]">
           {/* Left Column (1/2) */}
-          <div className="w-full md:w-[47.22%]">
+          <div className="w-full min-[981px]:w-[47.22%]">
             <Image
               src="/articles/images/SelenaTrotter-MadamAmbition-97.jpg"
               alt="Selena Trotter"
@@ -74,7 +74,7 @@ export default function Home() {
             />
           </div>
           {/* Right Column (1/2) */}
-          <div className="w-full md:w-[47.22%] mt-12 md:mt-0 md:pt-[108.86px]">
+          <div className="w-full min-[981px]:w-[47.22%] mt-[30px] min-[981px]:mt-0 min-[981px]:pt-[108.86px]">
             <h2 className="font-serif text-[35px] text-brand-brown">Hi, I’m Selena Trotter,</h2>
             <h2 className="font-serif text-[35px] text-brand-brown">your Executive Coach</h2>
             <p className="pb-[1em]">
@@ -104,16 +104,16 @@ export default function Home() {
 
       {/* 3. Executive Coaching Section */}
       <section id="executive-coaching" className="bg-brand-copper pt-[8%] pb-[6%] text-white">
-        <div className="w-[80%] max-w-[1152px] mx-auto pb-[49px] border-b border-[#ebd9cb] flex flex-col lg:flex-row items-start lg:gap-[5.47%]">
+        <div className="w-[80%] max-w-[1152px] mx-auto pb-[49px] border-b border-[#ebd9cb] flex flex-col min-[981px]:flex-row items-start min-[981px]:gap-[5.47%]">
           {/* Quote Column (1/3) */}
-          <div className="w-full lg:w-[36.72%]">
+          <div className="w-full min-[981px]:w-[36.72%]">
             <h2 className="font-serif text-[28px] leading-[33.6px]!">
               &ldquo;Becoming&nbsp;is better than being&rdquo;
             </h2>
             <p>{`${NBSP.repeat(6)}— Dr. Carol S Dweck, PhD, Columbia University`}</p>
           </div>
           {/* Bullets Column (2/3) */}
-          <div className="w-full lg:w-[57.81%] mt-12 lg:mt-0">
+          <div className="w-full min-[981px]:w-[57.81%] mt-[30px] min-[981px]:mt-0">
             <h2 className="font-serif text-[30px]">Executive Coaching</h2>
             <ul className="list-disc pl-[16px] pb-[16px]">
               {COACHING_POINTS.map((point) => (
@@ -137,7 +137,7 @@ export default function Home() {
       {/* 4. Join Facebook Section */}
       <section className="bg-brand-beige pt-[calc(5%_+_45px)] pb-[7%] border-b-[15px] border-brand-nav">
         <div className="w-[80%] max-w-[1152px] mx-auto">
-          <div className="w-full md:w-[47.22%] mx-auto text-center">
+          <div className="w-full min-[981px]:w-[47.22%] mx-auto text-center">
             <h2 className="font-serif text-[26px] text-brand-brown">Join me on Facebook</h2>
             <p>to learn about mentorship opportunities and hear from the leaders.</p>
             <div className="mt-[31.67px]">
@@ -154,9 +154,9 @@ export default function Home() {
 
       {/* 5. Let's Chat Section */}
       <section id="contact" className="bg-white pt-[6%] pb-[calc(44px_+_2%)]">
-        <div className="w-[80%] max-w-[1152px] mx-auto flex flex-col md:flex-row items-start md:gap-[5.56%]">
+        <div className="w-[80%] max-w-[1152px] mx-auto flex flex-col min-[981px]:flex-row items-start min-[981px]:gap-[5.56%]">
           {/* Image */}
-          <div className="w-full md:w-[47.22%]">
+          <div className="w-full min-[981px]:w-[47.22%]">
             <Image
               src="/articles/images/SelenaTrotter-MadamAmbition-45.jpg"
               alt="Contact Selena Trotter"
@@ -166,7 +166,7 @@ export default function Home() {
             />
           </div>
           {/* Text Content */}
-          <div className="w-full md:w-[47.22%] mt-12 md:mt-0 md:pt-[65.31px]">
+          <div className="w-full min-[981px]:w-[47.22%] mt-[30px] min-[981px]:mt-0 min-[981px]:pt-[65.31px]">
             <h2 className="font-serif text-[26px] text-brand-brown">Let’s chat</h2>
             <p>
               Book a complimentary call to explore if Executive Coaching is right for you. We create
@@ -187,9 +187,9 @@ export default function Home() {
 
       {/* 6. Image Quote Section */}
       <section className="bg-brand-nav bg-[image:linear-gradient(rgba(11,36,47,0.7),rgba(11,36,47,0.7)),url('/articles/images/SelenaTrotter-MadamAmbition-40.jpg')] bg-cover bg-center pt-[13%] pb-[6%] border-b-[15px] border-[#f8f0e6]">
-        <div className="w-[80%] max-w-[1152px] mx-auto flex flex-col md:flex-row md:gap-[2.95%]">
-          <div className="hidden md:block md:w-[48.52%]" />
-          <div className="w-full md:w-[48.52%]">
+        <div className="w-[80%] max-w-[1152px] mx-auto flex flex-col min-[981px]:flex-row min-[981px]:gap-[2.95%]">
+          <div className="hidden min-[981px]:block min-[981px]:w-[48.52%]" />
+          <div className="w-full min-[981px]:w-[48.52%]">
             <blockquote className="mt-[20px] mb-[30px] border-l-[5px] border-white pl-[20px]">
               <p className="font-quote italic text-[30px] leading-[45px]! text-white">
                 {`“Let go of who you think you’re supposed to be; embrace who you are.”${NBSP.repeat(16)}– Brené Brown`}

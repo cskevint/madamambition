@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 :root {
   --background: #fbf7f3;
@@ -52,6 +53,14 @@ h1 {
 
 .divi-type :is(p, li) {
   line-height: 27.2px;
+}
+
+/* Divi pads the interior hero's text column down so the heading sits low beside the
+   image. Desktop only — on mobile the columns stack and the offset would be dead space. */
+@media (min-width: 981px) {
+  .hero-title-offset {
+    padding-top: var(--hero-title-offset, 148px);
+  }
 }
 
 /* Markdown Content Styling */

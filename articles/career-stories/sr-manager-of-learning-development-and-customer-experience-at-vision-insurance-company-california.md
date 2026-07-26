@@ -1,4 +1,4 @@
-[//]: # "title: "
+[//]: # "title: Amee Sheldon – Sr Manager of Learning & Development and Customer Experience at Vision Insurance Company, California"
 [//]: # "url: https://madamambition.com/sr-manager-of-learning-development-and-customer-experience-at-vision-insurance-company-california/"
 [//]: # "filename: sr-manager-of-learning-development-and-customer-experience-at-vision-insurance-company-california.md"
 [//]: # "main_image: /articles/images/33-scaled.jpg"
