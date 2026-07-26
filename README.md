@@ -29,6 +29,7 @@ only for the contact form — every other page works without any configuration.
 | `RESEND_API_KEY` | Yes, to send mail | — | API key from [resend.com](https://resend.com). Powers the `/contact/` form via a server action. Without it the form still renders and validates, but submitting returns "Email is not configured yet" and logs a warning server-side. |
 | `CONTACT_TO_EMAIL` | No | `hello@madamambition.com` | Where contact submissions are delivered. |
 | `CONTACT_FROM_EMAIL` | No | `Madam Ambition <onboarding@resend.dev>` | Sender address. Must be on a domain verified in Resend. |
+| `CAREER_STORIES_ENABLED` | No | unset (**disabled**) | Set to `true` to publish the career stories. See below. |
 
 ```bash
 # .env.local
@@ -41,6 +42,24 @@ CONTACT_FROM_EMAIL=Madam Ambition <hello@madamambition.com>
 > `onboarding@resend.dev`, is Resend's sandbox sender and can only deliver to the Resend
 > account owner's own address. It is fine for local testing and will silently fail to reach
 > anyone else in production.
+
+### Career stories
+
+The 55 articles in `articles/career-stories/` are **switched off by default**. While disabled:
+
+- `/career-stories/` and every career-story slug return a 404 (not an empty listing).
+- They are excluded from the RSS feed and from `generateStaticParams`, so they are never built.
+- The header nav and footer "Explore" links to them disappear.
+- Legacy `/category/career-stories/*` URLs fall through to `/insights/`, and the
+  `/chrysta-wilson/` redirect is dropped so it 404s like any unknown URL.
+
+Nothing is deleted — the markdown stays in the repo. Set `CAREER_STORIES_ENABLED=true` to
+bring it all back.
+
+Disabled is the default deliberately: if the variable is missing or misspelled in a
+deployment, the content stays hidden rather than leaking. Enabling has to be explicit.
+Implemented in [`lib/features.ts`](lib/features.ts); `next.config.ts` reads the same variable
+so the redirects stay consistent.
 
 Implementation: [`src/app/contact/actions.ts`](src/app/contact/actions.ts). The Resend client
 is constructed lazily inside the action — `new Resend(undefined)` throws, so building it at

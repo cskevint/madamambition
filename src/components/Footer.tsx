@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { SOCIAL_LINKS } from "@/components/primitives";
+import { careerStoriesEnabled } from "../../lib/features";
 
 const EXPLORE_LINKS = [
   { href: "/about/", label: "About Madam Ambition" },
   { href: "/executive-coaching/", label: "Executive Coaching" },
-  { href: "/career-stories/", label: "Career Stories" },
+  // Hidden unless the feature is enabled — see lib/features.ts.
+  ...(careerStoriesEnabled ? [{ href: "/career-stories/", label: "Career Stories" }] : []),
   { href: "/contact/", label: "Contact" },
 ];
 

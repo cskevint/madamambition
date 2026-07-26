@@ -27,6 +27,9 @@ These override the "strict parity" reading of the original audit:
 3. **Dependencies may be added** where they genuinely help.
 4. **Divergences get flagged, never destructively resolved.** Anything that differs from live
    and isn't covered above goes in the divergence register (§7) for a human decision.
+5. **Career stories are disabled** (added 2026-07-26). The listing, all 55 slugs, and every
+   link to them must behave as 404 — gated by `CAREER_STORIES_ENABLED`, off by default. The
+   markdown stays on disk; this is a publishing switch, not a deletion, so §0.1 still holds.
 
 Consequence: several sections that appear only in the local app are **kept and restyled** to
 the site's design system so they read as native, rather than removed. All logged in §7.
@@ -93,12 +96,12 @@ paragraphs fall back to Tailwind defaults and nothing lines up.
 | `/about/` | ✅ | yes | Sections 0/2/3 exact `[503,·,510,521]`; §1 +196px from the two retained D4 paragraphs |
 | `/executive-coaching/` | ✅ | yes | **Exact** `[503,925,510,521]`; total 3057 vs 3058 |
 | `/insights/` | ✅ | yes, 9 posts | Hero exact (503); grid 3-up, newest-first, matches live's first card |
-| `/career-stories/` | ✅ | **no** — "No Results Found" | Live heading, our 55 articles instead of the empty grid (owner-confirmed) |
+| `/career-stories/` | ✅ | **no** — "No Results Found" | Built, then **disabled** by default (§0.5). Returns 404; `CAREER_STORIES_ENABLED=true` restores it |
 | `/journal/` | ✅ | yes | **Exact** `[503,852]`; real ConvertKit form replaces the dead placeholder |
 | `/contact/` | ✅ | yes | **Exact** `[272,925]`; Resend hardened; form split out so the page exports `metadata` |
 | `/journal-download/` | ✅ | yes | **Exact** `[503,852]`. PDFs still remote — see D2 |
 | `/[slug]/` posts | ✅ | yes | Hero exact (528), image exact, body 16px/27.2px in the full 1152px column |
-| `/[slug]/` career stories | ✅ | **no** — 404 | Same template; content kept per §0.1 |
+| `/[slug]/` career stories | ✅ | **no** — 404 | Same template; **disabled** by default (§0.5), so all 55 slugs 404. Content kept on disk |
 | `/feed/` | ✅ | yes | Real RSS at the original URL (64 items) rather than a redirect |
 
 ---
@@ -323,7 +326,7 @@ subtitle paragraph · image 666×443 with `IMG_SHADOW`.
 
 | ID | Divergence | Disposition |
 |---|---|---|
-| D1 | Live serves a career story at `/chrysta-wilson/`; ours is `/chrysta-wilson-founder-dei-coach-and-consultant/` (matches its `url:` metadata and its 54 siblings) | Keeping our slug + 301 from the short one. **Confirm which should be canonical.** |
+| D1 | Live serves a career story at `/chrysta-wilson/`; ours is `/chrysta-wilson-founder-dei-coach-and-consultant/` (matches its `url:` metadata and its 54 siblings) | Moot while career stories are disabled — the redirect is omitted so `/chrysta-wilson/` 404s. Revisit only if the feature is re-enabled. |
 | D2 | `/journal-download/` exists on live; no local content for it | ✅ **Closed.** Page built from the live content, exact match `[503,852]`. Both PDFs copied byte-for-byte into `public/journal/` (21 pages each; 4,795,275 and 5,247,557 bytes, verified against the source `Content-Length`). The original `wp-content` upload URLs 301 to the local copies, so links already in the wild keep working. **No remaining dependency on the WordPress install.** |
 | D3 | 4 `/category/*` + 19 `/tag/*` archives exist on live; tags aren't in the markdown | 301 to the nearest listing. Reproducing archives exactly needs new taxonomy data. |
 | D4 | `/about/` narrative — **corrected**: the narrative *is* on live, inside section 1's right column (5 plain 16px paragraphs beside the portrait, no blockquote). Live wording differs from ours, and live has a paragraph we lacked ("In the wake of the global pandemic…"). Two of our paragraphs ("When we look at the potential of women…", "We are dedicated to helping women…") appear nowhere on live | Live copy adopted; our 2 extra paragraphs **retained** per §0.1, which is the entire +196px difference in that section |
@@ -332,8 +335,8 @@ subtitle paragraph · image 666×443 with `IMG_SHADOW`.
 | D7 | `/journal/` copper quote callout — not on live | Kept, restyled |
 | D8 | `/contact/` "Follow the Journey" socials — not on live | Kept, links wired to real URLs |
 | D9 | `/[slug]/` breadcrumb + post-footer nav — not on live | Kept, "More Projects" wording fixed |
-| D10 | Career stories absent from live entirely (404 + empty listing + missing from sitemap) | Kept per §0.1. **Worth checking whether the production removal was intentional.** |
-| D11 | Live nav omits "Career Stories" (footer only) because that content was unpublished there | ✅ **Resolved by owner 2026-07-26: keep it in the nav.** Restored in `layout.tsx` after Executive Coaching. Deliberate, documented divergence from live |
+| D10 | Career stories absent from live entirely (404 + empty listing + missing from sitemap) | ✅ Resolved: the upstream removal *was* intentional, so career stories are now disabled here too (§0.5). Content retained on disk. |
+| D11 | Live nav omits "Career Stories" (footer only) because that content was unpublished there | ✅ Superseded by §0.5: the nav item is now conditional on `CAREER_STORIES_ENABLED` and hidden by default, which matches the live nav |
 | D12 | Contact form uses Resend, not Ninja Forms | Kept — functionally equivalent, better |
 
 ---

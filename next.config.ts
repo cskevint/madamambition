@@ -8,22 +8,35 @@ import type { NextConfig } from "next";
  * touches them. These cover the WordPress-generated surfaces (taxonomy, date and author
  * archives, pagination) that a static Next site does not reproduce.
  */
-const redirects = async () => [
-  // A career story that live re-published under a shorter slug. Ours keeps the original
-  // long slug, matching its `url:` metadata and its 54 siblings (divergence D1).
-  {
-    source: "/chrysta-wilson",
-    destination: "/chrysta-wilson-founder-dei-coach-and-consultant/",
-    permanent: true,
-  },
+/**
+ * Career stories are disabled by default (lib/features.ts). When they are off, anything that
+ * would land on them must 404 rather than redirect to a 404 — so those rules are omitted
+ * entirely and the career-story category archives fall through to /insights/.
+ */
+const careerStoriesEnabled = ["true", "1", "yes", "on"].includes(
+  (process.env.CAREER_STORIES_ENABLED ?? "").trim().toLowerCase(),
+);
 
-  // Category archives. The career-stories ones were unpublished upstream; point them at the
-  // listing that now carries that content.
-  {
-    source: "/category/career-stories/:path*",
-    destination: "/career-stories/",
-    permanent: true,
-  },
+const careerStoryRedirects = careerStoriesEnabled
+  ? [
+      // A career story that live re-published under a shorter slug. Ours keeps the original
+      // long slug, matching its `url:` metadata and its 54 siblings (divergence D1).
+      {
+        source: "/chrysta-wilson",
+        destination: "/chrysta-wilson-founder-dei-coach-and-consultant/",
+        permanent: true,
+      },
+      {
+        source: "/category/career-stories/:path*",
+        destination: "/career-stories/",
+        permanent: true,
+      },
+      { source: "/career-stories/page/:path*", destination: "/career-stories/", permanent: true },
+    ]
+  : [];
+
+const redirects = async () => [
+  ...careerStoryRedirects,
   {
     source: "/category/thoughts-on-finance-and-executive-coaching/:path*",
     destination: "/insights/",
@@ -47,9 +60,10 @@ const redirects = async () => [
   // page — the distinction is not modelled here (divergence D3).
   { source: "/author/:path*", destination: "/about/", permanent: true },
 
-  // Listing pagination. Both listings render in full on one page, so deep pages collapse to
+  // Listing pagination. The listing renders in full on one page, so deep pages collapse to
   // the first — inbound links land on a page that contains the content they pointed at.
-  { source: "/career-stories/page/:path*", destination: "/career-stories/", permanent: true },
+  // The career-stories equivalent is in careerStoryRedirects, since it must not exist while
+  // that listing 404s.
   { source: "/insights/page/:path*", destination: "/insights/", permanent: true },
 
   // WordPress comment feed: there are no comments here, so send it to the article feed.

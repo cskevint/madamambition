@@ -1,4 +1,5 @@
 import { getAllArticles, getArticleBySlug } from "../../../lib/markdown";
+import { isHiddenCategory } from "../../../lib/features";
 import ReactMarkdown from "react-markdown";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
@@ -15,7 +16,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const slug = resolvedParams.slug;
   const article = getArticleBySlug(slug);
 
-  if (!article) return { title: "Not Found" };
+  // A disabled category must not leak a real title or an indexable description.
+  if (!article || isHiddenCategory(article.category)) return { title: "Not Found" };
 
   return {
     title: `${article.title} - Madam Ambition`,
@@ -40,7 +42,9 @@ export default async function ArticlePage({ params }: Props) {
   const slug = resolvedParams.slug;
   const article = getArticleBySlug(slug);
 
-  if (!article) {
+  // getAllArticles already excludes disabled categories from generateStaticParams, but a
+  // direct hit on the slug still reaches here — it must 404 like any unknown URL.
+  if (!article || isHiddenCategory(article.category)) {
     notFound();
   }
 

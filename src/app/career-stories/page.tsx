@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { getAllArticles } from "../../../lib/markdown";
+import { careerStoriesEnabled } from "../../../lib/features";
 import { ArticleGrid, InteriorHero, ROW, formatListingDate } from "@/components/primitives";
 
 export const metadata: Metadata = {
@@ -9,6 +11,11 @@ export const metadata: Metadata = {
 };
 
 export default function CareerStoriesPage() {
+  // Disabled by default — see lib/features.ts. Renders the 404 page, not an empty listing.
+  if (!careerStoriesEnabled) {
+    notFound();
+  }
+
   const articles = getAllArticles("career-stories").map((a) => ({
     slug: a.slug,
     title: a.title,

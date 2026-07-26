@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { isHiddenCategory } from "./features";
 
 export interface Article {
   slug: string;
@@ -159,11 +160,19 @@ function byDateDesc(a: Article, b: Article): number {
   return tb - ta;
 }
 
+/**
+ * Articles that are servable under the current feature flags, newest first.
+ *
+ * Disabled categories are filtered out here so that every consumer — listings, the RSS feed,
+ * `generateStaticParams` — is consistent without each having to remember. Use
+ * `getArticleBySlug` directly if you need an article regardless of flags.
+ */
 export function getAllArticles(categoryFilter?: string): Article[] {
   const slugs = getArticleSlugs();
   const articles = slugs
     .map((slug) => getArticleBySlug(slug))
     .filter((a): a is Article => a !== null)
+    .filter((a) => !isHiddenCategory(a.category))
     .sort(byDateDesc);
 
   if (categoryFilter) {

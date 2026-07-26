@@ -32,15 +32,16 @@ export const metadata: Metadata = {
 };
 
 import Footer from "@/components/Footer";
+import { careerStoriesEnabled } from "../../lib/features";
 
-// Deliberate divergence from live (D11): the production nav dropped "Career Stories" when
-// that content was unpublished there. This app keeps the 55 career stories, so the nav item
-// stays. Position matches the pre-removal live nav.
+// "Career Stories" appears only when the feature is enabled (lib/features.ts); it is off by
+// default, matching the live nav, which dropped it when that content was unpublished.
+// Position matches the pre-removal live nav.
 const NAV_ITEMS = [
   { href: "/", label: "Home" },
   { href: "/about/", label: "About" },
   { href: "/executive-coaching/", label: "Executive Coaching" },
-  { href: "/career-stories/", label: "Career Stories" },
+  ...(careerStoriesEnabled ? [{ href: "/career-stories/", label: "Career Stories" }] : []),
   { href: "/insights/", label: "Insights" },
   { href: "/journal/", label: "Journal" },
   { href: "/contact/", label: "Contact" },
