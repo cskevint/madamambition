@@ -67,7 +67,7 @@ export default function Footer() {
       <div className="bg-brand-brown pt-[17px] pb-[30px] text-white">
         <div className="w-[80%] max-w-[1152px] mx-auto pt-[15px]">
           <p className="text-[16px] text-center min-[981px]:text-left">
-            © 2026 Madam Ambition&nbsp; |&nbsp; All rights reserved
+            © {new Date().getFullYear()} Madam Ambition&nbsp; |&nbsp; All rights reserved
           </p>
         </div>
       </div>
