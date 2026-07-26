@@ -147,11 +147,24 @@ export function getArticleBySlug(slug: string): Article | null {
   };
 }
 
+/** Newest first, matching the live blog grids. Undated articles sort last, then by title. */
+function byDateDesc(a: Article, b: Article): number {
+  const ta = a.date ? new Date(a.date).getTime() : Number.NaN;
+  const tb = b.date ? new Date(b.date).getTime() : Number.NaN;
+  const va = Number.isNaN(ta);
+  const vb = Number.isNaN(tb);
+  if (va && vb) return a.title.localeCompare(b.title);
+  if (va) return 1;
+  if (vb) return -1;
+  return tb - ta;
+}
+
 export function getAllArticles(categoryFilter?: string): Article[] {
   const slugs = getArticleSlugs();
   const articles = slugs
     .map((slug) => getArticleBySlug(slug))
-    .filter((a): a is Article => a !== null);
+    .filter((a): a is Article => a !== null)
+    .sort(byDateDesc);
 
   if (categoryFilter) {
     return articles.filter((a) => a.category === categoryFilter);

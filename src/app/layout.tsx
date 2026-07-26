@@ -33,10 +33,14 @@ export const metadata: Metadata = {
 
 import Footer from "@/components/Footer";
 
+// Deliberate divergence from live (D11): the production nav dropped "Career Stories" when
+// that content was unpublished there. This app keeps the 55 career stories, so the nav item
+// stays. Position matches the pre-removal live nav.
 const NAV_ITEMS = [
   { href: "/", label: "Home" },
   { href: "/about/", label: "About" },
   { href: "/executive-coaching/", label: "Executive Coaching" },
+  { href: "/career-stories/", label: "Career Stories" },
   { href: "/insights/", label: "Insights" },
   { href: "/journal/", label: "Journal" },
   { href: "/contact/", label: "Contact" },

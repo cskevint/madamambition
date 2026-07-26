@@ -2,34 +2,70 @@
 
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+/**
+ * Resend email delivery for the contact form.
+ *
+ * The client is built lazily inside the action: `new Resend(undefined)` throws
+ * "Missing API key", so constructing it at module scope would take down the whole route
+ * whenever RESEND_API_KEY is absent. Built here, a missing key degrades to a clear message
+ * and the rest of the site is unaffected.
+ *
+ * Env (see .env.example):
+ *   RESEND_API_KEY    required to actually send
+ *   CONTACT_TO_EMAIL  recipient; defaults to hello@madamambition.com
+ *   CONTACT_FROM_EMAIL sender; must be on a domain verified in Resend. Defaults to
+ *                     onboarding@resend.dev, Resend's sandbox address, which can only
+ *                     deliver to the Resend account owner — fine for testing, not for
+ *                     production.
+ */
 
-export async function sendEmail(formData: FormData) {
-  const name = formData.get("name") as string;
-  const email = formData.get("email") as string;
-  const message = formData.get("message") as string;
+const DEFAULT_TO = "hello@madamambition.com";
+const DEFAULT_FROM = "Madam Ambition <onboarding@resend.dev>";
+
+export type SendEmailResult = { success: boolean; error?: string };
+
+export async function sendEmail(formData: FormData): Promise<SendEmailResult> {
+  const name = (formData.get("name") as string | null)?.trim() ?? "";
+  const email = (formData.get("email") as string | null)?.trim() ?? "";
+  const message = (formData.get("message") as string | null)?.trim() ?? "";
 
   if (!name || !email || !message) {
     return { success: false, error: "All fields are required." };
   }
 
+  // Deliberately permissive: something@something.tld. Anything stricter rejects valid
+  // addresses, and Resend validates properly on its side anyway.
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    return { success: false, error: "Please enter a valid email address." };
+  }
+
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    console.error("Contact form: RESEND_API_KEY is not set; cannot send.");
+    return {
+      success: false,
+      error: "Email is not configured yet. Please reach out directly in the meantime.",
+    };
+  }
+
   try {
+    const resend = new Resend(apiKey);
     const { error } = await resend.emails.send({
-      from: "Madam Ambition <onboarding@resend.dev>",
-      to: ["hello@madamambition.com"], // Fallback email
-      subject: `New Contact Form Submission from ${name}`,
+      from: process.env.CONTACT_FROM_EMAIL || DEFAULT_FROM,
+      to: [process.env.CONTACT_TO_EMAIL || DEFAULT_TO],
+      subject: `New contact form submission from ${name}`,
       replyTo: email,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     });
 
     if (error) {
-      console.error("Resend Error:", error);
+      console.error("Resend error:", error);
       return { success: false, error: error.message };
     }
 
     return { success: true };
   } catch (err) {
-    console.error("Submission Error:", err);
+    console.error("Contact form submission error:", err);
     return { success: false, error: "Something went wrong. Please try again later." };
   }
 }

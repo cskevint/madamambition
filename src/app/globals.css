@@ -37,9 +37,10 @@ h6 {
   font-family: var(--font-serif);
 }
 
-h1 {
-  font-size: 30px;
-}
+/* The former global `h1 { font-size: 30px }` lived here. Being unlayered, it beat every
+   Tailwind utility regardless of specificity, so each page's `text-*` on an h1 was silently
+   ignored. Every page now sets its own measured size (48px home, 35px interior, 30px
+   contact, 26px articles), so the override is gone. Do not reintroduce it. */
 
 /* Divi parity for the `.divi-type` subtree (the home page and the footer):
    headings sit on a 1.1 line-height with a 10px gap below, and body copy of
@@ -63,19 +64,6 @@ h1 {
   }
 }
 
-/* Markdown Content Styling */
-.markdown-content p {
-  margin-bottom: 2rem;
-}
-
-.markdown-content blockquote {
-  border-left: 4px solid var(--color-brand-beige);
-  padding-left: 1.5rem;
-  font-style: italic;
-  margin: 2rem 0;
-}
-
-.markdown-content strong {
-  font-weight: 700;
-  color: black;
-}
+/* The former `.markdown-content` rules (paragraph spacing, blockquote, strong) lived here
+   and were unlayered, so they silently beat every Tailwind utility. They are now handled by
+   @tailwindcss/typography on the article template, tuned to the Divi metrics. */

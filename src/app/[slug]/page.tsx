@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { HERO_GRADIENT, IMG_SHADOW, ROW } from "@/components/divi";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -17,8 +18,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!article) return { title: "Not Found" };
 
   return {
-    title: `${article.title} | Madam Ambition`,
-    description: article.content.substring(0, 160).replace(/[#*_\[\]]/g, ""),
+    title: `${article.title} - Madam Ambition`,
+    description: article.excerpt.substring(0, 160),
     openGraph: {
       images: [article.mainImage || "/default-image.jpg"],
       url: `https://madamambition.com/${slug}/`,
@@ -49,81 +50,77 @@ export default async function ArticlePage({ params }: Props) {
     .join(" ");
 
   return (
-    <main className="bg-white min-h-screen font-sans antialiased text-black">
-      {/* Hero Section - Following the Divi-like format */}
-      <section
-        className="relative overflow-hidden pt-8 pb-12 lg:pt-12 lg:pb-16"
-        style={{
-          backgroundImage: "linear-gradient(270deg, #e2cec0 43%, #f5e5d6 43%)",
-        }}
-      >
-        <div className="max-w-[1200px] mx-auto px-6 text-left">
-          <div className="flex flex-col lg:flex-row items-center lg:items-center gap-12 lg:gap-0">
-            {/* Left Column (2/5 in Divi) */}
-            <div className="lg:w-[40%] flex flex-col space-y-6">
-              <div className="flex items-center text-[13px] tracking-wide text-brand-copper/90 font-medium">
-                <Link href={`/${article.category}/`} className="hover:underline">
-                  {categoryLabel}
-                </Link>
-                <span className="mx-2 text-gray-400">|</span>
-                <span className="text-gray-500">Madam Ambition Journal</span>
-              </div>
-
-              <h1 className="text-4xl md:text-5xl font-serif text-brand-brown font-normal leading-[1.1em] tracking-tight">
-                {article.title}
-              </h1>
-
-              {article.date && <div className="text-base text-gray-700 italic">{article.date}</div>}
+    <main className="divi-type font-sans antialiased bg-white text-black">
+      {/* 1. Hero — gradient split, 423 + 666 columns, 26px heading beside the featured image */}
+      <section className={`${HERO_GRADIENT} py-[calc(4%_+_1.44px)]`}>
+        <div
+          className={`${ROW} flex flex-col min-[981px]:flex-row items-start min-[981px]:gap-[5.47%]`}
+        >
+          <div className="w-full min-[981px]:w-[36.72%] min-[981px]:pt-[59px]">
+            {/* Divergence D9: the category breadcrumb is not on the live site. Retained. */}
+            <div className="text-[13px] tracking-wide text-brand-copper">
+              <Link href={`/${article.category}/`} className="hover:underline">
+                {categoryLabel}
+              </Link>
             </div>
-
-            {/* Right Column (3/5 in Divi) */}
-            <div className="lg:w-[60%] w-full flex justify-end">
-              <div className="relative w-full aspect-1024/724 border border-brand-darkbeige shadow-sm overflow-hidden rounded-sm">
-                {article.mainImage ? (
-                  <Image
-                    src={article.mainImage}
-                    alt={article.title}
-                    fill
-                    className="object-cover"
-                    priority
-                  />
-                ) : (
-                  <div className="w-full h-full bg-brand-beige flex items-center justify-center text-brand-brown/30 font-serif italic">
-                    [Article Featured Image]
-                  </div>
-                )}
+            <h1 className="font-serif text-[26px] text-brand-brown">{article.title}</h1>
+            {article.date && <div className="text-[16px]">{article.date}</div>}
+          </div>
+          <div className="w-full min-[981px]:w-[57.81%] mt-[30px] min-[981px]:mt-0">
+            {article.mainImage ? (
+              <Image
+                src={article.mainImage}
+                alt={article.title}
+                width={1023}
+                height={630}
+                className={`w-full h-auto ${IMG_SHADOW}`}
+                priority
+              />
+            ) : (
+              <div className="w-full aspect-[1023/630] bg-brand-beige flex items-center justify-center font-serif italic text-brand-brown/30">
+                [Article Featured Image]
               </div>
-            </div>
+            )}
           </div>
         </div>
       </section>
 
-      {/* Main Content Area - Refined Single Column */}
-      <section className="max-w-[800px] mx-auto py-16 px-6 md:py-24">
-        <div
-          className="prose prose-stone prose-lg md:prose-xl max-w-none text-black font-normal leading-relaxed markdown-content 
-          prose-headings:font-serif prose-headings:text-brand-brown prose-headings:font-normal prose-headings:mt-12 prose-headings:mb-6
-          prose-h2:text-3xl prose-p:mb-8 prose-strong:font-bold prose-strong:text-black 
-          prose-blockquote:border-l-[5px] prose-blockquote:border-brand-brown prose-blockquote:bg-transparent prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:my-10"
-        >
-          <ReactMarkdown>{article.content}</ReactMarkdown>
+      {/* 2. Body — a single full-width 1152px column, 16px/27.2px, paragraphs 16px apart.
+          `prose` supplies the list/table/heading rhythm markdown needs; the Divi metrics
+          below override its defaults, and .divi-type fixes the line-heights. */}
+      <section className="bg-white pt-[6%] pb-[6%]">
+        <div className={ROW}>
+          <div
+            className="prose max-w-none text-black
+              prose-p:text-[16px] prose-p:mt-0 prose-p:mb-0 prose-p:pb-[16px]
+              prose-headings:font-serif prose-headings:text-brand-brown prose-headings:font-normal
+              prose-headings:mt-[1em] prose-headings:mb-0
+              prose-h2:text-[26px] prose-h3:text-[22px] prose-h4:text-[20px]
+              prose-li:text-[16px] prose-li:my-0
+              prose-strong:text-black prose-strong:font-bold
+              prose-a:text-brand-copper prose-a:no-underline hover:prose-a:underline
+              prose-blockquote:border-l-[5px] prose-blockquote:border-brand-copper
+              prose-blockquote:pl-[20px] prose-blockquote:not-italic prose-blockquote:font-normal
+              prose-img:shadow-[0_2px_18px_0_rgba(0,0,0,0.3)]"
+          >
+            <ReactMarkdown>{article.content}</ReactMarkdown>
+          </div>
         </div>
       </section>
 
-      {/* Post-Article Navigation */}
-      <footer className="border-t border-brand-beige mt-12 py-12 px-6">
-        <div className="max-w-[800px] mx-auto flex justify-between items-center text-[11px] uppercase tracking-[0.2em] font-bold text-gray-400">
-          <Link
-            href={`/${article.category}/`}
-            className="hover:text-brand-copper transition-colors"
-          >
-            ← More Projects
+      {/* 3. Post nav — divergence D9: not on the live site. Retained, wording corrected. */}
+      <section className="bg-white pb-[6%]">
+        <div
+          className={`${ROW} flex justify-between items-center border-t border-brand-beige pt-[30px] text-[13px] tracking-wide`}
+        >
+          <Link href={`/${article.category}/`} className="text-brand-copper hover:underline">
+            ← More {categoryLabel}
           </Link>
-          <Link href="/contact" className="hover:text-brand-copper transition-colors">
-            Get in Touch →
+          <Link href="/contact/" className="text-brand-copper hover:underline">
+            Get in touch →
           </Link>
         </div>
-      </footer>
+      </section>
     </main>
   );
 }

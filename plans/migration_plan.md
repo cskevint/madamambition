@@ -3,9 +3,10 @@
 **Target:** the live WordPress/Divi site at `https://www.madamambition.com`.
 **Measured:** 2026-07-25, Chrome at a 1440px viewport. All px values are from that width.
 
-**Progress:** 3 of 11 steps done — ✅ `/`, `/about/`, `/executive-coaching/`, shared components,
-dependencies and two parser bugs. 🔴 `/[slug]/`, `/insights/`, `/journal/`, `/contact/`,
-`/journal-download/`, redirects, and cleanup. See §3 for routes and §9 for the execution log.
+**Progress:** 10 of 11 steps done. Every route is ported and verified; all 12 redirect
+families resolve. 🔴 Remaining: step 11 (header shrink-on-scroll and entrance animations,
+both cosmetic) and two flagged items needing your input — D2 (journal PDFs) and D1
+(`/chrysta-wilson/` canonical slug). See §3 for routes and §9 for the log.
 
 Throughout this document: **✅ = done and verified** · **🔴 = still to do**.
 
@@ -83,16 +84,17 @@ paragraphs fall back to Tailwind defaults and nothing lines up.
 
 | Route | Ported | On live? | Notes |
 |---|---|---|---|
-| `/` | ✅ | yes | `430f53d` — parity ≤1px, 4099px both. Header shrink + animations outstanding (§6.4–6.5) |
-| `/executive-coaching/` | ✅ | yes | **Exact**: sections `[503,925,510,521]` = live; total 3057 vs 3058 |
-| `/about/` | ✅ | yes | Sections 0/2/3 exact; §1 +196px from the two retained D4 paragraphs |
-| `/[slug]/` posts | 🔴 | yes | Needs 1152px column, 26px `h1`, retuned `prose` (§6.2) |
-| `/[slug]/` career stories | 🔴 | **no** — 404 | Content **kept** per §0.1; shares the post template |
-| `/insights/` | 🔴 | yes, 9 posts | Hero + 3-up grid |
-| `/career-stories/` | 🔴 | **no** — "No Results Found" | Listing **kept** per §0.1 |
-| `/journal/` | 🔴 | yes | Hero + real ConvertKit form (currently a dead placeholder) |
-| `/contact/` | 🔴 | yes | Hero variant + form chrome; Resend action already works |
-| `/journal-download/` | 🔴 | yes | **No local content** — needs extraction (D2) |
+| `/` | ✅ | yes | Parity ≤1px, 4099px both. Header shrink + animations outstanding (§6.4–6.5) |
+| `/about/` | ✅ | yes | Sections 0/2/3 exact `[503,·,510,521]`; §1 +196px from the two retained D4 paragraphs |
+| `/executive-coaching/` | ✅ | yes | **Exact** `[503,925,510,521]`; total 3057 vs 3058 |
+| `/insights/` | ✅ | yes, 9 posts | Hero exact (503); grid 3-up, newest-first, matches live's first card |
+| `/career-stories/` | ✅ | **no** — "No Results Found" | Live heading, our 55 articles instead of the empty grid (owner-confirmed) |
+| `/journal/` | ✅ | yes | **Exact** `[503,852]`; real ConvertKit form replaces the dead placeholder |
+| `/contact/` | ✅ | yes | **Exact** `[272,925]`; Resend hardened; form split out so the page exports `metadata` |
+| `/journal-download/` | ✅ | yes | **Exact** `[503,852]`. PDFs still remote — see D2 |
+| `/[slug]/` posts | ✅ | yes | Hero exact (528), image exact, body 16px/27.2px in the full 1152px column |
+| `/[slug]/` career stories | ✅ | **no** — 404 | Same template; content kept per §0.1 |
+| `/feed/` | ✅ | yes | Real RSS at the original URL (64 items) rather than a redirect |
 
 ---
 
@@ -107,10 +109,10 @@ recorded URLs match their local route `/{slug}/` exactly. No redirects needed.
 
 | Live URL | Count | Status | Plan |
 |---|---|---|---|
-| `/chrysta-wilson/` | 1 | 200 — a career story at a **shorter slug** than ours | 301 → `/chrysta-wilson-founder-dei-coach-and-consultant/`. **Divergence D1** |
-| `/journal-download/` | 1 | 200, `h1` "Download your Mindset Journal" | Needs a real page; content must be extracted. **Divergence D2** |
-| `/category/*` | 4 | 2 live in sitemap; 4 referenced inside article bodies | 301 → `/insights/` or `/career-stories/`. **Divergence D3** |
-| `/tag/*` | 19 | 200 tag archives | 301 → `/insights/`. Tags are **not** in the markdown, so exact archives are not reproducible without new content. **Divergence D3** |
+| `/chrysta-wilson/` | 1 | 200 — a career story at a **shorter slug** than ours | ✅ 301 → `/chrysta-wilson-founder-dei-coach-and-consultant/`. **Divergence D1** |
+| `/journal-download/` | 1 | 200, `h1` "Download your Mindset Journal" | ✅ Real page built, exact match. PDFs still remote — **Divergence D2** |
+| `/category/*` | 4 | 2 live in sitemap; 4 referenced inside article bodies | ✅ 301 → `/career-stories/` or `/insights/` by category. **Divergence D3** |
+| `/tag/*` | 19 | 200 tag archives | ✅ 301 → `/insights/`. Tags are **not** in the markdown, so exact archives are not reproducible without new content. **Divergence D3** |
 
 The 4 category URLs referenced in article bodies:
 `/category/career-stories/`, `/category/career-stories/all-careers/`,
@@ -118,7 +120,7 @@ The 4 category URLs referenced in article bodies:
 `/category/thoughts-on-finance-and-executive-coaching/`.
 Only the last two survive in the live sitemap; the career-story ones died with the content.
 
-### 4.2b A prior crawl found 62 more 404s — 🔴 all still need redirects
+### 4.2b A prior crawl found 62 more 404s — ✅ all now redirected
 
 `scripts/results.json` (output of `scripts/web_crawler.py`, run against
 `madamambition.vercel.app`) recorded **70 URLs returning 200 and 62 returning 404**. The 404s
@@ -132,17 +134,21 @@ them entirely — mostly **paginated** archives:
 | WordPress internals | 18 | `/author/selenawp/` (+ pages 2–8), `/author/maribel/` (+ pages 2–6), `/feed/`, `/comments/feed/`, `/sign-in/` | see below |
 | Listing pagination | 1 | `/career-stories/page/2/` | `/career-stories/` |
 
-Judgement calls to confirm before implementing — **not** decided here:
+How the judgement calls were resolved:
 
-- **`/feed/` and `/comments/feed/`** should arguably be a *real* RSS feed rather than a
-  redirect; Next.js can generate one from the markdown. Redirecting an RSS endpoint to HTML
-  breaks subscribers.
-- **`/author/*`** → `/about/` is the natural target, but it discards the author distinction
-  (two authors: `selenawp`, `maribel`).
-- **`/sign-in/`** was a WordPress login surface with no equivalent here; a 410 Gone may be
-  more honest than a 301.
-- **Pagination** collapses many URLs onto one target, which is acceptable for SEO but means
-  deep-paged inbound links land on page 1.
+- **`/feed/` is NOT redirected.** It is served as a real RSS 2.0 feed at the original URL
+  (`src/app/feed/route.ts`, 64 items, `application/rss+xml`), because redirecting an RSS
+  endpoint to HTML breaks every existing subscriber. `/comments/feed/` → `/feed/`.
+- **`/author/*`** → `/about/`, collapsing the two WordPress authors (`selenawp`, `maribel`).
+  The author distinction is not modelled here.
+- **`/sign-in/`** → `/`. A 410 Gone would be more honest but needs middleware; revisit if the
+  crawl noise matters.
+- **Pagination** collapses onto page 1. Acceptable for SEO, and since both listings render in
+  full on one page, deep-paged inbound links still land on the content they pointed at.
+
+Implemented in `next.config.ts` as 12 `permanent: true` rules. All 12 verified returning 308
+to the right target, with article, page and listing URLs confirmed *not* caught by the
+patterns (notably that `/:year(\\d{4})/:month(\\d{2})/` does not swallow article slugs).
 
 `results.json` itself is **not committed** — it is regenerable crawler output pinned to one
 deployment URL (now gitignored). Its findings are captured above, which is the durable form.
@@ -310,7 +316,7 @@ subtitle paragraph · image 666×443 with `IMG_SHADOW`.
 | ID | Divergence | Disposition |
 |---|---|---|
 | D1 | Live serves a career story at `/chrysta-wilson/`; ours is `/chrysta-wilson-founder-dei-coach-and-consultant/` (matches its `url:` metadata and its 54 siblings) | Keeping our slug + 301 from the short one. **Confirm which should be canonical.** |
-| D2 | `/journal-download/` exists on live; no local content for it | Needs content extraction. Placeholder route + 301 to `/journal/` until then. |
+| D2 | `/journal-download/` exists on live; no local content for it | ✅ Page built from the live content, exact match. **Open:** its two PDFs (`Mindset-Journal_Col-1.pdf` 4.8 MB, `Mindset-Journal_BLW.pdf` 5.2 MB) still load from the WordPress uploads directory — the last hard dependency on the old site. Needs sign-off to copy them into `public/`. |
 | D3 | 4 `/category/*` + 19 `/tag/*` archives exist on live; tags aren't in the markdown | 301 to the nearest listing. Reproducing archives exactly needs new taxonomy data. |
 | D4 | `/about/` narrative — **corrected**: the narrative *is* on live, inside section 1's right column (5 plain 16px paragraphs beside the portrait, no blockquote). Live wording differs from ours, and live has a paragraph we lacked ("In the wake of the global pandemic…"). Two of our paragraphs ("When we look at the potential of women…", "We are dedicated to helping women…") appear nowhere on live | Live copy adopted; our 2 extra paragraphs **retained** per §0.1, which is the entire +196px difference in that section |
 | D5 | `/insights/` "Accelerate your growth" CTA — not on live | Kept, restyled |
@@ -319,7 +325,7 @@ subtitle paragraph · image 666×443 with `IMG_SHADOW`.
 | D8 | `/contact/` "Follow the Journey" socials — not on live | Kept, links wired to real URLs |
 | D9 | `/[slug]/` breadcrumb + post-footer nav — not on live | Kept, "More Projects" wording fixed |
 | D10 | Career stories absent from live entirely (404 + empty listing + missing from sitemap) | Kept per §0.1. **Worth checking whether the production removal was intentional.** |
-| D11 | Live nav omits "Career Stories" (footer only); home page was matched to that. If career stories stay, the nav item arguably should too | **Open question** |
+| D11 | Live nav omits "Career Stories" (footer only) because that content was unpublished there | ✅ **Resolved by owner 2026-07-26: keep it in the nav.** Restored in `layout.tsx` after Executive Coaching. Deliberate, documented divergence from live |
 | D12 | Contact form uses Resend, not Ninja Forms | Kept — functionally equivalent, better |
 
 ---
@@ -329,14 +335,14 @@ subtitle paragraph · image 666×443 with `IMG_SHADOW`.
 1. ✅ Dependencies + parser fix (§6.2, §6.3) — unblocks 64 article pages.
 2. ✅ Shared components (§6.7).
 3. ✅ `/about/` + `/executive-coaching/`.
-4. 🔴 `/[slug]/`.
-5. 🔴 `/insights/`.
-6. 🔴 `/journal/` (+ ConvertKit).
-7. 🔴 `/contact/`.
-8. 🔴 `/journal-download/` — new route, needs content extracted from live (D2).
-9. 🔴 Redirects + trailing slashes + `metadata` (§4.4, §6.6).
-10. 🔴 Retire the global `h1` rule (§6.1).
-11. 🔴 Optional: header shrink, animations.
+4. ✅ `/[slug]/`.
+5. ✅ `/insights/` (and `/career-stories/`).
+6. ✅ `/journal/` (+ ConvertKit).
+7. ✅ `/contact/` (+ Resend hardening).
+8. ✅ `/journal-download/` — built; PDFs still remote (D2).
+9. ✅ Redirects + trailing slashes + `metadata` + real `/feed/` (§4.4, §6.6).
+10. ✅ Retire the global `h1` rule (§6.1).
+11. 🔴 Optional: header shrink, animations — **the only work left**.
 
 Steps 4–8 are independent once step 2 lands.
 
@@ -351,14 +357,14 @@ Steps 4–8 are independent once step 2 lands.
 | 1. Deps + parser fix | ✅ `@tailwindcss/typography` installed + `@plugin` directive; `lib/markdown.ts` regex fixed; `/yue-lulu-liu/` title restored; one empty `title:` backfilled |
 | 2. Shared components | ✅ `src/components/divi.tsx` — `InteriorHero`, `MissionValuesSection`, `LetsChatSection` + `IMG_SHADOW`/`BTN`/`ROW`/`HERO_GRADIENT` |
 | 3. `/about/` + `/executive-coaching/` | ✅ `/executive-coaching/` **exact**: sections `[503,925,510,521]` vs live `[503,925,510,521]`, total 3057 vs 3058. `/about/` sections 0/2/3 exact; §1 is +196px from the two retained D4 paragraphs |
-| 4. `/[slug]/` | 🔴 next — plugin is installed but the page still needs the 1152px column, 26px `h1` and retuned `prose` values |
-| 5. `/insights/` | 🔴 |
-| 6. `/journal/` (+ ConvertKit) | 🔴 |
-| 7. `/contact/` | 🔴 |
-| 8. `/journal-download/` | 🔴 — no local content; needs extraction from live (D2) |
-| 9. Redirects + trailing slashes + `metadata` | 🔴 — `metadata` added to `/about/` and `/executive-coaching/` only |
-| 10. Retire global `h1` rule | 🔴 — blocked until all pages set explicit sizes |
-| 11. Header shrink, animations | 🔴 |
+| 4. `/[slug]/` | ✅ Hero 528 exact, image `666x410` exact, body 16px/27.2px in the full 1152px column. Typography plugin needed a dev-server restart to emit; also removed the unlayered `.markdown-content` rules that were beating every utility |
+| 5. `/insights/` + `/career-stories/` | ✅ Shared `ArticleGrid` (3-up, 35px gutters, 19px card, full-bleed 1.6 thumb, 23px title, `Jul 24, 2023` date). `getAllArticles` now sorts newest-first, matching live's ordering |
+| 6. `/journal/` | ✅ **Exact** `[503,852]`. Real ConvertKit post to form 4837251; page is a server component again so it exports `metadata` |
+| 7. `/contact/` | ✅ **Exact** `[272,925]`. Narrow hero has its own padding (4%/2% + 4% row) and a 16px subtitle. Form extracted to `ContactForm.tsx` |
+| 8. `/journal-download/` | ✅ **Exact** `[503,852]`. Content extracted from live; shares `JournalDetail` with `/journal/` |
+| 9. Redirects + `metadata` + feed | ✅ 12 redirect families in `next.config.ts`, all 12 verified 308→correct target; every page exports `metadata`; real RSS at `/feed/` |
+| 10. Retire global `h1` rule | ✅ Removed, plus the `!` overrides it had forced. Verified 48/35/30/26px hold |
+| 11. Header shrink, animations | 🔴 Not started — the only remaining work |
 
 ### Measurements captured for the remaining pages
 

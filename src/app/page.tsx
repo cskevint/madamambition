@@ -26,7 +26,7 @@ export default function Home() {
         <div className="w-[90%] max-w-[1296px] mx-auto flex flex-col min-[981px]:flex-row items-start min-[981px]:gap-[5.5%]">
           {/* Left Column (2/5) */}
           <div className="w-full pt-[20%] min-[768px]:pt-[10%] min-[981px]:w-[36.73%] min-[981px]:pt-[11.01%]">
-            <h1 className="font-serif text-[48px]! tracking-[2px] uppercase text-brand-brown">
+            <h1 className="font-serif text-[48px] tracking-[2px] uppercase text-brand-brown">
               Madam Ambition
             </h1>
             <h2 className="font-serif text-[23px] text-brand-brown">Selena Trotter</h2>
