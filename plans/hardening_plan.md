@@ -3,9 +3,10 @@
 **Scope:** the GitHub-side and dependency-side work started 2026-07-28. Application behaviour is
 out of scope — for that, see [`migration_plan.md`](migration_plan.md).
 
-**Progress:** the substantive work is done, committed and pushed (`cf230b0`, `6006ade`, `fe90fe2`).
-CI is green on its first run. What remains is one verification gap, some PR cleanup, and a few
-standing watch items. Nothing below is blocking.
+**Progress:** the substantive work is done and pushed. CI is fully exercised — push, pull_request
+and concurrency cancellation all verified — and the first Dependabot backlog is cleared, with one
+PR (#9) green and awaiting merge. What remains is the Vercel Node reconciliation (§2, now
+actionable), standing watch items, and untested mail (§6). Nothing below is blocking.
 
 Throughout: **✅ = done and verified** · **🟡 = done but unverified** · **🔴 = still to do**
 
@@ -21,13 +22,14 @@ Throughout: **✅ = done and verified** · **🟡 = done but unverified** · **�
 | Push protection | ✅ enabled (was already) |
 | Actions default token = `read` | ✅ (was already) |
 | Dependabot alerts + security updates | ✅ enabled this session |
-| `.github/dependabot.yml` — grouped weekly | ✅ committed, ran on push |
+| `.github/dependabot.yml` — grouped weekly | ✅ ran, first backlog triaged (§5) |
 | Every *fixable* advisory | ✅ cleared in `6006ade` — open alerts went 43 → 4 |
 | `npm run typecheck` script | ✅ added, passes locally and in CI |
+| Vercel project | ✅ linked mid-session, production build green — but see §2 |
 
 ---
 
-## 1. ✅ / 🔴 CI runs green on push — the pull_request trigger is still unexercised
+## 1. ✅ CI is fully exercised
 
 **Verified:** run [`30374669794`](https://github.com/cskevint/madamambition/actions/runs/30374669794)
 on the `main` push, green in 40s. `actions/checkout@v7` and `actions/setup-node@v7` both resolved,
@@ -42,23 +44,32 @@ is a nicer way to see it than local output. See §7.
 exercised it within minutes. Four runs, three green and one red, and **the red one was correct**:
 see §5. CI earned its keep on day one.
 
-🔴 **Still unproven:** `cancel-in-progress` concurrency, which needs two pushes to the same ref in
-quick succession. Minor, and it will happen incidentally.
+✅ **`cancel-in-progress` is verified too**, also incidentally: merging five Dependabot PRs in
+quick succession cancelled four in-flight `main` runs and let only the last complete. That is the
+intended behaviour — the superseded runs were wasted work — and it means a green tick on `main`
+after a burst of merges belongs to the *final* state, not to each intermediate commit.
 
-## 2. 🔴 Reconcile the Node version with the real deploy platform
+## 2. 🔴 Reconcile the Node version with Vercel — now actionable
 
-`node-version: 24` is an **assumption**, not a mirror. There is no `.vercel/` link, and the only
-accessible Vercel scope (`codelab-institute`) has zero projects — so this app is not deployed
-anywhere we can inspect. Node 24 is Vercel's current default and satisfies Next's
-`engines: >=20.9.0`, which is why it was chosen.
+`node-version: 24` was chosen as an **assumption**: Vercel's default at the time, and it satisfies
+Next's `engines: >=20.9.0`. When this was written there was no deploy platform to compare against.
 
-When the site is first deployed:
+**That changed mid-session — the repo is now linked to Vercel.** Production and Preview deployments
+appear from `vercel[bot]`, and the production build is **green** (`● Ready`), so whatever Node
+Vercel selected does build this app. A `Vercel Preview Comments` check now runs on PRs alongside
+`verify`.
 
-1. Read the platform's actual Node version.
-2. If it differs, change the CI pin to match — a green CI run must mean the same thing as a green
-   deploy.
-3. Record the version in `package.json` `engines` so CI and the platform cannot silently drift.
-   Nothing in the repo currently states a Node version, which is why the pin had to be a guess.
+Still to do, because the local Vercel CLI (54.4.1, outdated) does not list the project and the
+MCP endpoint returned `401` for its build logs:
+
+1. Read the Node version from the Vercel project settings or a build log — **this has not been
+   verified**, only inferred to be compatible from the fact that the build succeeded.
+2. If it differs from 24, change the CI pin to match. A green CI run must mean the same thing as a
+   green deploy.
+3. Record it in `package.json` `engines` so the two cannot silently drift. Nothing in the repo
+   states a Node version, which is why the pin had to be a guess in the first place.
+4. Upgrade the CLI (`npm i -g vercel@latest`) — 54.4.1 could not see the project at all, which is
+   what blocked steps 1–3.
 
 ## 3. 🔴 Upgrade branch protection when a second contributor arrives
 
@@ -129,19 +140,35 @@ complete.
 forward fix exists and audit is falling back to the newest version predating the advisory. Also
 note `npm audit` claims `next@16.2.12` fixes postcss and sharp; it does not.
 
-## 5. 🔴 Close three superseded Dependabot PRs
+## 5. ✅ The first PR backlog is cleared
 
-Dependabot opened these in the window between alerts being enabled and the fixes being pushed, so
-all three are already done — by the same or a higher version:
-
-| PR | What it does | Superseded by |
+| PR | Bump | Outcome |
 | --- | --- | --- |
-| [#3](https://github.com/cskevint/madamambition/pull/3) | `next` 16.1.6 → 16.2.**11** | we are on 16.2.**12** |
-| [#2](https://github.com/cskevint/madamambition/pull/2) | Bump `uuid` and `resend` | `resend@6.18.1` removed `uuid` from the tree entirely |
-| [#1](https://github.com/cskevint/madamambition/pull/1) | `flatted` 3.4.1 → 3.4.3 | `npm audit fix` |
+| #1 | `flatted` 3.4.1 → 3.4.3 | merged — rebased to a lockfile no-op, already patched by `npm audit fix` |
+| #2 | `uuid` and `resend` | merged — also a no-op; `resend@6.18.1` had already removed `uuid` |
+| #3 | `next` 16.1.6 → 16.2.**11** | **closed** — `main` is on 16.2.**12**, so this was a downgrade, and it conflicted |
+| #4 | minor-and-patch group, 8 updates | closed by Dependabot, superseded by #9 |
+| #5 | `lint-staged` 16 → 17 | merged, CI green |
+| #6 | `@types/node` 20 → 26 | merged, CI green |
+| #7 | `eslint` 9 → 10 | **closed** by the new ignore rule — see §5b |
+| #8 | `lucide-react` 0.577 → 1.27 | merged, CI green |
+| #9 | minor-and-patch group, 9 updates | rebased, CI green, **awaiting merge** |
 
-Dependabot often closes these itself once the base branch is ahead, but it had not as of the push.
-Close them if they linger, and check the diff first — #3 in particular would be a **downgrade**.
+`main` at `2f60f3c` is verified green in CI, and re-verified locally after `npm ci` — typecheck,
+lint and build all pass with the three merged majors (`lucide-react` 1.x, `@types/node` 26,
+`lint-staged` 17) in place. Open alerts remain **4**, all from §4.
+
+**#9 is ready.** `date-fns` 4.1→4.4, `react`/`react-dom` 19.2.3→19.2.8, `@types/react`
+19.2.14→19.2.17, `@tailwindcss/postcss` 4.2.1→4.3.3, `eslint` 9.39.4→9.39.5, `oxfmt` 0.40→0.61,
+`oxlint` 1.55→1.76. `verify` and the Vercel preview check both pass; verified locally too.
+
+One thing CI cannot see was checked by hand, because `oxfmt` and `oxlint` run **only in the
+pre-commit hook**, never in CI: `oxfmt@0.61` reformats 6 files, but all of them are `.md`, `.html`
+or `.json`, and `lint-staged` is scoped to `*.{js,jsx,ts,tsx}` — so the hook will not sweep-reformat
+anything. All 24 JS/TS files are already correctly formatted under the new version, and
+`oxlint@1.76` reports zero issues. **Worth repeating this check on future `oxfmt`/`oxlint` bumps**:
+a formatter jump is exactly the kind of change that silently turns the next commit into a
+whole-tree diff, and CI would never tell you.
 
 ## 5b. 🔴 Decide whether major bumps need their own group
 
