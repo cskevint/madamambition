@@ -146,24 +146,30 @@ visitors are unaffected, which makes this easy to misdiagnose: the site looks fi
 non-JS tooling fails. From CI it would trip on every push, from rotating runner IPs that cannot
 be allow-listed.
 
-### Two dependency alerts cannot be fixed here
+### Three alerts cannot be fixed here — and `npm audit fix --force` will lie to you
 
 Dependabot alerts and security updates are enabled, and
 [`.github/dependabot.yml`](.github/dependabot.yml) groups minor/patch bumps into roughly one PR
-a week. Two open alerts are **not** actionable in this repo, because Next.js pins the vulnerable
-versions itself:
+a week. Framework **major** bumps (`next`, `react`, `react-dom`) are ignored on purpose; minors
+are not, since 16.1.x → 16.2.x carried a large batch of security fixes.
 
-- `next → postcss` is an **exact pin** at `8.4.31`, so the 8.5.x patches are unreachable. Note
-  that a *second* postcss coexists in the tree under `@tailwindcss/postcss` (`^8.5.6`); that
-  one is build-time only and Dependabot can move it freely, so postcss alerts here need reading
-  carefully — one copy is fixable and the other is not.
-- `next → sharp` is `^0.34.5`, and a caret on a `0.x` version pins the minor — so the `0.35.0`
+Three remaining advisories have **no forward fix**, because a parent pins the vulnerable version:
+
+- `next → postcss` is an **exact pin** at `8.4.31`, so the 8.5.x patches are unreachable.
+  A *second* postcss lives under `@tailwindcss/postcss` (`^8.5.6`) and tracks the latest — so
+  postcss alerts need reading carefully: one copy is fixable and the other is not.
+- `next → sharp` is `^0.34.5`, and a caret on a `0.x` version pins the minor, so the `0.35.0`
   patch is outside the range.
+- `minimatch@3.x → brace-expansion@^1.1.7`, deep in the eslint tree. The fix for the unbounded
+  expansion advisory landed only in `5.0.8`; there is **no 1.x patch**, and the advisory range
+  (`<=5.0.7`) matches every 1.x release. Dev-only, but it cascades — `minimatch` reports as
+  vulnerable, and with it `eslint`, `eslint-config-next`, and every `eslint-plugin-*`.
 
-Upgrading Next.js does not clear either one; `next@16.2.12` still carries both constraints.
-Dependabot may instead open a PR adding an `overrides` block, which diverges from what the
-framework expects — an override on `sharp` would affect Next.js image optimization. Read what
-these PRs actually change; close them and wait for the framework if the change is an override.
+Upgrading Next.js clears none of these; `next@16.2.12` still carries both of its pins.
 
-Framework **major** bumps (`next`, `react`, `react-dom`) are ignored in `dependabot.yml` on
-purpose. Minors are not: 16.1.x → 16.2.x carries security fixes.
+**The tell is the suggested fix.** `npm audit fix --force` proposes `next@9.3.3`, `eslint@4.0.0`
+and `eslint-config-next@0.2.4` — years-old downgrades. When `audit` suggests going *backwards*,
+it means no forward fix exists and it is picking the newest version predating the advisory. Never
+run it here. Dependabot's equivalent move is a PR adding an `overrides` block, which diverges
+from what the framework expects; an override on `sharp` would affect Next.js image
+optimization. Read what such PRs actually change, and close them and wait for the framework.
