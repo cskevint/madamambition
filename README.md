@@ -101,7 +101,7 @@ so nobody has to wait on mail delivery.
 ```
 articles/            Markdown content: career-stories/ and insights/
 lib/markdown.ts      Frontmatter parsing, sorting (newest first), excerpts
-plans/               Migration plan and audit
+plans/               Migration plan, audit, and the repo hardening plan
 public/articles/     Images
 public/journal/      Mindset Journal PDFs
 scripts/             Python crawler + archived copies of the old site
@@ -122,6 +122,9 @@ src/components/primitives.tsx  Shared design primitives — read before styling 
   redirected in `next.config.ts`. `/feed/` is a real RSS feed, not a redirect.
 
 ## CI and dependency security
+
+Remaining work, standing watch items and the decisions taken deliberately:
+[`plans/hardening_plan.md`](plans/hardening_plan.md).
 
 [`.github/workflows/ci.yml`](.github/workflows/ci.yml) runs typecheck, lint and build on pushes
 to `main` and on every pull request. `main` also has a ruleset blocking branch deletion and
