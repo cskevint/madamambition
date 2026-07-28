@@ -1,0 +1,38 @@
+version: 2
+
+# Grouping is the point. This lockfile has ~900 packages; ungrouped, Dependabot
+# opens a PR per package per bump, becomes noise, and the security PRs get lost
+# in the stream — which is worse than not running it at all. Target roughly one
+# PR per week.
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      npm-minor-and-patch:
+        patterns: ["*"]
+        update-types: ["minor", "patch"]
+    ignore:
+      # Framework majors stay deliberate. The 15 -> 16 upgrade renamed
+      # middleware.ts to proxy.ts and stopped running ESLint during `next
+      # build`; that kind of change is a reading task, not a merge task.
+      # Minors are NOT ignored — 16.1.6 -> 16.2.x carries security fixes.
+      - dependency-name: next
+        update-types: ["version-update:semver-major"]
+      - dependency-name: eslint-config-next
+        update-types: ["version-update:semver-major"]
+      - dependency-name: react
+        update-types: ["version-update:semver-major"]
+      - dependency-name: react-dom
+        update-types: ["version-update:semver-major"]
+
+  # Otherwise actions/checkout and actions/setup-node go stale silently.
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+    groups:
+      github-actions:
+        patterns: ["*"]

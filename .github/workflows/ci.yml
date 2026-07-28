@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# A newer push makes the in-flight run irrelevant.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+# Least privilege: nothing here writes to the repo.
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          # Matches Vercel's current default (Node 24 LTS), not the local version.
+          # A green run here has to mean the same thing as a green deploy.
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      # `next build` type-checks, but running tsc on its own makes a type error
+      # distinguishable from a build failure at a glance in the checks UI.
+      - run: npm run typecheck
+
+      # Next 16 no longer runs ESLint during `next build`, so this is not
+      # redundant with the build step below. The pre-commit hook runs oxlint,
+      # not eslint — this is the only place eslint runs.
+      - run: npm run lint
+
+      - run: npm run build
+
+# Deliberately NOT here: anything that sends requests at the live site,
+# including scripts/web_crawler.py. Vercel's automatic DDoS mitigation reads a
+# burst of requests (especially to dead WordPress paths) as vulnerability
+# scanning and starts returning 403 with `x-vercel-mitigated: challenge` on
+# every path for a sustained period, with Attack Mode off. Real browsers pass
+# the JS challenge, so visitors are unaffected, but all non-JS tooling breaks.
+# From CI it would trip on every push, from rotating runner IPs that cannot be
+# allow-listed. Keep production probing manual and local.

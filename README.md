@@ -14,10 +14,17 @@ npm install
 npm run dev        # http://localhost:3000
 ```
 
-Other scripts: `npm run build`, `npm run start`, `npm run lint`, `npm run format`.
+Other scripts: `npm run build`, `npm run start`, `npm run typecheck`, `npm run lint`,
+`npm run format`.
 
 A pre-commit hook runs `oxfmt`, `oxlint` and a full `next build`, so a broken build cannot be
 committed.
+
+**There are two linters and they do not overlap.** The pre-commit hook runs `oxlint` via
+`lint-staged`, on staged `*.{js,jsx,ts,tsx}` files only. `npm run lint` runs **eslint** with
+`eslint-config-next` (`core-web-vitals` + `typescript`) across the whole tree, and Next 16 no
+longer runs ESLint during `next build` — so eslint rules are enforced by CI and nowhere else.
+A commit can pass the hook and still fail `npm run lint`.
 
 ## Environment variables
 
@@ -113,3 +120,50 @@ src/components/primitives.tsx  Shared design primitives — read before styling 
 - Vertical spacing is expressed as percentages of viewport width, matching the original.
 - Legacy WordPress URLs (categories, tags, date and author archives, pagination) are
   redirected in `next.config.ts`. `/feed/` is a real RSS feed, not a redirect.
+
+## CI and dependency security
+
+[`.github/workflows/ci.yml`](.github/workflows/ci.yml) runs typecheck, lint and build on pushes
+to `main` and on every pull request. `main` also has a ruleset blocking branch deletion and
+non-fast-forward pushes — the two unrecoverable operations. Direct pushes stay allowed, so
+required status checks are deliberately **not** configured: they only gate pull request merges
+and would never evaluate. When a second contributor arrives, the upgrade is one API call adding
+`pull_request` and `required_status_checks` pointed at the `verify` job.
+
+CI pins `node-version: 24`, matching Vercel's current default. **This app is not linked to a
+Vercel project yet**, so that pin is an assumption rather than a mirror of a real build — check
+it against the platform's Node version when the site is first deployed, or record the version in
+an `engines` field so the two cannot drift.
+
+### Never point automated jobs at the live site
+
+`scripts/web_crawler.py` and its archived output in `scripts/oldsite/` exist for one-off
+migration work. Keep them manual. Vercel's automatic DDoS mitigation reads a burst of requests
+— especially to dead WordPress paths, of which `next.config.ts` redirects many — as
+vulnerability scanning, and responds with `403` and `x-vercel-mitigated: challenge` on *every*
+path for a sustained period, with Attack Mode off. Real browsers pass the JS challenge so
+visitors are unaffected, which makes this easy to misdiagnose: the site looks fine while all
+non-JS tooling fails. From CI it would trip on every push, from rotating runner IPs that cannot
+be allow-listed.
+
+### Two dependency alerts cannot be fixed here
+
+Dependabot alerts and security updates are enabled, and
+[`.github/dependabot.yml`](.github/dependabot.yml) groups minor/patch bumps into roughly one PR
+a week. Two open alerts are **not** actionable in this repo, because Next.js pins the vulnerable
+versions itself:
+
+- `next → postcss` is an **exact pin** at `8.4.31`, so the 8.5.x patches are unreachable. Note
+  that a *second* postcss coexists in the tree under `@tailwindcss/postcss` (`^8.5.6`); that
+  one is build-time only and Dependabot can move it freely, so postcss alerts here need reading
+  carefully — one copy is fixable and the other is not.
+- `next → sharp` is `^0.34.5`, and a caret on a `0.x` version pins the minor — so the `0.35.0`
+  patch is outside the range.
+
+Upgrading Next.js does not clear either one; `next@16.2.12` still carries both constraints.
+Dependabot may instead open a PR adding an `overrides` block, which diverges from what the
+framework expects — an override on `sharp` would affect Next.js image optimization. Read what
+these PRs actually change; close them and wait for the framework if the change is an override.
+
+Framework **major** bumps (`next`, `react`, `react-dom`) are ignored in `dependabot.yml` on
+purpose. Minors are not: 16.1.x → 16.2.x carries security fixes.
