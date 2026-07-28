@@ -3,9 +3,9 @@
 **Scope:** the GitHub-side and dependency-side work started 2026-07-28. Application behaviour is
 out of scope — for that, see [`migration_plan.md`](migration_plan.md).
 
-**Progress:** the substantive work is done and committed (`cf230b0`, `6006ade`). What remains is
-mostly *verification of things that cannot be tested locally*, plus a small number of standing
-watch items. Nothing below is blocking.
+**Progress:** the substantive work is done, committed and pushed (`cf230b0`, `6006ade`, `fe90fe2`).
+CI is green on its first run. What remains is one verification gap, some PR cleanup, and a few
+standing watch items. Nothing below is blocking.
 
 Throughout: **✅ = done and verified** · **🟡 = done but unverified** · **🔴 = still to do**
 
@@ -15,33 +15,33 @@ Throughout: **✅ = done and verified** · **🟡 = done but unverified** · **�
 
 | Item | State |
 | --- | --- |
-| `.github/workflows/ci.yml` — typecheck, lint, build | ✅ committed, 🟡 never executed |
+| `.github/workflows/ci.yml` — typecheck, lint, build | ✅ green on first run (40s, Node 24 / `ubuntu-latest`) |
 | `main` ruleset — `deletion` + `non_fast_forward` | ✅ active (id `19906691`), confirmed via rules API |
 | Secret scanning | ✅ enabled (was already) |
 | Push protection | ✅ enabled (was already) |
 | Actions default token = `read` | ✅ (was already) |
 | Dependabot alerts + security updates | ✅ enabled this session |
-| `.github/dependabot.yml` — grouped weekly | ✅ committed, 🟡 first run not yet observed |
-| Every *fixable* advisory | ✅ cleared in `6006ade` |
-| `npm run typecheck` script | ✅ added, passes |
+| `.github/dependabot.yml` — grouped weekly | ✅ committed, ran on push |
+| Every *fixable* advisory | ✅ cleared in `6006ade` — open alerts went 43 → 4 |
+| `npm run typecheck` script | ✅ added, passes locally and in CI |
 
 ---
 
-## 1. 🔴 Confirm CI actually runs green
+## 1. ✅ / 🔴 CI runs green on push — the pull_request trigger is still unexercised
 
-The workflow passes locally on **Node 23.11.0 / macOS**. It has never run on **Node 24 /
-`ubuntu-latest`**, which is what it pins. Until the first run completes, treat it as unverified.
+**Verified:** run [`30374669794`](https://github.com/cskevint/madamambition/actions/runs/30374669794)
+on the `main` push, green in 40s. `actions/checkout@v7` and `actions/setup-node@v7` both resolved,
+`npm ci` succeeded against the committed lockfile on a clean machine, and Node 24 /
+`ubuntu-latest` built the site with no `.env.local` present — confirming nothing needs
+`RESEND_API_KEY` at build time.
 
-Specifically unproven:
+CI surfaced the one tolerated eslint warning as a run annotation (`postcss.config.mjs#1`), which
+is a nicer way to see it than local output. See §7.
 
-- `actions/checkout@v7` and `actions/setup-node@v7` — confirmed as the current major tags via the
-  releases API, but never invoked.
-- `npm ci` against the committed lockfile on a clean machine.
-- That nothing in the build depends on a local-only file. `.env.local` is absent in CI, which
-  should be fine: only the contact and journal *actions* need `RESEND_API_KEY`, and they are not
-  invoked at build time.
-
-**Done when:** one run of `verify` is green on `main` and one is green on a pull request.
+🔴 **Still unproven:** the `pull_request` trigger. Nothing has opened a PR from a branch in this
+repo yet, so that half of the `on:` block has never fired, and neither has
+`cancel-in-progress` concurrency. Both are cheap to confirm the next time a branch is pushed —
+worth doing deliberately rather than discovering a typo during real work.
 
 ## 2. 🔴 Reconcile the Node version with the real deploy platform
 
@@ -102,31 +102,54 @@ mistaken for neglect.
 
 | Chain | Why it is stuck | Unblocks when |
 | --- | --- | --- |
-| `next → postcss` | **Exact pin** at `8.4.31`; 8.5.x patches unreachable. Still pinned in `16.2.12`. | Next.js moves its pin |
-| `next → sharp` | `^0.34.5` — a caret on `0.x` pins the minor, so `0.35.0` is out of range | Next.js widens to `^0.35` |
-| `minimatch@3.x → brace-expansion@^1.1.7` | Fix landed only in `5.0.8`; advisory range `<=5.0.7` covers all of 1.x, so there is no 1.x version to move to. Dev-only, but cascades to `minimatch`, `eslint`, `eslint-config-next` and every `eslint-plugin-*` — 9 of the 12 remaining `npm audit` entries | eslint's tree moves off `minimatch@3` |
+| `next → postcss` | **Exact pin** at `8.4.31`; the 8.5.x patches are unreachable. Still pinned in `16.2.12`. Accounts for **3 of the 4** open alerts | Next.js moves its pin |
+| `next → sharp` | `^0.34.5` — a caret on `0.x` pins the minor, so `0.35.0` is out of range. The **4th** alert | Next.js widens to `^0.35` |
+| `minimatch@3.x → brace-expansion@^1.1.7` | Fix landed only in `5.0.8`; `1.1.16` is the highest 1.x ever published, so there is no 1.x version to move to. Dev-only, and it cascades to `minimatch`, `eslint`, `eslint-config-next` and every `eslint-plugin-*` — 9 of the 12 `npm audit` entries | eslint's tree moves off `minimatch@3` |
+
+**Dependabot confirmed the first two itself.** Its security-update runs for `postcss` and `sharp`
+both *errored* rather than opening a PR, with: `The latest possible version that can be installed
+is 0.34.5 because of the following conflicting dependencies`. Two consequences worth knowing:
+
+- Recurring failed Dependabot runs on these two packages are **expected**, not a
+  misconfiguration. Don't go debugging them.
+- The feared `overrides` PR **did not materialise**. Dependabot errored instead of diverging from
+  the framework's pin. Keep the review habit anyway, but this is evidence it is unlikely here.
+
+**`brace-expansion` is the reverse case: `npm audit` flags it and Dependabot does not.** Dependabot
+reports one version per package per manifest and sees the patched `5.0.8` copy, so the nested
+`1.1.16` never becomes an alert. Checked GitHub's own advisory (`GHSA-mh99-v99m-4gvg`) via the
+API: range `<= 5.0.7`, first patched `5.0.8` — which does cover `1.1.16`. So `npm audit` is right
+and the alert count is quietly understating this one. **Read both sources**; neither alone is
+complete.
 
 **Never run `npm audit fix --force` in this repo.** It proposes `next@9.3.3`, `eslint@4.0.0` and
 `eslint-config-next@0.2.4` — years-old downgrades. A suggested *downgrade* is the signal that no
 forward fix exists and audit is falling back to the newest version predating the advisory. Also
 note `npm audit` claims `next@16.2.12` fixes postcss and sharp; it does not.
 
-## 5. 🔴 Review the first Dependabot PRs, then confirm the cadence
+## 5. 🔴 Close three superseded Dependabot PRs
 
-Two things to watch on the first batch:
+Dependabot opened these in the window between alerts being enabled and the fixes being pushed, so
+all three are already done — by the same or a higher version:
 
-- **Override PRs.** Where a parent pins a vulnerable version, Dependabot may add an `overrides`
-  block rather than a clean bump. That diverges from what the framework expects — an override on
-  `sharp` would affect Next.js image optimization. Read what the PR changes; close it and wait for
-  the framework if it is an override.
-- **Volume.** The grouping targets roughly one PR a week. If the first few weeks produce more,
-  tighten `.github/dependabot.yml` rather than learning to ignore the stream — noise is what makes
-  the *security* PRs get lost, which is worse than not running Dependabot at all.
+| PR | What it does | Superseded by |
+| --- | --- | --- |
+| [#3](https://github.com/cskevint/madamambition/pull/3) | `next` 16.1.6 → 16.2.**11** | we are on 16.2.**12** |
+| [#2](https://github.com/cskevint/madamambition/pull/2) | Bump `uuid` and `resend` | `resend@6.18.1` removed `uuid` from the tree entirely |
+| [#1](https://github.com/cskevint/madamambition/pull/1) | `flatted` 3.4.1 → 3.4.3 | `npm audit fix` |
 
-Note that GitHub's alert counts lag the lockfile until the fixing commit reaches `main`, so the
-first reading after the push is the meaningful one. Before the push it was 43 open (35 runtime, 8
-development); the fixes in `6006ade` should leave **4 runtime** (three postcss advisories against
-the `8.4.31` copy, plus one sharp).
+Dependabot often closes these itself once the base branch is ahead, but it had not as of the push.
+Close them if they linger, and check the diff first — #3 in particular would be a **downgrade**.
+
+**Then confirm the cadence.** The grouping targets roughly one PR a week. If the first few weeks
+produce more, tighten `.github/dependabot.yml` rather than learning to ignore the stream — noise is
+what makes the *security* PRs get lost, which is worse than not running Dependabot at all. The
+`github-actions` entry ran clean and opened nothing, since both actions are already on their
+current major.
+
+Alert counts lag the lockfile until the fixing commit reaches `main`. Post-push reading, which is
+the meaningful one: **4 open, all runtime, 0 development** — down from 43 (35 runtime, 8
+development). Every remaining one is in §4.
 
 ## 6. 🔴 Mail delivery is still untested end to end
 
@@ -146,9 +169,9 @@ emailed journal links point at the old WordPress site.
 - 🔴 **`package.json` is still named `next_temp`** — the `create-next-app` scaffold name. Harmless
   today, but it is what would appear if anything ever reads the manifest name.
 - 🔴 **One eslint warning is tolerated.** `postcss.config.mjs` trips
-  `import/no-anonymous-default-export`. CI does not pass `--max-warnings 0`, so it stays green.
-  Either fix the file and add the flag, or leave it deliberately — but decide, rather than letting
-  the warning count drift upward unnoticed.
+  `import/no-anonymous-default-export`. CI does not pass `--max-warnings 0`, so it stays green and
+  the warning shows up as a run annotation. Either fix the file and add the flag, or leave it
+  deliberately — but decide, rather than letting the warning count drift upward unnoticed.
 - 🔴 **Two optional secret-scanning features are off**: `secret_scanning_non_provider_patterns`
   and `secret_scanning_validity_checks`. Neither was expected to be on, and neither is needed given
   the audit found no secrets in history (the only committed env file is `.env.example`, whose sole
