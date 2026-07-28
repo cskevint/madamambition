@@ -38,10 +38,12 @@ on the `main` push, green in 40s. `actions/checkout@v7` and `actions/setup-node@
 CI surfaced the one tolerated eslint warning as a run annotation (`postcss.config.mjs#1`), which
 is a nicer way to see it than local output. See §7.
 
-🔴 **Still unproven:** the `pull_request` trigger. Nothing has opened a PR from a branch in this
-repo yet, so that half of the `on:` block has never fired, and neither has
-`cancel-in-progress` concurrency. Both are cheap to confirm the next time a branch is pushed —
-worth doing deliberately rather than discovering a typo during real work.
+✅ **The `pull_request` trigger is verified too**, and sooner than expected — Dependabot's own PRs
+exercised it within minutes. Four runs, three green and one red, and **the red one was correct**:
+see §5. CI earned its keep on day one.
+
+🔴 **Still unproven:** `cancel-in-progress` concurrency, which needs two pushes to the same ref in
+quick succession. Minor, and it will happen incidentally.
 
 ## 2. 🔴 Reconcile the Node version with the real deploy platform
 
@@ -141,10 +143,36 @@ all three are already done — by the same or a higher version:
 Dependabot often closes these itself once the base branch is ahead, but it had not as of the push.
 Close them if they linger, and check the diff first — #3 in particular would be a **downgrade**.
 
-**Then confirm the cadence.** The grouping targets roughly one PR a week. If the first few weeks
-produce more, tighten `.github/dependabot.yml` rather than learning to ignore the stream — noise is
-what makes the *security* PRs get lost, which is worse than not running Dependabot at all. The
-`github-actions` entry ran clean and opened nothing, since both actions are already on their
+## 5b. 🔴 Decide whether major bumps need their own group
+
+The first `dependabot.yml` run opened **five** PRs, not the one intended:
+
+| PR | Bump | CI |
+| --- | --- | --- |
+| [#4](https://github.com/cskevint/madamambition/pull/4) | the `npm-minor-and-patch` group, 8 updates | — |
+| [#5](https://github.com/cskevint/madamambition/pull/5) | `lint-staged` 16 → 17 | ✅ |
+| [#6](https://github.com/cskevint/madamambition/pull/6) | `@types/node` 20 → 26 | ✅ |
+| [#7](https://github.com/cskevint/madamambition/pull/7) | `eslint` 9 → 10 | ❌ |
+| [#8](https://github.com/cskevint/madamambition/pull/8) | `lucide-react` 0.577 → 1.27 | ✅ |
+
+**This is the config working as written, not a bug.** The group covers `minor` and `patch` only, so
+every **major** gets its own PR. Majors were only ignored for `next`, `eslint-config-next`, `react`
+and `react-dom`, and everything else was overdue at once.
+
+Read this as a **one-time backlog flush** — Dependabot had never run here. Steady state should be
+close to the intended one PR a week, since majors are rare. So the recommendation is to leave the
+config alone and re-measure in a few weeks. If majors do prove noisy, add a second group keyed to
+`update-types: ["major"]`, accepting the trade-off that one unmergeable major then blocks the
+others in its PR.
+
+**`eslint` 9 → 10 has since been added to the ignore list.** CI caught it: `Error while loading
+rule 'react/display-name': contextOrFilename.getFilename is not a function`. `eslint-config-next`
+bundles `eslint-plugin-react@^7.37.0`, which is not eslint-10 compatible — its `eslint: >=9.0.0`
+peer range is optimistic. Blocked upstream, not by anything here, which is the same reasoning
+already applied to the framework majors. Revisit when `eslint-config-next` ships a compatible
+plugin; Dependabot should close #7 on its next run.
+
+The `github-actions` entry ran clean and opened nothing, since both actions are already on their
 current major.
 
 Alert counts lag the lockfile until the fixing commit reaches `main`. Post-push reading, which is

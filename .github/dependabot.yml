@@ -27,6 +27,14 @@ updates:
         update-types: ["version-update:semver-major"]
       - dependency-name: react-dom
         update-types: ["version-update:semver-major"]
+      # eslint 10 is blocked upstream, not by anything in this repo. CI proved it
+      # on PR #7: `Error while loading rule 'react/display-name':
+      # contextOrFilename.getFilename is not a function`. eslint-config-next
+      # bundles eslint-plugin-react@^7.37.0, which is not eslint-10 compatible,
+      # and its `eslint: >=9.0.0` peer range is optimistic about this. Revisit
+      # when eslint-config-next ships a compatible plugin.
+      - dependency-name: eslint
+        update-types: ["version-update:semver-major"]
 
   # Otherwise actions/checkout and actions/setup-node go stale silently.
   - package-ecosystem: github-actions
