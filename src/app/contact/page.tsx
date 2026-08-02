@@ -1,6 +1,6 @@
 import Image from "next/image";
 import type { Metadata } from "next";
-import { IMG_SHADOW, InteriorHero, ROW, SocialRow } from "@/components/primitives";
+import { IMG_SHADOW, InteriorHero, ROW } from "@/components/primitives";
 import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
@@ -39,14 +39,9 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* 3. Divergence D8: not on the live page. Retained, now pointing at the real profiles
-          instead of the previous href="#" placeholders. */}
-      <section className="bg-brand-beige pt-[4%] pb-[4%]">
-        <div className={`${ROW} text-center`}>
-          <h3 className="font-serif text-[20px] text-brand-brown">Follow the Journey</h3>
-          <SocialRow />
-        </div>
-      </section>
+      {/* Divergence D8 (a "Follow the Journey" social row, not on the live page) was removed:
+          it repeated the footer's own social row, so on mobile the same four icons appeared
+          twice within about half a screen of each other. The footer's row is the survivor. */}
     </main>
   );
 }
