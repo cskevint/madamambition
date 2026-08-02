@@ -32,20 +32,7 @@ export const metadata: Metadata = {
 };
 
 import Footer from "@/components/Footer";
-import { careerStoriesEnabled } from "../../lib/features";
-
-// "Career Stories" appears only when the feature is enabled (lib/features.ts); it is off by
-// default, matching the live nav, which dropped it when that content was unpublished.
-// Position matches the pre-removal live nav.
-const NAV_ITEMS = [
-  { href: "/", label: "Home" },
-  { href: "/about/", label: "About" },
-  { href: "/executive-coaching/", label: "Executive Coaching" },
-  ...(careerStoriesEnabled ? [{ href: "/career-stories/", label: "Career Stories" }] : []),
-  { href: "/insights/", label: "Insights" },
-  { href: "/journal/", label: "Journal" },
-  { href: "/contact/", label: "Contact" },
-];
+import { NAV_ITEMS } from "../../lib/nav";
 
 export default function RootLayout({
   children,
