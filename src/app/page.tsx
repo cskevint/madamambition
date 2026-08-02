@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { HERO_GRADIENT } from "@/components/primitives";
 
 /* Every image carries the same drop shadow. */
 const IMG_SHADOW = "shadow-[0_2px_18px_0_rgba(0,0,0,0.3)]";
@@ -22,10 +23,16 @@ export default function Home() {
   return (
     <main className="site-type font-sans antialiased bg-white text-black">
       {/* 1. Hero Section */}
-      <section className="bg-[linear-gradient(270deg,#e2cec0_43%,#f5e5d6_43%)] py-[5%]">
+      {/* Shares the interior-hero background rather than repeating the gradient inline —
+          the duplicate copy is how this hero missed the mobile flat-background fix. */}
+      <section className={`${HERO_GRADIENT} py-[5%]`}>
         <div className="w-[90%] max-w-[1296px] mx-auto flex flex-col min-[981px]:flex-row items-start min-[981px]:gap-[5.5%]">
           {/* Left Column (2/5) */}
-          <div className="w-full pt-[20%] min-[768px]:pt-[10%] min-[981px]:w-[36.73%] min-[981px]:pt-[11.01%]">
+          {/* Mobile uses a fixed 24px rather than a percentage: percentage padding resolves
+              against WIDTH, so the old pt-[20%] put 67px of dead space above the headline on a
+              375px phone — 13% of the viewport, and double the desktop percentage on the
+              screen with the least room. The desktop ladder is the measured original. */}
+          <div className="w-full pt-[24px] min-[768px]:pt-[10%] min-[981px]:w-[36.73%] min-[981px]:pt-[11.01%]">
             <h1 className="font-serif text-[48px] tracking-[2px] uppercase text-brand-brown">
               Madam Ambition
             </h1>
@@ -143,7 +150,9 @@ export default function Home() {
             <div className="mt-[31.67px]">
               <Link
                 href="https://www.facebook.com/madamambittion"
-                className={`${BTN} w-full text-center bg-black text-white px-[30px] py-[9px] hover:bg-brand-nav transition-colors`}
+                // py-[9px] + 25.5px line-height lands at 43.5px — just under the 44px
+                // minimum. 10px on mobile clears it; desktop keeps the measured padding.
+                className={`${BTN} w-full text-center bg-black text-white px-[30px] py-[10px] min-[981px]:py-[9px] hover:bg-brand-nav transition-colors`}
               >
                 Follow Madam Ambition
               </Link>

@@ -325,6 +325,33 @@ function effectiveRect(doc: Doc, el: El): { width: number; height: number } {
   return { width, height };
 }
 
+/**
+ * WCAG 2.2 SC 2.5.8 exempts a target that is "in a sentence or its size is otherwise
+ * constrained by the line-height of non-target text" — you cannot pad a link inside running
+ * prose without wrecking the paragraph.
+ *
+ * The test is deliberately narrow: the element must be `display: inline` AND its containing
+ * block must hold text that is NOT inside a link. A `<br>`-separated list of links (the
+ * site's footer Explore column) has no non-link text, so it stays checked — which is right,
+ * because that one is a navigation list, not a sentence.
+ */
+function isInlineInProse(win: Win, el: El): boolean {
+  const s = styleOf(win, el);
+  if (!s || s.display !== "inline") return false;
+
+  const parent = el.parentElement;
+  if (!parent) return false;
+
+  const strip = (v: string) => v.replace(/\s+/g, "");
+  const allText = strip(parent.textContent || "");
+  const linkText = all(parent, "a, button").reduce(
+    (sum: string, node: El) => sum + strip(node.textContent || ""),
+    "",
+  );
+
+  return allText.length > linkText.length;
+}
+
 function checkTapTargets(win: Win, doc: Doc): CheckResult {
   const findings: Finding[] = [];
   const candidates = all(doc, INTERACTIVE_SELECTOR);
@@ -342,6 +369,9 @@ function checkTapTargets(win: Win, doc: Doc): CheckResult {
     // Not laid out at all (a detached or zero-box control) — not a tap-target problem.
     if (eff.width < 1 && eff.height < 1) continue;
     if (eff.width >= 44 && eff.height >= 44) continue;
+
+    // A link inside running prose is exempt — see isInlineInProse.
+    if (isInlineInProse(win, el)) continue;
 
     // A small control inside a large interactive ancestor is fine — the ancestor is the
     // real target.

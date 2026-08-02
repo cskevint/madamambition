@@ -10,8 +10,13 @@ import { subscribeToJournal } from "./actions";
  * border, 15px lower-case type, 15px gaps, and a copper submit button — no uppercase and no
  * letter-spacing. Measured from the live /journal/ at 1440px.
  */
+/**
+ * 16px on mobile is not cosmetic: iOS Safari zooms the page when a field under 16px takes
+ * focus, and does not zoom back. The measured 15px is restored at the desktop breakpoint so
+ * the embed's original look is unchanged where it was measured.
+ */
 const FIELD =
-  "w-full h-[47px] px-[12px] bg-white text-[15px] text-black border border-[#e3e3e3] rounded-[4px] outline-none focus:border-brand-copper";
+  "w-full h-[47px] px-[12px] bg-white text-[16px] min-[981px]:text-[15px] text-black border border-[#e3e3e3] rounded-[4px] outline-none focus:border-brand-copper";
 
 /**
  * Mindset Journal signup. On success the download links are shown immediately as well as
@@ -87,7 +92,7 @@ export default function JournalSignupForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full h-[43px] bg-brand-copper text-white font-sans text-[15px] rounded-[4px] hover:bg-brand-brown transition-colors cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full h-[44px] min-[981px]:h-[43px] bg-brand-copper text-white font-sans text-[15px] rounded-[4px] hover:bg-brand-brown transition-colors cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {isSubmitting ? "Subscribing…" : "Subscribe"}
       </button>

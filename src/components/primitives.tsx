@@ -18,8 +18,16 @@ export const BTN_DARK = `${BTN} bg-black text-white hover:bg-brand-nav transitio
 /** The standard row container. Section padding is applied by the section, not here. */
 export const ROW = "w-[80%] max-w-[1152px] mx-auto";
 
-/** The 270deg split background used by every interior hero. */
-export const HERO_GRADIENT = "bg-[linear-gradient(270deg,#e2cec0_43%,#f5e5d6_43%)]";
+/**
+ * The 270deg split background used by every interior hero.
+ *
+ * The hard stop at 43% aligns with the desktop 423+666 two-column hero. On a phone the
+ * columns stack, so that edge becomes an arbitrary vertical seam through the heading and
+ * image — at 393px it lands at x=224. Below 981px it is a flat #f5e5d6 (brand-beige), which
+ * is the colour the content side already sat on.
+ */
+export const HERO_GRADIENT =
+  "bg-brand-beige min-[981px]:bg-[linear-gradient(270deg,#e2cec0_43%,#f5e5d6_43%)]";
 
 /**
  * The interior-page hero: gradient split, 423+666 columns, 35px heading, right-hand image.
@@ -186,6 +194,38 @@ export const SOCIAL_LINKS = [
     path: "M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05a3.75 3.75 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zm1.78 13.02H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z",
   },
 ];
+
+/**
+ * The row of circular social icons, used by the footer and by /contact/.
+ *
+ * Shared rather than copied: both places previously carried identical hardcoded markup, and
+ * a tap-target fix applied to one silently left the other at 36px. 44px on mobile meets the
+ * Apple HIG minimum; the original 36px circle returns at the desktop breakpoint.
+ */
+export function SocialRow({ gapClass = "gap-[8px]" }: { gapClass?: string }) {
+  return (
+    <ul className={`flex justify-center ${gapClass}`}>
+      {SOCIAL_LINKS.map(({ label, href, path }) => (
+        <li key={label}>
+          <Link
+            href={href}
+            aria-label={label}
+            className="w-[44px] h-[44px] min-[981px]:w-[36px] min-[981px]:h-[36px] rounded-full bg-brand-copper text-white flex items-center justify-center hover:bg-brand-brown transition-colors"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+              className="w-[20px] h-[20px] min-[981px]:w-[16px] min-[981px]:h-[16px]"
+            >
+              <path d={path} />
+            </svg>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
 
 /**
  * The article grid used by /insights/ and /career-stories/: three columns, 35px gutters,

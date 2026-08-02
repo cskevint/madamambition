@@ -63,7 +63,10 @@ export default async function ArticlePage({ params }: Props) {
           <div className="w-full min-[981px]:w-[36.72%] min-[981px]:pt-[59px]">
             {/* Divergence D9: the category breadcrumb is not on the live site. Retained. */}
             <div className="text-[13px] tracking-wide text-brand-copper">
-              <Link href={`/${article.category}/`} className="hover:underline">
+              <Link
+                href={`/${article.category}/`}
+                className="hover:underline inline-block py-[14px] -my-[14px] min-[981px]:py-0 min-[981px]:my-0"
+              >
                 {categoryLabel}
               </Link>
             </div>
@@ -117,10 +120,18 @@ export default async function ArticlePage({ params }: Props) {
         <div
           className={`${ROW} flex justify-between items-center border-t border-brand-beige pt-[30px] text-[13px] tracking-wide`}
         >
-          <Link href={`/${article.category}/`} className="text-brand-copper hover:underline">
+          {/* Vertical padding with a matching negative margin lifts these 20px links to a
+              44px tap target without shifting the row. Reset above 981px. */}
+          <Link
+            href={`/${article.category}/`}
+            className="text-brand-copper hover:underline inline-block py-[13px] -my-[13px] min-[981px]:py-0 min-[981px]:my-0"
+          >
             ← More {categoryLabel}
           </Link>
-          <Link href="/contact/" className="text-brand-copper hover:underline">
+          <Link
+            href="/contact/"
+            className="text-brand-copper hover:underline inline-block py-[13px] -my-[13px] min-[981px]:py-0 min-[981px]:my-0"
+          >
             Get in touch →
           </Link>
         </div>

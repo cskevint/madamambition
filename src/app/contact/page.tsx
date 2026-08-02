@@ -1,7 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import type { Metadata } from "next";
-import { IMG_SHADOW, InteriorHero, ROW, SOCIAL_LINKS } from "@/components/primitives";
+import { IMG_SHADOW, InteriorHero, ROW, SocialRow } from "@/components/primitives";
 import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
@@ -45,26 +44,7 @@ export default function Contact() {
       <section className="bg-brand-beige pt-[4%] pb-[4%]">
         <div className={`${ROW} text-center`}>
           <h3 className="font-serif text-[20px] text-brand-brown">Follow the Journey</h3>
-          <ul className="flex justify-center gap-[8px]">
-            {SOCIAL_LINKS.map(({ label, href, path }) => (
-              <li key={label}>
-                <Link
-                  href={href}
-                  aria-label={label}
-                  className="w-[36px] h-[36px] rounded-full bg-brand-copper text-white flex items-center justify-center hover:bg-brand-brown transition-colors"
-                >
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    aria-hidden="true"
-                    className="w-[16px] h-[16px]"
-                  >
-                    <path d={path} />
-                  </svg>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <SocialRow />
         </div>
       </section>
     </main>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SOCIAL_LINKS } from "@/components/primitives";
+import { SocialRow } from "@/components/primitives";
 import { careerStoriesEnabled } from "../../lib/features";
 
 const EXPLORE_LINKS = [
@@ -26,11 +26,17 @@ export default function Footer() {
         {/* Explore column */}
         <div className="min-[981px]:w-1/3 bg-brand-beige pt-[6%] pb-[6%] min-[981px]:pb-0 text-center">
           <h2 className="font-serif text-[19px] text-brand-brown">Explore</h2>
+          {/* inline-block + vertical padding lifts these from 22px to 44px tall, clearing the
+              24px WCAG 2.2 SC 2.5.8 floor. Reset above 981px so the desktop footer keeps its
+              original spacing. */}
           <p className="text-[17px] text-[#4b4b4b]">
             {EXPLORE_LINKS.map(({ href, label }, i) => (
               <span key={href}>
                 {i > 0 && <br />}
-                <Link href={href} className="text-brand-copper hover:underline">
+                <Link
+                  href={href}
+                  className="text-brand-copper hover:underline inline-block py-[11px] min-[981px]:py-0"
+                >
                   {label}
                 </Link>
               </span>
@@ -40,26 +46,9 @@ export default function Footer() {
         {/* Social column */}
         <div className="min-[981px]:w-1/3 bg-brand-beige pt-[6%] pb-[6%] min-[981px]:pb-0 text-center">
           <h3 className="font-serif text-[20px] text-brand-brown">Social Media Follow</h3>
-          <ul className="flex justify-center pt-[10px]">
-            {SOCIAL_LINKS.map(({ label, href, path }, i) => (
-              <li key={label} className={i === SOCIAL_LINKS.length - 1 ? "" : "mr-[8px]"}>
-                <Link
-                  href={href}
-                  aria-label={label}
-                  className="w-[36px] h-[36px] rounded-full bg-brand-copper text-white flex items-center justify-center hover:bg-brand-brown transition-colors"
-                >
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    aria-hidden="true"
-                    className="w-[16px] h-[16px]"
-                  >
-                    <path d={path} />
-                  </svg>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <div className="pt-[10px]">
+            <SocialRow />
+          </div>
         </div>
       </div>
 
@@ -67,7 +56,10 @@ export default function Footer() {
       <div className="bg-brand-brown pt-[17px] pb-[30px] text-white">
         <div className="w-[80%] max-w-[1152px] mx-auto pt-[15px]">
           <p className="text-[16px] text-center min-[981px]:text-left">
-            © {new Date().getFullYear()} Madam Ambition&nbsp; |&nbsp; All rights reserved
+            {/* Built as one string: as separate JSX children the space between the year
+                expression and the text is dropped, rendering "© 2026Madam Ambition". */}
+            {`© ${new Date().getFullYear()} Madam Ambition`}
+            &nbsp; |&nbsp; All rights reserved
           </p>
         </div>
       </div>
