@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { JournalDownloadLinks } from "@/components/primitives";
+import { HONEYPOT_CLASS, HONEYPOT_FIELD } from "../../../lib/spam";
 import { subscribeToJournal } from "./actions";
 
 /**
@@ -57,7 +58,7 @@ export default function JournalSignupForm() {
   }
 
   return (
-    <form action={handleSubmit} className="mt-[20px] flex flex-col gap-[15px]">
+    <form action={handleSubmit} className="relative mt-[20px] flex flex-col gap-[15px]">
       <label htmlFor="journal-first-name" className="sr-only">
         First Name
       </label>
@@ -82,6 +83,25 @@ export default function JournalSignupForm() {
         required
         className={FIELD}
       />
+
+      {/*
+        Honeypot — see lib/spam.ts. Absolutely positioned off-screen, so it stays in the markup
+        for a script to fill while taking no space in the flex column. It is the form that is
+        `relative`, so the offset is measured from there rather than from whatever ancestor
+        happens to be positioned. `aria-hidden` plus `tabIndex={-1}` keep it out of screen
+        readers and tab order.
+      */}
+      <div className={HONEYPOT_CLASS} aria-hidden="true">
+        <label htmlFor="journal-website">Website</label>
+        <input
+          id="journal-website"
+          name={HONEYPOT_FIELD}
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          defaultValue=""
+        />
+      </div>
 
       {error ? (
         <p className="text-brand-brown" role="alert">
