@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { BTN } from "@/components/primitives";
+import { HONEYPOT_CLASS, HONEYPOT_FIELD } from "../../../lib/spam";
 import { sendEmail } from "./actions";
 
 /**
@@ -51,7 +52,7 @@ export default function ContactForm() {
       <h2 className="font-serif text-[26px] text-brand-brown">Contact Me</h2>
       <p className="pb-[1em]">Fields marked with an * are required</p>
 
-      <form action={handleSubmit} className="max-w-[520px]">
+      <form action={handleSubmit} className="relative max-w-[520px]">
         <label htmlFor="name" className="block text-[16px]">
           Name *
         </label>
@@ -86,6 +87,24 @@ export default function ContactForm() {
           rows={6}
           className="w-full px-[16px] py-[12px] mb-[16px] bg-white border border-brand-darkbeige focus:border-brand-copper outline-none text-[16px] resize-y"
         />
+
+        {/*
+          Honeypot — see lib/spam.ts. Off-screen rather than `display: none`, so it stays in the
+          markup for a script to fill; the offset measures from the form, which is `relative`.
+          `aria-hidden` plus `tabIndex={-1}` keep it out of screen readers and tab order. No
+          asterisk on the label, so a script reads it as one more optional field.
+        */}
+        <div className={HONEYPOT_CLASS} aria-hidden="true">
+          <label htmlFor="contact-website">Website</label>
+          <input
+            id="contact-website"
+            name={HONEYPOT_FIELD}
+            type="text"
+            tabIndex={-1}
+            autoComplete="off"
+            defaultValue=""
+          />
+        </div>
 
         {error ? (
           <p className="pb-[1em] text-brand-brown" role="alert">

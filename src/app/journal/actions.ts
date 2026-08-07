@@ -3,6 +3,7 @@
 import { JOURNAL_PDFS } from "@/components/primitives";
 import { isValidEmail, sendNotification, sendToVisitor } from "../../../lib/mail";
 import { absoluteUrl } from "../../../lib/site";
+import { isBotSubmission } from "../../../lib/spam";
 
 /**
  * Mindset Journal signup.
@@ -14,6 +15,11 @@ import { absoluteUrl } from "../../../lib/site";
  * The subscriber email is the one that matters to the visitor, so its failure fails the
  * request. The owner notification is best-effort: if only that one fails, the visitor has
  * still received their journal and should not be shown an error.
+ *
+ * A honeypot field guards the two sends — see lib/spam.ts. Both are worth guarding: the
+ * notification is the owner's inbox, and the subscriber send is mail this site originates to
+ * an address a script chose, which is how a signup form turns into someone else's spam
+ * problem and a sender-reputation one for the domain.
  */
 
 export type SubscribeResult = { success: boolean; error?: string };
@@ -21,6 +27,16 @@ export type SubscribeResult = { success: boolean; error?: string };
 export async function subscribeToJournal(formData: FormData): Promise<SubscribeResult> {
   const firstName = (formData.get("firstName") as string | null)?.trim() ?? "";
   const email = (formData.get("email") as string | null)?.trim() ?? "";
+
+  /**
+   * Reported as a success so the bot learns nothing, but nothing is sent. The form then shows
+   * the download links, which costs nothing — the PDFs are public files under public/journal/
+   * and are linked from /journal-download/ anyway. What the honeypot protects is the mail.
+   */
+  if (isBotSubmission(formData)) {
+    console.warn("Journal signup: honeypot triggered, dropping submission.");
+    return { success: true };
+  }
 
   if (!email) {
     return { success: false, error: "Please enter your email address." };
