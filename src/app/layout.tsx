@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Abril_Fatface, Lora, Marcellus } from "next/font/google";
 import "./globals.css";
 
@@ -47,6 +48,7 @@ export default function RootLayout({
         <SiteHeader />
         {children}
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   );
